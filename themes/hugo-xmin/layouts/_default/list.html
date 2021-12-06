@@ -6,6 +6,10 @@
 
 {{ .Content }}
 
+{{if .IsHome}}
+<font size = 4pt>Blogs:</font>
+{{end}}
+
 <ul>
   {{ $pages := .Pages }}
   {{ if .IsHome }}{{ $pages = .Site.RegularPages }}{{ end }}

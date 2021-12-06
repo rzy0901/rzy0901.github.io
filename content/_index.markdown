@@ -15,5 +15,3 @@ title: Home
 1. I'm struggling with doing my homework.
 2. I'm trying to lose weight.
 
-<font size = 4pt>Blogs:</font>
-

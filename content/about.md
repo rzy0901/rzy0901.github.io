@@ -42,7 +42,7 @@ Note: You can look up my [Github](https://github.com/rzy0901) for my full projec
 
 | Project Name                                                 | Description                                 |
 | ------------------------------------------------------------ | ------------------------------------------- |
-| <img src="../about.assets/image-20211204035136071.png" alt="image-20211204035136071" style="zoom:40%;" /> <br/>[My Homepage](https://rzy0901.github.io) (Continuously updated.) | A simple academic page, maintained by Hugo. |
+| <img src="../about.assets/image-20211204035136071.png" alt="image-20211204035136071" style="zoom:40%;" /> <br/>[My Homepage](https://github.com/rzy0901/rzy0901.github.io) (Continuously updated.) | A simple academic page, maintained by Hugo. |
 | Undetermined...                                              | In Progress...                              |
 
 ## Awards

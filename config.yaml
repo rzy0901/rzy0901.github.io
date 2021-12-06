@@ -32,7 +32,7 @@ menu:
 
 params:
   description: "A website built through Hugo and blogdown."
-  footer: "&copy; [Zhenyu Ren](https://rzy0901.github.io) 2021 -- 2022 | [Github](https://github.com/rzy0901) | [MAIL](mailto:11812214@mail.sustech.edu.cn)"
+  footer: "Copyright &copy; [Ren Zhenyu](https://rzy0901.github.io) | [Github](https://github.com/rzy0901) | [MAIL](mailto:11812214@mail.sustech.edu.cn)"
 
 markup:
   highlight:
