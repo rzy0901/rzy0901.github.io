@@ -1,2 +1,2 @@
 # rzy0901.github.io
-My personal website.
++ This is my Personal Page based on [hugo-xmin](https://github.com/yihui/hugo-xmin).
