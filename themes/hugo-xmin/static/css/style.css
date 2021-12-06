@@ -7,14 +7,14 @@ body {
 
 /* header and footer areas */
 .menu { padding: 0;}
-.menu li { display: inline-block; }
-.menu a{border-style: dashed;}
+.menu li { display: inline-block;}
 .article-meta, .menu a {
   text-decoration: none;
+  background: #eee;
   padding: 5px;
-  border-radius: 2px;
+  border-radius: 5px;
 }
-.article-meta {background: #eee;}
+.article-meta{background: #eee;}
 .menu, .article-meta, footer { text-align: center; }
 .title { font-size: 1.1em; }
 footer a { text-decoration: none; }
