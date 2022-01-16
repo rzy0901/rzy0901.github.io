@@ -1,49 +1,60 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+<?xml-stylesheet type="text/xsl" href="/sitemap.xsl"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://rzy0901.github.io/categories/</loc>
-    <lastmod>2021-12-05T00:00:00+00:00</lastmod>
+    <loc>/post/even-preview/</loc>
+    <lastmod>2022-01-16T00:00:00+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://rzy0901.github.io/</loc>
-    <lastmod>2021-12-05T00:00:00+00:00</lastmod>
+    <loc>/</loc>
+    <lastmod>2022-01-15T00:00:00+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://rzy0901.github.io/categories/hugo/</loc>
-    <lastmod>2021-12-05T00:00:00+00:00</lastmod>
+    <loc>/about/</loc>
+    <lastmod>2022-01-16T21:41:52+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://rzy0901.github.io/tags/markdown/</loc>
-    <lastmod>2021-12-05T00:00:00+00:00</lastmod>
+    <loc>/categories/</loc>
+    <lastmod>2022-01-16T00:00:00+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://rzy0901.github.io/post/</loc>
-    <lastmod>2021-12-05T00:00:00+00:00</lastmod>
+    <loc>/tags/hugo/</loc>
+    <lastmod>2022-01-16T00:00:00+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://rzy0901.github.io/tags/</loc>
-    <lastmod>2021-12-05T00:00:00+00:00</lastmod>
+    <loc>/categories/hugo/</loc>
+    <lastmod>2022-01-16T00:00:00+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://rzy0901.github.io/post/2021/12/05/testblogs/</loc>
-    <lastmod>2021-12-05T00:00:00+00:00</lastmod>
+    <loc>/post/</loc>
+    <lastmod>2022-01-16T00:00:00+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://rzy0901.github.io/post/2021/12/04/a-plain-markdown-post/</loc>
-    <lastmod>2021-12-04T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://rzy0901.github.io/about/</loc>
+    <loc>/tags/</loc>
+    <lastmod>2022-01-16T00:00:00+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   
 </urlset>
