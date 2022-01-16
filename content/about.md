@@ -14,7 +14,7 @@ weight: 50
   1. Wireless Communication.
   2. Integrated Sensing And Communication (ISAC).
 
-> PDF version for my CV: <a href="../cv.pdf">[CV.pdf]</a> (Last Updated: April.2021, this is just a draft ::smile:. ).
+> PDF version for my CV: <a href="../cv.pdf">[CV.pdf]</a> (Last Updated: April.2021, this is just a draft :smile:. ).
 
 ## Academia
 
