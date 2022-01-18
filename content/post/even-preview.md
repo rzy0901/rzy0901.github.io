@@ -10,7 +10,7 @@ weight: 10
 # contentCopyright: MIT
 mathjax: true
 autoCollapseToc: true
-postMetaInFooter: false
+postMetaInFooter: true
 ---
 
 > Based on [MarkdownPreview test.md](https://github.com/facelessuser/MarkdownPreview/blob/master/examples/test.md).
