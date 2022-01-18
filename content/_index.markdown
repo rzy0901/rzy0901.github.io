@@ -13,14 +13,19 @@ toc: false
 autoCollapseToc: true
 ---
 
-[<img src="./index.assets/profile.png" style="max-width: 20%; float: right; zoom: 25%;" alt="Github account" />](https://github.com/rzy0901)
+[<img src="/profile.png" style="max-width: 25%; float: right; zoom: 25%;" alt="Github account" />](https://github.com/rzy0901)
 
-<font size = 4pt>Hi, this is Ren Zhenyu (任振裕). 🌏</font> 
+<font size = 4pt>
 
-<font size = 4pt>Brief Bio: UG@SUSTech || Intern@Huawei.</font>
+Hi, this is Ren Zhenyu (任振裕). 🌏
 
-<font size = 4pt>Recent News:</font>
+Brief Bio: UG@SUSTech || Intern@Huawei.
+
+Major: Communication Engineering.
+
+Recent News:
 
 1. I'm struggling with doing my homework.
 2. I'm trying to lose weight.
 
+</font>
