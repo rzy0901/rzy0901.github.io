@@ -28,4 +28,7 @@ Recent News:
 1. I'm struggling with doing my homework.
 2. I'm trying to lose weight.
 
+Recommended post: [Introduction（写在前面）](/post/introduction/)
+
 </font>
+
