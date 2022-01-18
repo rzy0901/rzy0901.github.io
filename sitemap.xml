@@ -23,6 +23,34 @@
   </url>
   
   <url>
+    <loc>/tags/diary/</loc>
+    <lastmod>2022-01-18T23:09:36+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/post/intoduction/</loc>
+    <lastmod>2022-01-18T23:09:36+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/post/</loc>
+    <lastmod>2022-01-18T23:09:36+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/</loc>
+    <lastmod>2022-01-18T23:09:36+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>/categories/</loc>
     <lastmod>2022-01-16T00:00:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -38,20 +66,6 @@
   
   <url>
     <loc>/categories/hugo/</loc>
-    <lastmod>2022-01-16T00:00:00+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>/post/</loc>
-    <lastmod>2022-01-16T00:00:00+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/</loc>
     <lastmod>2022-01-16T00:00:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
