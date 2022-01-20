@@ -15,7 +15,7 @@ reward: false
 ---
 
 # Why I set up such a Personal Website.[^1]
-[^1]:This website is based on [Hugo](https://gohugo.io/) and its theme [even](https://github.com/olOwOlo/hugo-theme-even), deploying on GitHub using GitHub Actions.
+[^1]:This website is based on [Hugo](https://gohugo.io/) and its theme [even](https://github.com/olOwOlo/hugo-theme-even), deploying on GitHub using [GitHub Actions](https://github.com/features/actions).
 <font size = 4pt>
 
 + Firstly, from the point of view as a student, I think it is necessary for me to build up a private place to `record and manage my notes `(or some other things) efficiently. In the past three years of my undergraduate student career, I could always dig some interesting ideas almost every day but not always had a chance (or a good 'util') to record them. For example, I learned lots of new things in the school every day and sometimes I might write some handwirtten notes  to record them.  But the fact is that I always dropped them in few days or throwed them in the trash because of poor readability in the next Semesters. Personal website offers me a direction to record my thoughts more fancily that maybe I shall still find my blogs useful and interesting even in many years later.
