@@ -6,7 +6,6 @@ draft: false
 tags: ["Hugo"]
 categories: ["Hugo"]
 
-weight: 10
 # contentCopyright: MIT
 mathjax: true
 autoCollapseToc: true
