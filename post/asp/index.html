@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Notebook for Applied Stochastic Processes - Ren Zhenyu&#39;s Website </title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="Ren Zhenyu" /><meta name="description" content="info This is a collection of my notes for SUSTech MA208 &amp;ldquo;Applied Stochastic Processes&amp;rdquo;, in the spring semester of 2022, based on Professor Zhang Yiying (张艺赢)&amp;lsquo;s lectures. Chapter 1: Preliminaries: Reviews on Probability Theory Probability Space Definition (Probability Space). The probability space $(\Omega,\mathcal{F},\mathbb{P})$ is defined as follows: $\Omega$: sample space, the set of all possible outcomes. $\mathcal{F}$: $\sigma$-field" /><meta name="keywords" content="Ren Zhenyu, blog" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.68.3 with theme even" />
+
+
+<link rel="canonical" href="/post/asp/" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+<link href="/sass/main.min.2e81bbed97b8b282c1aeb57488cc71c8d8c8ec559f3931531bd396bf31e0d4dd.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
+
+
+<meta property="og:title" content="Notebook for Applied Stochastic Processes" />
+<meta property="og:description" content="info This is a collection of my notes for SUSTech MA208 &ldquo;Applied Stochastic Processes&rdquo;, in the spring semester of 2022, based on Professor Zhang Yiying (张艺赢)&lsquo;s lectures. Chapter 1: Preliminaries: Reviews on Probability Theory Probability Space Definition (Probability Space). The probability space $(\Omega,\mathcal{F},\mathbb{P})$ is defined as follows: $\Omega$: sample space, the set of all possible outcomes. $\mathcal{F}$: $\sigma$-field" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/post/asp/" />
+<meta property="article:published_time" content="2022-02-22T00:00:00+08:00" />
+<meta property="article:modified_time" content="2022-02-22T00:00:00+08:00" />
+<meta itemprop="name" content="Notebook for Applied Stochastic Processes">
+<meta itemprop="description" content="info This is a collection of my notes for SUSTech MA208 &ldquo;Applied Stochastic Processes&rdquo;, in the spring semester of 2022, based on Professor Zhang Yiying (张艺赢)&lsquo;s lectures. Chapter 1: Preliminaries: Reviews on Probability Theory Probability Space Definition (Probability Space). The probability space $(\Omega,\mathcal{F},\mathbb{P})$ is defined as follows: $\Omega$: sample space, the set of all possible outcomes. $\mathcal{F}$: $\sigma$-field">
+<meta itemprop="datePublished" content="2022-02-22T00:00:00&#43;08:00" />
+<meta itemprop="dateModified" content="2022-02-22T00:00:00&#43;08:00" />
+<meta itemprop="wordCount" content="445">
+
+
+
+<meta itemprop="keywords" content="Notes," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Notebook for Applied Stochastic Processes"/>
+<meta name="twitter:description" content="info This is a collection of my notes for SUSTech MA208 &ldquo;Applied Stochastic Processes&rdquo;, in the spring semester of 2022, based on Professor Zhang Yiying (张艺赢)&lsquo;s lectures. Chapter 1: Preliminaries: Reviews on Probability Theory Probability Space Definition (Probability Space). The probability space $(\Omega,\mathcal{F},\mathbb{P})$ is defined as follows: $\Omega$: sample space, the set of all possible outcomes. $\mathcal{F}$: $\sigma$-field"/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">Ren Zhenyu</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/">
+        <li class="mobile-menu-item">Home</li>
+      </a><a href="/post/">
+        <li class="mobile-menu-item">Archives</li>
+      </a><a href="/tags/">
+        <li class="mobile-menu-item">Tags</li>
+      </a><a href="/categories/">
+        <li class="mobile-menu-item">Categories</li>
+      </a><a href="/about/">
+        <li class="mobile-menu-item">About</li>
+      </a>
+  </ul>
+
+  
+
+
+</nav>
+
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">Ren Zhenyu</a>
+</div>
+
+
+
+
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/">Home</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/post/">Archives</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/tags/">Tags</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/categories/">Categories</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/about/">About</a>
+      </li>
+  </ul>
+</nav>
+
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">Notebook for Applied Stochastic Processes</h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 2022-02-22 </span>
+        <div class="post-category">
+            <a href="/categories/notes/"> Notes </a>
+            </div>
+          <span class="more-meta"> 445 words </span>
+          <span class="more-meta"> 1 min read </span>
+        
+      </div>
+    </header>
+
+    <div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">Contents</h2>
+  <div class="post-toc-content">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#chapter-1-preliminaries-reviews-on-probability-theory">Chapter 1: Preliminaries: Reviews on Probability Theory</a>
+      <ul>
+        <li><a href="#probability-space">Probability Space</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </div>
+</div>
+    <div class="post-content">
+      <!--
+关于Mathjex的bug记录：
+一、行内公式: $\{\}$需要写为$\\{\\}$
+二、公式换行：必须使用\begin{aligned} \newline \end{aligned}或\begin{align} \newline \end{align}
+-->
+<div class="admonition info"><p class="admonition-title">info</p>
+<p>This is a collection of  my notes for SUSTech MA208 &ldquo;Applied Stochastic Processes&rdquo;, in the spring semester of 2022, based on Professor <a href="https://sites.google.com/site/yiyingzhang16">Zhang Yiying (张艺赢)</a>&lsquo;s lectures.</p>
+</div>
+<h1 id="chapter-1-preliminaries-reviews-on-probability-theory">Chapter 1: Preliminaries: Reviews on Probability Theory</h1>
+<h2 id="probability-space">Probability Space</h2>
+<div class="admonition tip"><p class="admonition-title">Definition (Probability Space). </p>
+  The probability space $(\Omega,\mathcal{F},\mathbb{P})$ is defined as follows:
+<ul>
+<li>$\Omega$: sample space, the set of all possible outcomes.</li>
+<li>$\mathcal{F}$: $\sigma$-field ($\sigma$-algebra) on $\Omega$ or collection of events.</li>
+<li>$\mathbb{P}$: Probability measure on $(\Omega,\mathcal{F})$.</li>
+</ul>
+</div>
+<div class="admonition tip"><p class="admonition-title">Definition ($\sigma$-algebra).</p>
+<p>For a sample space $\Omega$, $\mathcal{F}$ is said to be a $\sigma$-algebra if it satisfies:</p>
+<ul>
+<li>$\Omega \in \mathcal{F}$;</li>
+<li>closed under complement, that is, if $E\in \mathcal{F}$, then $E^c \in \mathcal{F}$;</li>
+<li>closed under countable unions of events, that is, $E_i \in \mathcal{F}$, $i=1,2,\cdots$, then $\cup_iE_i \in \mathcal{F}$.</li>
+</ul>
+<p><em>Remark</em>: $\mathcal{F}$ is collection of sets (For example,  $\Omega = \{a,b,c,d\}, \mathcal{F}=\{\emptyset,\Omega,\{a,b\},\{c,d\}\}.$</p>
+</div>
+<div class="admonition tip"><p class="admonition-title">Definition (Probability).</p>
+<p>(Probability). Any event $E \in \Omega$, $\mathbb{P}(E)$ is called the probability of the event $E$ if it satisffies:</p>
+<ul>
+<li>$0 \leq \mathbb{P}(E) \leq 1$;</li>
+<li>If $E_i \in \mathcal{F}$, $E_i \cap E_j = \emptyset$ for $i\neq j$ (mutually disjoint events), then $\mathbb{P}(\cup E_i)=\sum_i\mathbb{P}(E_i)$; (概率的可数可加性)</li>
+<li>$\mathbb{P}(\Omega) = 1$. ($\mathbb{P}(\emptyset) = 0$)</li>
+</ul>
+<p><em>Remark</em>: $\mathbb{P}(\cup_iE_i)\leq \sum_i\mathbb{P}(E_i)$ (subadditivitiy property or Boole&rsquo;s inequality).</p>
+</div>
+<div class="admonition tip"><p class="admonition-title">Remark (Continuity property of $\mathbb{P}$).</p>
+<p>For a monotone sequence $\{E_n,n \geq 1\}$,  if and only if $\lim\limits_{n\to \infty}\mathbb{P}(E_n)=\mathbb{P}(\lim\limits_{n \to \infty}E_n)$.</p>
+<ul>
+<li>
+<p>(Increasing sequence) If $E_1 \subset E_2 \subset \cdots$, then $\lim\limits_{n\to \infty}\mathbb{P}(E_n)=\mathbb{P}(\lim\limits_{n \to \infty}E_n)=\mathbb{P}(\cup_{n=1}^{\infty}E_n)$.</p>
+</li>
+<li>
+<p>(Decreasing sequence) If  $E_1 \supset E_2 \supset \cdots$, then $\lim\limits_{n\to \infty}\mathbb{P}(E_n)=\mathbb{P}(\lim\limits_{n \to \infty}E_n)=\mathbb{P}(\cap_{n=1}^{\infty}E_n)$.</p>
+</li>
+</ul>
+</div>
+<div class="admonition tip"><p class="admonition-title">Definition (Infimum and Supremum, 上下确界).</p>
+<p>Suppose $\{A_n\}_{n=1}^{\infty}$ is a sequence of sets.</p>
+<p>Define：
+$$
+\text{(All except finitely often, a.e.f.o)} \quad
+\lim_\limits{n\to \infty}\inf A_n = \cup_{n\geq 1}\cap_{j
+\geq n}A_j
+$$
+and
+$$
+\text{(Infinitely Often, i.o.)} \quad \lim\limits_{n \to \infty}\sup A_n = \cap_{n \geq 1}\cup_{j \geq n} A_j
+$$</p>
+<hr>
+<p><em>Remark</em>:</p>
+<ul>
+<li>(a.e.f.o)</li>
+</ul>
+<p>$$
+\begin{aligned}
+&amp;x \in \lim_\limits{n\to \infty}\inf A_n = \cup_{n\geq 1}\cap_{j \geq n}A_j<br>
+\newline &amp;\Longleftrightarrow \exists n_i,x \in \cap_{j \geq n_i}A_j, \text{for some } i
+\newline &amp;\Longleftrightarrow \exists n_i,x \in A_{n_i},A_{n_{i+1}}\cdots,A_{\infty}
+\end{aligned}
+$$</p>
+<ul>
+<li>(i.o.)
+$$
+\begin{aligned}&amp;x \in \lim_\limits{n\to \infty}\sup A_n = \cap_{n\geq 1}\cup_{j \geq n}A_j<br>
+\newline &amp;\Longleftrightarrow \forall n,x \in \cup_{j \geq n}A_j
+\newline &amp;\Longleftrightarrow \forall n, \exists m\geq n, x \in A_m
+\end{aligned}
+$$</li>
+</ul>
+<hr>
+<p><em>Simple Proof</em>: (Why the infimum and superemum is defined as above?)</p>
+<p>Let $L_n=\cap_{j\geq n}A_j$, $U_n = \cup_{j\geq n}A_j$, then $L_n \leq A_n \leq U_n$.</p>
+<p>Taking $\lim\limits_{n\to\infty}$ we have: $\lim\limits_{n\to\infty}L_n \leq \lim\limits_{n\to\infty}A_n \leq \lim\limits_{n\to\infty} U_n$.</p>
+<p>Since  $\{L_n\}$ and $\{U_n\}$ are monotonically increasing and decreasing sequences seperately, by the continuity property of $\mathbb{P}$, we have:
+$$
+\underbrace{\lim\limits_{n\to\infty}\cup_{n\geq1}\cap_{j\geq n}A_j}_{\lim_\limits{n\to \infty}\inf A_n} \leq \lim\limits_{n\to\infty}A_n \leq \underbrace{\lim\limits_{n\to\infty}\cap_{n\geq1}\cup_{j\geq n}A_j}_{\lim_\limits{n\to \infty}\sup A_n}
+$$</p>
+</div>
+
+    </div>
+
+    <div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">Author</span>
+    <span class="item-content">Ren Zhenyu</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">LastMod</span>
+    <span class="item-content">
+        2022-02-22
+        
+    </span>
+  </p>
+  
+  
+</div>
+<footer class="post-footer">
+      <div class="post-tags">
+          <a href="/tags/notes/">Notes</a>
+          </div>
+      <nav class="post-nav">
+        
+        <a class="next" href="/post/introduction/">
+            <span class="next-text nav-default">Intoduction（写在前面）</span>
+            <span class="next-text nav-mobile">Next</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+        </div>
+        
+
+  
+
+  
+    <script src="https://utteranc.es/client.js"
+            repo="rzy0901/blog-comment"
+            issue-term="pathname"
+            theme="github-light"
+            crossorigin="anonymous"
+            async>
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://github.com/utterance">comments powered by utterances.</a></noscript>
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="mailto:1182214@sustech.edu.cn" class="iconfont icon-email" title="email"></a>
+      <a href="https://github.com/rzy0901" class="iconfont icon-github" title="github"></a>
+      <a href="https://space.bilibili.com/485868285?spm_id_from=333.1007.0.0" class="iconfont icon-bilibili" title="bilibili"></a>
+  <a href="/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  
+
+  <span class="copyright-year">
+    Copyright &copy; 
+    2021 - 
+    2022&nbsp;
+    <span>Ren Zhenyu | <span class="power-by">
+    Powered by <a class="hexo-link" href="https://gohugo.io">Hugo</a>
+  </span></span>
+  </span>
+</div>
+
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js" integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin="anonymous"></script>
+
+
+
+<script type="text/javascript" src="/js/main.min.c12618f9a600c40bd024996677e951e64d3487006775aeb22e200c990006c5c7.js"></script>
+  <script type="text/javascript">
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$','$'], ['\\(','\\)']],
+        }
+    };
+  </script>
+  <script async src="https://cdn.jsdelivr.net/npm/mathjax@3.0.5/es5/tex-mml-chtml.js" integrity="sha256-HGLuEfFcsUJGhvB8cQ8nr0gai9EucOOaIxFw7qxmd+w=" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+
+</body>
+</html>

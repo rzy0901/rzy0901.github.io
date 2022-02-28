@@ -6,10 +6,19 @@
     <description>Recent content in Tags on Ren Zhenyu&#39;s Website </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 18 Jan 2022 23:09:36 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 22 Feb 2022 00:00:00 +0800</lastBuildDate>
     
 	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Notes</title>
+      <link>/tags/notes/</link>
+      <pubDate>Tue, 22 Feb 2022 00:00:00 +0800</pubDate>
+      
+      <guid>/tags/notes/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Diary</title>

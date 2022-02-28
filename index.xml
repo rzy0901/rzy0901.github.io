@@ -12,6 +12,33 @@
     
     
     <item>
+      <title>About</title>
+      <link>/about/</link>
+      <pubDate>Sat, 15 Jan 2022 21:38:52 +0800</pubDate>
+      
+      <guid>/about/</guid>
+      <description>Brief Bio I&amp;rsquo;m an undergradute student in the Department of Electrical and Electronics Engineering at Southern University of Science and Technology (SUSTech). I am currently studying in LAb of WirelesS communications and System Optimization (LASSO) and being supervised by Prof. Wang Rui. I&amp;rsquo;m also currently working as an internship student in the Integrated Sensing And Communication (ISAC) group in Wireless Technology (WT) LAB of Huawei Technology. My supervisor at the</description>
+    </item>
+    
+    <item>
+      <title>Notebook for Applied Stochastic Processes</title>
+      <link>/post/asp/</link>
+      <pubDate>Tue, 22 Feb 2022 00:00:00 +0800</pubDate>
+      
+      <guid>/post/asp/</guid>
+      <description>info This is a collection of my notes for SUSTech MA208 &amp;ldquo;Applied Stochastic Processes&amp;rdquo;, in the spring semester of 2022, based on Professor Zhang Yiying (张艺赢)&amp;lsquo;s lectures. Chapter 1: Preliminaries: Reviews on Probability Theory Probability Space Definition (Probability Space). The probability space $(\Omega,\mathcal{F},\mathbb{P})$ is defined as follows: $\Omega$: sample space, the set of all possible outcomes. $\mathcal{F}$: $\sigma$-field</description>
+    </item>
+    
+    <item>
+      <title>Intoduction（写在前面）</title>
+      <link>/post/introduction/</link>
+      <pubDate>Tue, 18 Jan 2022 23:09:36 +0800</pubDate>
+      
+      <guid>/post/introduction/</guid>
+      <description>Why I set up such a Personal Website.1 Firstly, from the point of view as a student, I think it is necessary for me to build up a private place to record and manage my notes (or some other things) efficiently. In the past three years of my undergraduate student career, I could always dig some interesting ideas almost every day but not always had a chance (or a good</description>
+    </item>
+    
+    <item>
       <title>Theme preview</title>
       <link>/post/even-preview/</link>
       <pubDate>Sun, 16 Jan 2022 00:00:00 +0800</pubDate>
@@ -1073,24 +1100,6 @@ Not a problem!
 &lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;</description>
-    </item>
-    
-    <item>
-      <title>About</title>
-      <link>/about/</link>
-      <pubDate>Sat, 15 Jan 2022 21:38:52 +0800</pubDate>
-      
-      <guid>/about/</guid>
-      <description>Brief Bio I&amp;rsquo;m an undergradute student in the Department of Electrical and Electronics Engineering at Southern University of Science and Technology (SUSTech). I am currently studying in LAb of WirelesS communications and System Optimization (LASSO) and being supervised by Prof. Wang Rui. I&amp;rsquo;m also currently working as an internship student in the Integrated Sensing And Communication (ISAC) group in Wireless Technology (WT) LAB of Huawei Technology. My supervisor at the</description>
-    </item>
-    
-    <item>
-      <title>Intoduction（写在前面）</title>
-      <link>/post/introduction/</link>
-      <pubDate>Tue, 18 Jan 2022 23:09:36 +0800</pubDate>
-      
-      <guid>/post/introduction/</guid>
-      <description>Why I set up such a Personal Website.1 Firstly, from the point of view as a student, I think it is necessary for me to build up a private place to record and manage my notes (or some other things) efficiently. In the past three years of my undergraduate student career, I could always dig some interesting ideas almost every day but not always had a chance (or a good</description>
     </item>
     
   </channel>
