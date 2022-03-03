@@ -26,7 +26,7 @@
       <pubDate>Tue, 22 Feb 2022 00:00:00 +0800</pubDate>
       
       <guid>/post/asp/</guid>
-      <description>info This is a collection of my notes for SUSTech MA208 &amp;ldquo;Applied Stochastic Processes&amp;rdquo;, in the spring semester of 2022, based on Professor Zhang Yiying (张艺赢)&amp;lsquo;s lectures. Chapter 1: Preliminaries: Reviews on Probability Theory Probability Space Definition (Probability Space). The probability space $(\Omega,\mathcal{F},\mathbb{P})$ is defined as follows: $\Omega$: sample space, the set of all possible outcomes. $\mathcal{F}$: $\sigma$-field</description>
+      <description>info This is a collection of my notes for SUSTech MA208 &amp;ldquo;Applied Stochastic Processes&amp;rdquo;, in the spring semester of 2022, based on Professor Zhang Yiying (张艺赢)&amp;lsquo;s lectures and slides. Chapter 1: Preliminaries: Reviews on Probability Theory Probability Space Definition (Probability Space). The probability space $(\Omega,\mathcal{F},\mathbb{P})$ is defined as follows: $\Omega$: sample space, the set of all possible outcomes.</description>
     </item>
     
     <item>
