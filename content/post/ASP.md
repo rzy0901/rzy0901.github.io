@@ -22,7 +22,7 @@ author: Ren Zhenyu
 
 {{% admonition info "info" %}}
 
-This is a collection of  my notes for SUSTech MA208 "Applied Stochastic Processes", in the spring semester of 2022, based on Professor [Zhang Yiying (张艺赢)](https://sites.google.com/site/yiyingzhang16)'s lectures.
+This is a collection of  my notes for SUSTech MA208 "Applied Stochastic Processes", in the spring semester of 2022, based on Professor [Zhang Yiying (张艺赢)](https://sites.google.com/site/yiyingzhang16)'s lectures and slides.
 
 {{% /admonition %}}
 
@@ -125,3 +125,47 @@ $$
 \underbrace{\lim\limits_{n\to\infty}\cup_{n\geq1}\cap_{j\geq n}A_j}_{\lim_\limits{n\to \infty}\inf A_n} \leq \lim\limits_{n\to\infty}A_n \leq \underbrace{\lim\limits_{n\to\infty}\cap_{n\geq1}\cup_{j\geq n}A_j}_{\lim_\limits{n\to \infty}\sup A_n}
 $$
 {{% /admonition %}}
+
+{{% admonition tip "Proposition (Borel-Cantelli Lemma)"%}}
+
+Let  $E_1,E_2,\cdots$ denote a sequence of events, define 
+$$
+\lim\limits_{n \to \infty}\sup E_n = \cap_{n=0}^{\infty} \cup_{i=n}^{\infty}E_i=\\{\text{an infinite number of }E_i \text{ occur}\\}.
+$$
+
++ **Proposition** **(Borel-Cantelli Lemma I)** If $\sum_{i=1}^\infty\mathbb{P}(E_i)<\infty$, then
+  $$
+  \mathbb{P}(\lim\limits_{n \to \infty}\sup E_n)=0.
+  $$
+  
+  Proof. 
+  
+  $$
+  \begin{align}
+  &\mathbb{P}(\lim\limits_{n \to \infty}\sup E_n) = \mathbb{P}(\cap_{n=0}^{\infty} \cup_{i=n}^{\infty}E_i) \newline
+  &\xlongequal[]{\text{since } \cup_{i=n}^{\infty}E_i \text{ is decreasing.}} \mathbb{P}(\lim_\limits{n \to \infty}\cup_{i=n}^{\infty}E_i)=\lim_\limits{n \to \infty}\mathbb{P} (\cup_{i=n}^{\infty}E_i) \newline
+  & \leq \lim_\limits{n \to \infty} \sum_{i=n}^{\infty}\mathbb{P}(E_i) \stackrel{(a)}{=} 0,
+  \end{align}
+  $$
+  
+  where $(a)$ holds because of $\sum_{i=1}^\infty\mathbb{P}(E_i)<\infty$. (Proof is straightforward by taking $\lim\limits_{n \to \infty}$ at both sides of $\sum_{i=1}^\infty\mathbb{P}(E_i) = \sum_{i=1}^{n-1}\mathbb{P}(E_i)+\sum_{i=n}^\infty\mathbb{P}(E_i)$.)
+  
++  **Proposition** **(Borel-Cantelli Lemma II)** If $E_1,E_2,\cdots$ are independent events such that $\sum_{i=1}^\infty\mathbb{P}(E_i)=\infty$, then 
+  $$
+  \mathbb{P}(\lim\limits_{n \to \infty}\sup E_n)=1.
+  $$
+  Proof. For any $n<m<\infty$, since $1-x<e^{-x}$,
+  $$
+  \begin{align}
+  &\mathbb{P}(\left(\cup_{i=n}^{m}E_i\right)^c)=\mathbb{P}(\cap_{i=n}^{m}E_i^c)=\prod_{i=n}^m \mathbb{P} (E_i^c) \text{ (By independence)} \newline
+  &= \prod_{i=n}^m (1-\mathbb{P}(E_i)) \leq \prod_{i=n}^m \exp(-\mathbb{P}(E_i))=\exp\left(-\sum_{i=n}^m \mathbb{P}(E_i)\right) \stackrel{m \rightarrow \infty}{\longrightarrow} 0,
+  \end{align}
+  $$
+  which means that $\mathbb{P}(\cup_{i=n}^{m}E_i)\to 1$ as $m \to 0$, $\mathbb{P}(\cup_{i=n}^{\infty}E_i)=1$ for any $n$. Hence,
+  $$
+  \mathbb{P}(\lim\limits_{n \to \infty}\sup E_n) = \mathbb{P}(\cap_{n=0}^{\infty} \cup_{i=n}^{\infty}E_i) 
+  = \mathbb{P}(\lim_\limits{n \to \infty}\cup_{i=n}^{\infty}E_i)=\lim_\limits{n \to \infty}\mathbb{P} (\cup_{i=n}^{\infty}E_i)=1.
+  $$
+
+{{% /admonition %}}
+
