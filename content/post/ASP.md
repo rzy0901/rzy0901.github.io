@@ -1,7 +1,7 @@
 ---
 title: "Notebook for Applied Stochastic Processes"
 date: 2022-02-22T00:00:00+08:00
-lastmod: 2022-02-22T00:00:00+08:00
+lastmod: 2022-03-04T00:00:00+08:00
 draft: false
 tags: ["Notes"]
 categories: ["Notes"]
@@ -11,14 +11,8 @@ mathjax: true
 autoCollapseToc: true
 postMetaInFooter: true
 reward: false
-author: Ren Zhenyu
+author: Ren Zhenyu (Based on Professor Zhang Yiying's lectures)
 ---
-
-<!--
-关于Mathjex的bug记录：
-一、行内公式: $\{\}$需要写为$\\{\\}$
-二、公式换行：必须使用\begin{aligned} \newline \end{aligned}或\begin{align} \newline \end{align}
--->
 
 {{% admonition info "info" %}}
 
@@ -62,7 +56,7 @@ _Remark_: $\mathbb{P}(\cup_iE_i)\leq \sum_i\mathbb{P}(E_i)$ (subadditivitiy prop
 
 {{% /admonition %}}
 
-{{% admonition tip"Remark (Continuity property of $\mathbb{P}$)." %}}
+{{% admonition info "Remark (Continuity property of $\mathbb{P}$)." %}}
 
 For a monotone sequence $\\{E_n,n \geq 1\\}$,  if and only if $\lim\limits_{n\to \infty}\mathbb{P}(E_n)=\mathbb{P}(\lim\limits_{n \to \infty}E_n)$. 
 
@@ -126,7 +120,7 @@ $$
 $$
 {{% /admonition %}}
 
-{{% admonition tip "Proposition (Borel-Cantelli Lemma)"%}}
+{{% admonition info "Proposition (Borel-Cantelli Lemma)"%}}
 
 Let  $E_1,E_2,\cdots$ denote a sequence of events, define 
 $$
@@ -168,4 +162,22 @@ $$
   $$
 
 {{% /admonition %}}
+
+# 关于本博客撰写的一些统一规范
+
+关于Mathjex结合markdown使用Latex的bug记录:
+
+```html
+一、集合\{\}的转义问题: $\{\}$需要写为$\\{\\}$
+二、公式换行：必须使用\begin{aligned} \newline \end{aligned}或\begin{align} \newline \end{align}
+```
+
+Adomonition文本框，撰写规范: 
+
+```html
+一、Definition 使用 \{\{% admonition tip "Definition XXX" %\}\} \{\{% /admonition tip %\}\}
+二、Proposition, Remark 使用 \{\{% admonition tip "Definition XXX" %\}\} \{\{% /admonition tip %\}\}
+```
+
+
 
