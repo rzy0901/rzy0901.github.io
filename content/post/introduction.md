@@ -36,8 +36,6 @@ reward: false
 </font>
 </details>
 
-
-
 # What is next?
 
 :one: I will keep maintaining this website.
@@ -48,15 +46,9 @@ reward: false
 
 + Notes for self-learnings,
 
-+ Projects, Critical thoughts, Daily life and etc. 
++ Projects, Critical thoughts, Daily life and etc., 
   
   in this website. 
-
-# Motto（寄语）
-
-> + I'm not a programmer, but I have a computer and like recording something.
->
-> 	+ 我不是个程序员，但是我有一个电脑并喜欢记录东西。
 
 </font>
 
