@@ -46,7 +46,7 @@ _Remark_: $\mathcal{F}$ is collection of sets (For example,  $\Omega = \\{a,b,c,
 
 {{% admonition tip"Definition (Probability)." %}}
 
-(Probability). Any event $E \in \Omega$, $\mathbb{P}(E)$ is called the probability of the event $E$ if it satisffies:
+Any event $E \in \Omega$, $\mathbb{P}(E)$ is called the probability of the event $E$ if it satisffies:
 
 + $0 \leq \mathbb{P}(E) \leq 1$;
 + If $E_i \in \mathcal{F}$, $E_i \cap E_j = \emptyset$ for $i\neq j$ (mutually disjoint events), then $\mathbb{P}(\cup E_i)=\sum_i\mathbb{P}(E_i)$; (概率的可数可加性)
@@ -60,9 +60,9 @@ _Remark_: $\mathbb{P}(\cup_iE_i)\leq \sum_i\mathbb{P}(E_i)$ (subadditivitiy prop
 
 For a monotone sequence $\\{E_n,n \geq 1\\}$,  if and only if $\lim\limits_{n\to \infty}\mathbb{P}(E_n)=\mathbb{P}(\lim\limits_{n \to \infty}E_n)$. 
 
-+ (Increasing sequence) If $E_1 \subset E_2 \subset \cdots$, then $\lim\limits_{n\to \infty}\mathbb{P}(E_n)=\mathbb{P}(\lim\limits_{n \to \infty}E_n)=\mathbb{P}(\cup_{n=1}^{\infty}E_n)$.
++ (Increasing sequence). If $E_1 \subset E_2 \subset \cdots$, then $\lim\limits_{n\to \infty}\mathbb{P}(E_n)=\mathbb{P}(\lim\limits_{n \to \infty}E_n)=\mathbb{P}(\cup_{n=1}^{\infty}E_n)$.
 
-+ (Decreasing sequence) If  $E_1 \supset E_2 \supset \cdots$, then $\lim\limits_{n\to \infty}\mathbb{P}(E_n)=\mathbb{P}(\lim\limits_{n \to \infty}E_n)=\mathbb{P}(\cap_{n=1}^{\infty}E_n)$.
++ (Decreasing sequence). If  $E_1 \supset E_2 \supset \cdots$, then $\lim\limits_{n\to \infty}\mathbb{P}(E_n)=\mathbb{P}(\lim\limits_{n \to \infty}E_n)=\mathbb{P}(\cap_{n=1}^{\infty}E_n)$.
 
 {{% /admonition %}}
 
@@ -72,7 +72,7 @@ For a monotone sequence $\\{E_n,n \geq 1\\}$,  if and only if $\lim\limits_{n\to
 
 Define：
 $$
-\text{(All except finitely often, a.e.f.o)} \quad
+\text{(All except finitely often, a.e.f.o.)} \quad
 \lim_\limits{n\to \infty}\inf A_n = \cup_{n\geq 1}\cap_{j 
 \geq n}A_j
 $$
@@ -127,9 +127,9 @@ $$
 \lim\limits_{n \to \infty}\sup E_n = \cap_{n=0}^{\infty} \cup_{i=n}^{\infty}E_i=\\{\text{an infinite number of }E_i \text{ occur}\\}.
 $$
 
-+ **Proposition** **(Borel-Cantelli Lemma I)** If $\sum_{i=1}^\infty\mathbb{P}(E_i)<\infty$, then
++ **Proposition** **(Borel-Cantelli Lemma I).** If $\sum_{i=1}^\infty\mathbb{P}(E_i)<\infty$, then
   $$
-  \mathbb{P}(\lim\limits_{n \to \infty}\sup E_n)=0.
+  \mathbb{P}(\lim\limits_{n \to \infty}\sup E_n)=\mathbb{P}(\text{an infinite number of }E_i \text{ occur})=0.
   $$
   
   Proof. 
@@ -144,9 +144,9 @@ $$
   
   where $(a)$ holds because of $\sum_{i=1}^\infty\mathbb{P}(E_i)<\infty$. (Proof is straightforward by taking $\lim\limits_{n \to \infty}$ at both sides of $\sum_{i=1}^\infty\mathbb{P}(E_i) = \sum_{i=1}^{n-1}\mathbb{P}(E_i)+\sum_{i=n}^\infty\mathbb{P}(E_i)$.)
   
-+  **Proposition** **(Borel-Cantelli Lemma II)** If $E_1,E_2,\cdots$ are independent events such that $\sum_{i=1}^\infty\mathbb{P}(E_i)=\infty$, then 
++  **Proposition** **(Borel-Cantelli Lemma II).** If $E_1,E_2,\cdots$ are independent events such that $\sum_{i=1}^\infty\mathbb{P}(E_i)=\infty$, then 
   $$
-  \mathbb{P}(\lim\limits_{n \to \infty}\sup E_n)=1.
+  \mathbb{P}(\lim\limits_{n \to \infty}\sup E_n)=\mathbb{P}(\text{an infinite number of }E_i \text{ occur})=1.
   $$
   Proof. For any $n<m<\infty$, since $1-x<e^{-x}$,
   $$
@@ -162,6 +162,76 @@ $$
   $$
 
 {{% /admonition %}}
+
++ (容斥原理，Inclusion-exclusion Principle): $A_1,A_2,\dots,A_n$ are events, then:
+  $$
+  \mathbb{P}\left(\cup_{i=1}^{n} A_{i}\right)=\sum_{i=1}^{n} \mathbb{P}\left(A_{i}\right)-\sum_{i<j} \mathbb{P}\left(A_{i} A_{j}\right)+\sum_{i<j<k} \mathbb{P}\left(A_{i} A_{j} A_{k}\right) 
+  -\cdots+(-1)^{n+1} \mathbb{P}\left(A_{1} \cdots A_{n}\right).
+  $$
+
++ 
+  $$
+  \mathbb{P}(\text{exactly } r  \text{ of the events }  A_{1}, \cdots, A_{n}\text{ occur})
+  =\sum_{i=0}^{n-r}(-1)^{i}\left(\begin{array}{c}
+  r+i \newline
+  r
+  \end{array}\right) \sum_{j_{1}<j_{2}<\cdots<j_{r+i}} \mathbb{P}\left(A_{j_{1}} A_{j_{2}} \cdots A_{j_{r+i}}\right).
+  $$
+
+## Random Variable and Distributions
+
+{{% admonition tip "Definition (random variable, distribution function)" %}}
+
+A **random variable** $X$ is a mapping from $\Omega$ to $\mathbb{R}$, and for any Borel Set $A\subset \mathbb{R}$ (这里等价认为，$(-\infty,a],\forall a \in \mathbb{R}$),
+$$
+\mathbb{P}(X(\omega)\in A) = \mathbb{P}(X^{-1}(A))=\mathbb{P}\\{\omega:X(\omega)\in A\\}.
+$$
+The **distribution function** $F$ of a random variable $X$ is defined for any real number $x \in \mathbb{R}$,
+$$
+F(x) = \mathbb{P}(X \leq x)=\mathbb{P}(X \in (-\infty,x]),
+$$
+ and the **survival (or tail) function** is $\overline{F}(x)=1-F(x)=\mathbb{P}(X > x)$.
+
+***
+
+Properties of distribution function:
+
++ Right-continous; Non-decreasing ($\lim_\limits{x\to+\infty}F(x)=1,\lim_\limits{x\to-\infty}F(x)=0$);
++ If $X$ is discrete random varibale, $F(x)=\sum_{z\leq x}\mathbb{P}(x)$. If $X$ takes uncountably many values, summation makes NO sense.
+
+***
+
+**(Continuous Random Variable).** $X$ is said to be a continuous random variable if there exists a function $f(x)$ such that for any Borel set $B \subset \mathbb{R}$,
+$$
+\mathbb{P}(X \subset B)=\int_Bf(x)dx.
+$$
+$f(x)$ is called the probability density function (pdf). For continuous r.v. $X$,
+$$
+F(x) = \int_{-\infty}^xf(y)dy
+$$
+and 
+$$
+f(x) = F^{\prime} (x).
+$$
+
+***
+
+**(Joint distribution).** For random variables $X$, $Y$ , the joint distribution is defined by
+$$
+F(x,y)=\mathbb{P}(X\leq x,Y \leq y).
+$$
+Correspondingly, the distributions (marginal distributions) of $X,Y$ are:
+$$
+\begin{align}
+F_X(x)=\mathbb{P}(X\leq x)=\lim\limits_{y \to \infty}\mathbb{P}(X\leq x, Y \leq y)=\lim\limits_{y \to \infty}F(x,y) \newline
+F_Y(y)=\mathbb{P}(Y\leq y)=\lim\limits_{x \to \infty}\mathbb{P}(X\leq x, Y \leq y)=\lim\limits_{x \to \infty}F(x,y)
+\end{align}
+$$
+{{% /admonition %}} 
+
+## Expectations
+
+
 
 # 关于本博客撰写的一些统一规范
 
