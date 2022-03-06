@@ -49,7 +49,7 @@
 <meta itemprop="description" content="info This is a collection of my notes for SUSTech MA208 &ldquo;Applied Stochastic Processes&rdquo;, in the spring semester of 2022, based on Professor Zhang Yiying (张艺赢)&lsquo;s lectures and slides. Chapter 1: Preliminaries: Reviews on Probability Theory Probability Space Definition (Probability Space). The probability space $(\Omega,\mathcal{F},\mathbb{P})$ is defined as follows: $\Omega$: sample space, the set of all possible outcomes.">
 <meta itemprop="datePublished" content="2022-02-22T00:00:00&#43;08:00" />
 <meta itemprop="dateModified" content="2022-03-04T00:00:00&#43;08:00" />
-<meta itemprop="wordCount" content="828">
+<meta itemprop="wordCount" content="1144">
 
 
 
@@ -139,8 +139,8 @@
         <div class="post-category">
             <a href="/categories/notes/"> Notes </a>
             </div>
-          <span class="more-meta"> 828 words </span>
-          <span class="more-meta"> 2 mins read </span>
+          <span class="more-meta"> 1144 words </span>
+          <span class="more-meta"> 3 mins read </span>
         
       </div>
     </header>
@@ -153,6 +153,8 @@
     <li><a href="#chapter-1-preliminaries-reviews-on-probability-theory">Chapter 1: Preliminaries: Reviews on Probability Theory</a>
       <ul>
         <li><a href="#probability-space">Probability Space</a></li>
+        <li><a href="#random-variable-and-distributions">Random Variable and Distributions</a></li>
+        <li><a href="#expectations">Expectations</a></li>
       </ul>
     </li>
     <li><a href="#关于本博客撰写的一些统一规范">关于本博客撰写的一些统一规范</a></li>
@@ -184,7 +186,7 @@
 <p><em>Remark</em>: $\mathcal{F}$ is collection of sets (For example,  $\Omega = \{a,b,c,d\}, \mathcal{F}=\{\emptyset,\Omega,\{a,b\},\{c,d\}\}.$</p>
 </div>
 <div class="admonition tip"><p class="admonition-title">Definition (Probability).</p>
-<p>(Probability). Any event $E \in \Omega$, $\mathbb{P}(E)$ is called the probability of the event $E$ if it satisffies:</p>
+<p>Any event $E \in \Omega$, $\mathbb{P}(E)$ is called the probability of the event $E$ if it satisffies:</p>
 <ul>
 <li>$0 \leq \mathbb{P}(E) \leq 1$;</li>
 <li>If $E_i \in \mathcal{F}$, $E_i \cap E_j = \emptyset$ for $i\neq j$ (mutually disjoint events), then $\mathbb{P}(\cup E_i)=\sum_i\mathbb{P}(E_i)$; (概率的可数可加性)</li>
@@ -196,10 +198,10 @@
 <p>For a monotone sequence $\{E_n,n \geq 1\}$,  if and only if $\lim\limits_{n\to \infty}\mathbb{P}(E_n)=\mathbb{P}(\lim\limits_{n \to \infty}E_n)$.</p>
 <ul>
 <li>
-<p>(Increasing sequence) If $E_1 \subset E_2 \subset \cdots$, then $\lim\limits_{n\to \infty}\mathbb{P}(E_n)=\mathbb{P}(\lim\limits_{n \to \infty}E_n)=\mathbb{P}(\cup_{n=1}^{\infty}E_n)$.</p>
+<p>(Increasing sequence). If $E_1 \subset E_2 \subset \cdots$, then $\lim\limits_{n\to \infty}\mathbb{P}(E_n)=\mathbb{P}(\lim\limits_{n \to \infty}E_n)=\mathbb{P}(\cup_{n=1}^{\infty}E_n)$.</p>
 </li>
 <li>
-<p>(Decreasing sequence) If  $E_1 \supset E_2 \supset \cdots$, then $\lim\limits_{n\to \infty}\mathbb{P}(E_n)=\mathbb{P}(\lim\limits_{n \to \infty}E_n)=\mathbb{P}(\cap_{n=1}^{\infty}E_n)$.</p>
+<p>(Decreasing sequence). If  $E_1 \supset E_2 \supset \cdots$, then $\lim\limits_{n\to \infty}\mathbb{P}(E_n)=\mathbb{P}(\lim\limits_{n \to \infty}E_n)=\mathbb{P}(\cap_{n=1}^{\infty}E_n)$.</p>
 </li>
 </ul>
 </div>
@@ -207,8 +209,8 @@
 <p>Suppose $\{A_n\}_{n=1}^{\infty}$ is a sequence of sets.</p>
 <p>Define：
 $$
-\text{(All except finitely often, a.e.f.o)} \quad
-\lim_\limits{n\to \infty}\inf A_n = \cup_{n\geq 1}\cap_{j
+\text{(All except finitely often, a.e.f.o.)} \quad
+\lim_\limits{n\to \infty}\inf A_n = \cup_{n\geq 1}\cap_{j 
 \geq n}A_j
 $$
 and
@@ -246,15 +248,15 @@ $$
 $$</p>
 </div>
 <div class="admonition info"><p class="admonition-title">Proposition (Borel-Cantelli Lemma)</p>
-<p>Let  $E_1,E_2,\cdots$ denote a sequence of events, define
+<p>Let  $E_1,E_2,\cdots$ denote a sequence of events, define 
 $$
 \lim\limits_{n \to \infty}\sup E_n = \cap_{n=0}^{\infty} \cup_{i=n}^{\infty}E_i=\{\text{an infinite number of }E_i \text{ occur}\}.
 $$</p>
 <ul>
 <li>
-<p><strong>Proposition</strong> <strong>(Borel-Cantelli Lemma I)</strong> If $\sum_{i=1}^\infty\mathbb{P}(E_i)&lt;\infty$, then
+<p><strong>Proposition</strong> <strong>(Borel-Cantelli Lemma I).</strong> If $\sum_{i=1}^\infty\mathbb{P}(E_i)&lt;\infty$, then
 $$
-\mathbb{P}(\lim\limits_{n \to \infty}\sup E_n)=0.
+\mathbb{P}(\lim\limits_{n \to \infty}\sup E_n)=\mathbb{P}(\text{an infinite number of }E_i \text{ occur})=0.
 $$</p>
 <p>Proof.</p>
 <p>$$
@@ -267,9 +269,9 @@ $$</p>
 <p>where $(a)$ holds because of $\sum_{i=1}^\infty\mathbb{P}(E_i)&lt;\infty$. (Proof is straightforward by taking $\lim\limits_{n \to \infty}$ at both sides of $\sum_{i=1}^\infty\mathbb{P}(E_i) = \sum_{i=1}^{n-1}\mathbb{P}(E_i)+\sum_{i=n}^\infty\mathbb{P}(E_i)$.)</p>
 </li>
 <li>
-<p><strong>Proposition</strong> <strong>(Borel-Cantelli Lemma II)</strong> If $E_1,E_2,\cdots$ are independent events such that $\sum_{i=1}^\infty\mathbb{P}(E_i)=\infty$, then
+<p><strong>Proposition</strong> <strong>(Borel-Cantelli Lemma II).</strong> If $E_1,E_2,\cdots$ are independent events such that $\sum_{i=1}^\infty\mathbb{P}(E_i)=\infty$, then 
 $$
-\mathbb{P}(\lim\limits_{n \to \infty}\sup E_n)=1.
+\mathbb{P}(\lim\limits_{n \to \infty}\sup E_n)=\mathbb{P}(\text{an infinite number of }E_i \text{ occur})=1.
 $$
 Proof. For any $n&lt;m&lt;\infty$, since $1-x&lt;e^{-x}$,
 $$
@@ -280,12 +282,74 @@ $$
 $$
 which means that $\mathbb{P}(\cup_{i=n}^{m}E_i)\to 1$ as $m \to 0$, $\mathbb{P}(\cup_{i=n}^{\infty}E_i)=1$ for any $n$. Hence,
 $$
-\mathbb{P}(\lim\limits_{n \to \infty}\sup E_n) = \mathbb{P}(\cap_{n=0}^{\infty} \cup_{i=n}^{\infty}E_i)
+\mathbb{P}(\lim\limits_{n \to \infty}\sup E_n) = \mathbb{P}(\cap_{n=0}^{\infty} \cup_{i=n}^{\infty}E_i) 
 = \mathbb{P}(\lim_\limits{n \to \infty}\cup_{i=n}^{\infty}E_i)=\lim_\limits{n \to \infty}\mathbb{P} (\cup_{i=n}^{\infty}E_i)=1.
 $$</p>
 </li>
 </ul>
 </div>
+<ul>
+<li>
+<p>(容斥原理，Inclusion-exclusion Principle): $A_1,A_2,\dots,A_n$ are events, then:
+$$
+\mathbb{P}\left(\cup_{i=1}^{n} A_{i}\right)=\sum_{i=1}^{n} \mathbb{P}\left(A_{i}\right)-\sum_{i&lt;j} \mathbb{P}\left(A_{i} A_{j}\right)+\sum_{i&lt;j&lt;k} \mathbb{P}\left(A_{i} A_{j} A_{k}\right) 
+-\cdots+(-1)^{n+1} \mathbb{P}\left(A_{1} \cdots A_{n}\right).
+$$</p>
+</li>
+<li>
+<p>$$
+\mathbb{P}(\text{exactly } r  \text{ of the events }  A_{1}, \cdots, A_{n}\text{ occur})
+=\sum_{i=0}^{n-r}(-1)^{i}\left(\begin{array}{c}
+r+i \newline
+r
+\end{array}\right) \sum_{j_{1}&lt;j_{2}&lt;\cdots&lt;j_{r+i}} \mathbb{P}\left(A_{j_{1}} A_{j_{2}} \cdots A_{j_{r+i}}\right).
+$$</p>
+</li>
+</ul>
+<h2 id="random-variable-and-distributions">Random Variable and Distributions</h2>
+<div class="admonition tip"><p class="admonition-title">Definition (random variable, distribution function)</p>
+<p>A <strong>random variable</strong> $X$ is a mapping from $\Omega$ to $\mathbb{R}$, and for any Borel Set $A\subset \mathbb{R}$ (这里等价认为，$(-\infty,a],\forall a \in \mathbb{R}$),
+$$
+\mathbb{P}(X(\omega)\in A) = \mathbb{P}(X^{-1}(A))=\mathbb{P}\{\omega:X(\omega)\in A\}.
+$$
+The <strong>distribution function</strong> $F$ of a random variable $X$ is defined for any real number $x \in \mathbb{R}$,
+$$
+F(x) = \mathbb{P}(X \leq x)=\mathbb{P}(X \in (-\infty,x]),
+$$
+and the <strong>survival (or tail) function</strong> is $\overline{F}(x)=1-F(x)=\mathbb{P}(X &gt; x)$.</p>
+<hr>
+<p>Properties of distribution function:</p>
+<ul>
+<li>Right-continous; Non-decreasing ($\lim_\limits{x\to+\infty}F(x)=1,\lim_\limits{x\to-\infty}F(x)=0$);</li>
+<li>If $X$ is discrete random varibale, $F(x)=\sum_{z\leq x}\mathbb{P}(x)$. If $X$ takes uncountably many values, summation makes NO sense.</li>
+</ul>
+<hr>
+<p><strong>(Continuous Random Variable).</strong> $X$ is said to be a continuous random variable if there exists a function $f(x)$ such that for any Borel set $B \subset \mathbb{R}$,
+$$
+\mathbb{P}(X \subset B)=\int_Bf(x)dx.
+$$
+$f(x)$ is called the probability density function (pdf). For continuous r.v. $X$,
+$$
+F(x) = \int_{-\infty}^xf(y)dy
+$$
+and 
+$$
+f(x) = F^{\prime} (x).
+$$</p>
+<hr>
+<p><strong>(Joint distribution).</strong> For random variables $X$, $Y$ , the joint distribution is defined by
+$$
+F(x,y)=\mathbb{P}(X\leq x,Y \leq y).
+$$
+Correspondingly, the distributions (marginal distributions) of $X,Y$ are:
+$$
+\begin{align}
+F_X(x)=\mathbb{P}(X\leq x)=\lim\limits_{y \to \infty}\mathbb{P}(X\leq x, Y \leq y)=\lim\limits_{y \to \infty}F(x,y) \newline
+F_Y(y)=\mathbb{P}(Y\leq y)=\lim\limits_{x \to \infty}\mathbb{P}(X\leq x, Y \leq y)=\lim\limits_{x \to \infty}F(x,y)
+\end{align}
+$$</p>
+</div> 
+<h2 id="expectations">Expectations</h2>
 <h1 id="关于本博客撰写的一些统一规范">关于本博客撰写的一些统一规范</h1>
 <p>关于Mathjex结合markdown使用Latex的bug记录:</p>
 <div class="highlight"><div class="chroma">
