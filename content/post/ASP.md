@@ -175,12 +175,12 @@ $$
   =\sum_{i=0}^{n-r}(-1)^{i}\left(\begin{array}{c}
   r+i \newline
   r
-  \end{array}\right) \sum_{j_{1}<j_{2}<\cdots<j_{r+i}} \mathbb{P}\left(A_{j_{1}} A_{j_{2}} \cdots A_{j_{r+i}}\right).
+  \end{array}\right) \sum_{j_{1}<j_{2}<\cdots<j_{r+i}} \mathbb{P}\left(A_{j_{1}} A_{j_{2}} \cdots A_{j_{r+i}}\right).
   $$
 
 ## Random Variable and Distributions
 
-{{% admonition tip "Definition (random variable, distribution function)" %}}
+{{% admonition tip "Definition (Random variable, Distribution function)." %}}
 
 A **random variable** $X$ is a mapping from $\Omega$ to $\mathbb{R}$, and for any Borel Set $A\subset \mathbb{R}$ (这里等价认为，$(-\infty,a],\forall a \in \mathbb{R}$),
 $$
@@ -231,7 +231,39 @@ $$
 
 ## Expectations
 
+{{% admonition tip "Definition (Expectation)." %}} 
 
+For a random variable $X$, if $\int_{-\infty}^\infty xdF(x)$ exists, then we say it is the expectation or mean of $X$, denoted by $\mathbb{E}[X]$. 
+$$
+\mathbb{E}[X]=\int_{-\infty}^{\infty} x d F(x)=\left\\{
+\begin{array}{ll}\Sigma_{x} x \mathbb{P}(X=x) & \text { if } X \text { is discrete. } \newline
+\int_{-\infty}^{\infty} x f(x) d x & \text { if } X \text { is continuous. }\end{array}\right.
+$$
+
+{{% /admonition %}}
+
+{{% admonition info "Remark (Alternative expression when $X$ is nonnegative)." %}}
+
++ Let $N$ be a nonnegative integer valued random variable, we have:
+  $$
+  \mathbb{E}[N]=\sum_{k=1}^{\infty}\mathbb{P} \\{ N\geq k \\}
+  $$
+
++ In general, if $X$ is nonnegative with distribution $F$, then
+  
+  $$
+  \mathbb{E}[X]=\int_0^{\infty}\overline{F}(x)dx
+  $$
+  and
+  $$
+  E[X^n]=\int_0^\infty nx^{n-1}\overline{F}(x)dx.
+  $$
+
+***
+
+Proof. (待续...)
+
+{{% /admonition %}}
 
 # 关于本博客撰写的一些统一规范
 
@@ -245,8 +277,8 @@ $$
 Adomonition文本框，撰写规范: 
 
 ```html
-一、Definition 使用 \{\{% admonition tip "Definition XXX" %\}\} \{\{% /admonition tip %\}\}
-二、Proposition, Remark 使用 \{\{% admonition tip "Definition XXX" %\}\} \{\{% /admonition tip %\}\}
+一、Definition 使用 \{\{% admonition tip "Definition XXX" %\}\} \{\{% /admonition %\}\}
+二、Proposition, Remark 使用 \{\{% admonition info "Definition XXX" %\}\} \{\{% /admonition %\}\}
 ```
 
 
