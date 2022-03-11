@@ -35,7 +35,7 @@
 
 
 
-<link href="/sass/main.min.2e81bbed97b8b282c1aeb57488cc71c8d8c8ec559f3931531bd396bf31e0d4dd.css" rel="stylesheet">
+<link href="/sass/main.min.b87e76cd589b185c91369316107a6cff8b59e96cf13a7e3b13b57dfb75b68d79.css" rel="stylesheet">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
 
 
@@ -49,7 +49,7 @@
 <meta itemprop="description" content="info This is a collection of my notes for SUSTech MA208 &ldquo;Applied Stochastic Processes&rdquo;, in the spring semester of 2022, based on Professor Zhang Yiying (张艺赢)&lsquo;s lectures and slides. Chapter 1: Preliminaries: Reviews on Probability Theory Probability Space Definition (Probability Space). The probability space $(\Omega,\mathcal{F},\mathbb{P})$ is defined as follows: $\Omega$: sample space, the set of all possible outcomes.">
 <meta itemprop="datePublished" content="2022-02-22T00:00:00&#43;08:00" />
 <meta itemprop="dateModified" content="2022-03-04T00:00:00&#43;08:00" />
-<meta itemprop="wordCount" content="1260">
+<meta itemprop="wordCount" content="1328">
 
 
 
@@ -139,7 +139,7 @@
         <div class="post-category">
             <a href="/categories/notes/"> Notes </a>
             </div>
-          <span class="more-meta"> 1260 words </span>
+          <span class="more-meta"> 1328 words </span>
           <span class="more-meta"> 3 mins read </span>
         
       </div>
@@ -245,7 +245,8 @@ $$</li>
 <p>Since  $\{L_n\}$ and $\{U_n\}$ are monotonically increasing and decreasing sequences seperately, by the continuity property of $\mathbb{P}$, we have:
 $$
 \underbrace{\lim\limits_{n\to\infty}\cup_{n\geq1}\cap_{j\geq n}A_j}_{\lim_\limits{n\to \infty}\inf A_n} \leq \lim\limits_{n\to\infty}A_n \leq \underbrace{\lim\limits_{n\to\infty}\cap_{n\geq1}\cup_{j\geq n}A_j}_{\lim_\limits{n\to \infty}\sup A_n}
-$$</p>
+$$
+参考：<a href="http://theanalysisofdata.com/probability/A_4.html">Limits of Sets</a></p>
 </div>
 <div class="admonition info"><p class="admonition-title">Proposition (Borel-Cantelli Lemma)</p>
 <p>Let  $E_1,E_2,\cdots$ denote a sequence of events, define
@@ -378,7 +379,21 @@ $$</p>
 </li>
 </ul>
 <hr>
-<p>Proof. (待续&hellip;)</p>
+<p>Proof.
+$$
+\begin{align}
+E[N] &amp;= \sum_{k=0}^{\infty}kP\{N=k\} \newline
+&amp;= \sum_{k=0}^{\infty}k[P\{N \geq k\} – P\{N \geq k+1\} ] \newline
+&amp;= P\{N \geq 1\} – P\{N \geq 2\} + 2\cdot P\{N \geq 2\} – 2\cdot P\{N \geq 3\} + \dots \newline
+&amp;= \sum_{k=1}^{\infty} P\{N\geq k\}
+= \sum_{k=0}^{\infty} P\{N &gt; k\}. \newline
+E[X^n] &amp;= \int_{0}^{\infty}x^ndF(x) \newline
+&amp;= \int_{0}^{\infty}\int_{0}^{x}nt^{n-1}dtdF(x) \newline
+&amp;= \int_{0}^{\infty}\int_{t}^{\infty} nt^{n-1} dF(x)dt \newline
+&amp;= \int_{0}^{\infty}nt^{n-1}\cdot [F(\infty) – F(t)]dt \newline
+&amp;= \int_{0}^{\infty}nt^{n-1}\overline{F}(t)dt
+\end{align}
+$$</p>
 </div>
 <h1 id="关于本博客撰写的一些统一规范">关于本博客撰写的一些统一规范</h1>
 <p>关于Mathjex结合markdown使用Latex的bug记录:</p>
