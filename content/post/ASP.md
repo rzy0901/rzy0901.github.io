@@ -118,6 +118,8 @@ Since  $\\{L_n\\}$ and $\\{U_n\\}$ are monotonically increasing and decreasing s
 $$
 \underbrace{\lim\limits_{n\to\infty}\cup_{n\geq1}\cap_{j\geq n}A_j}_{\lim_\limits{n\to \infty}\inf A_n} \leq \lim\limits_{n\to\infty}A_n \leq \underbrace{\lim\limits_{n\to\infty}\cap_{n\geq1}\cup_{j\geq n}A_j}_{\lim_\limits{n\to \infty}\sup A_n}
 $$
+参考：[Limits of Sets](http://theanalysisofdata.com/probability/A_4.html)
+
 {{% /admonition %}}
 
 {{% admonition info "Proposition (Borel-Cantelli Lemma)"%}}
@@ -261,7 +263,22 @@ $$
 
 ***
 
-Proof. (待续...)
+Proof. 
+$$
+\begin{align} 
+E[N] &= \sum_{k=0}^{\infty}kP\\{N=k\\} \newline
+&= \sum_{k=0}^{\infty}k[P\\{N \geq k\\} – P\\{N \geq k+1\\} ] \newline
+&= P\\{N \geq 1\\} – P\\{N \geq 2\\} + 2\cdot P\\{N \geq 2\\} – 2\cdot P\\{N \geq 3\\} + \dots \newline
+&= \sum_{k=1}^{\infty} P\\{N\geq k\\}
+= \sum_{k=0}^{\infty} P\\{N > k\\}. \newline
+E[X^n] &= \int_{0}^{\infty}x^ndF(x) \newline
+&= \int_{0}^{\infty}\int_{0}^{x}nt^{n-1}dtdF(x) \newline
+&= \int_{0}^{\infty}\int_{t}^{\infty} nt^{n-1} dF(x)dt \newline
+&= \int_{0}^{\infty}nt^{n-1}\cdot [F(\infty) – F(t)]dt \newline
+&= \int_{0}^{\infty}nt^{n-1}\overline{F}(t)dt
+\end{align}
+$$
+
 
 {{% /admonition %}}
 
