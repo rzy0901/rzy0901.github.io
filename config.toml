@@ -48,6 +48,10 @@ copyright = ""            # default: author.name ↓        # 默认为下面配
   weight = 40
   identifier = "categories"
   url = "/categories/"
+#[[menu.main]]
+#  name = "CV"
+#  weight = 50
+#  url = "/cv.html"
 
 [params]
   version = "4.x"           # Used to give a friendly message when you have an incompatible update
@@ -73,7 +77,7 @@ copyright = ""            # default: author.name ↓        # 默认为下面配
   dateFormatToUse = "2006-01-02"
 
   # show word count and read time ?                       # 是否显示字数统计与阅读时间
-  moreMeta = true
+  moreMeta = false
 
   # Syntax highlighting by highlight.js
   highlightInClient = false
@@ -139,9 +143,9 @@ copyright = ""            # default: author.name ↓        # 默认为下面配
     clientId = ""           # Your client ID
     clientSecret = ""       # Your client secret
 
-  [params.utterances]       # https://utteranc.es/
-    owner = "rzy0901"              # Your GitHub ID
-    repo = "blog-comment"               # The repo to store comments
+#  [params.utterances]       # https://utteranc.es/
+#	owner = "rzy0901"              # Your GitHub ID
+#    repo = "blog-comment"               # The repo to store comments
 
   [params.gitalk]           # Gitalk is a comment system based on GitHub issues. see https://github.com/gitalk/gitalk
     owner = ""              # Your GitHub ID
