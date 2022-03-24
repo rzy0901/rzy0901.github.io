@@ -21,7 +21,7 @@ Hi, this is Ren Zhenyu (任振裕). 🌏
 
 Brief Bio: UG@SUSTech || Intern@Huawei.
 
-Major: Communication Engineering.
+Major: Communication Engineering (通信工程).
 
 Email: 11812214[at]sustech.edu.cn;
 
