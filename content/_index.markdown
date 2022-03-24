@@ -23,12 +23,9 @@ Brief Bio: UG@SUSTech || Intern@Huawei.
 
 Major: Communication Engineering.
 
-Recent News:
+Email: 11812214[at]sustech.edu.cn;
 
-1. I'm struggling with doing my homework.
-2. I'm trying to lose weight.
-
-Recommended post: [Introduction（写在前面）](/post/introduction/)
+My CV (Last Updated: March, 2022): [Website](/cv/) | [PDF](/cv.pdf).
 
 </font>
 

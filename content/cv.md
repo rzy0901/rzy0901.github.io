@@ -1,6 +1,10 @@
-# Ren Zhenyu
+---
+title: "CV"
+menu: "main"
+weight: 1000
+---
 
-<center><b>Mail</b>: 11812214[at]mail.sustech.edu.cn  <b>Website</b>:  <a href ="https://rzy0901.github.io">https://rzy0901.github.io</a></center>
+
 
 ## Brief Bio
 
@@ -34,14 +38,14 @@ Note: You can look up my [Github](https://github.com/rzy0901) for my full projec
 
 | Project Name                                                 | Description                                                  |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| <img src="../about.assets/image-20211204033131472.png" style="zoom:20%;" /> <br/>[Indoor and Outdoor Channel Simulations using Winprop API](https://github.com/rzy0901/testWinprop) (Mostly finished) | This project uses a Ray-Tracing Software (winprop) and its API (C++) to do Channel simulations. |
+| <img src="/about.assets/image-20211204033131472.png" style="zoom:20%;" /> <br/>[Indoor and Outdoor Channel Simulations using Winprop API](https://github.com/rzy0901/testWinprop) (Mostly finished) | This project uses a Ray-Tracing Software (winprop) and its API (C++) to do Channel simulations. |
 | UG Graduate Thesis. (Wi-Fi Based Indoor Near Field Imaging.) | In progress...                                               |
 
 **2. Personal Interest**:
 
 | Project Name                                                 | Description                                 |
 | ------------------------------------------------------------ | ------------------------------------------- |
-| <img src="../about.assets/image-20220116190146368.png" alt="image-20220116190146368" style="zoom:33%;" /> <br/>[My Homepage](https://github.com/rzy0901/rzy0901.github.io) (Continuously updated.) | A simple academic page, maintained by Hugo. |
+| <img src="/about.assets/image-20220116190146368.png" alt="image-20220116190146368" style="zoom:33%;" /> <br/>[My Homepage](https://github.com/rzy0901/rzy0901.github.io) (Continuously updated.) | A simple academic page, maintained by Hugo. |
 | Undetermined...                                              | In Progress...                              |
 
 ## Awards
