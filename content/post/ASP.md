@@ -20,6 +20,10 @@ This is a collection of  my notes for SUSTech MA208 "Applied Stochastic Processe
 
 {{% /admonition %}}
 
+> 毕业压力好大，暂时更新了第一章，可以作为概率论知识汇总作为参考。
+>
+> + 有时间再更新整个notebook。
+
 # Chapter 1: Preliminaries: Reviews on Probability Theory
 
 ## Probability Space
