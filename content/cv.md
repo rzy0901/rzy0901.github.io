@@ -36,17 +36,17 @@ Note: You can look up my [Github](https://github.com/rzy0901) for my full projec
 
 **1. Integrated Sensing and Communication**:
 
-| Project Name                                                 | Description                                                  |
-| ------------------------------------------------------------ | ------------------------------------------------------------ |
-| <img src="/about.assets/image-20211204033131472.png" style="zoom:20%;" /> <br/>[Indoor and Outdoor Channel Simulations using Winprop API](https://github.com/rzy0901/testWinprop) (Mostly finished) | This project uses a Ray-Tracing Software (winprop) and its API (C++) to do Channel simulations. |
-| UG Graduate Thesis. (Wi-Fi Based Indoor Near Field Imaging.) | In progress...                                               |
+| Project Name                                                 | Description                                                  | Resource                                                     |
+| ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| <img src="/cv.assets/image-20211204033131472.png" style="zoom:35%;" /> <br/>Indoor and Outdoor Channel Simulations using Winprop API (Mostly finished) | <li> This project uses a Ray-Tracing Software (Winprop) and its API (C++) to do Channel simulations. | [[Slides]](https://raw.githubusercontent.com/rzy0901/testWinprop/master/2021_7_12.pdf) <br/>[[Codes]](https://github.com/rzy0901/testWinprop) |
+| <img src="/cv.assets/image-20220510230834702.png" alt="image-20220510230834702" style="zoom: 35%;" /><br/>UG Graduate Thesis. (Wi-Fi Based Indoor Near Field Imaging.) | <li>This project was done during my internship of Huawei WT Lab.<br/><li>An impressive experiment based on AD9361 and digital-controlled rail (driven by C++ or MATLAB function) is also given. | [[中文本科毕设论文]](https://raw.githubusercontent.com/rzy0901/report/master/out/main.pdf) |
 
 **2. Personal Interest**:
 
-| Project Name                                                 | Description                                 |
-| ------------------------------------------------------------ | ------------------------------------------- |
-| <img src="/about.assets/image-20220116190146368.png" alt="image-20220116190146368" style="zoom:33%;" /> <br/>[My Homepage](https://github.com/rzy0901/rzy0901.github.io) (Continuously updated.) | A simple academic page, maintained by Hugo. |
-| Undetermined...                                              | In Progress...                              |
+| Project Name                                                 | Description                                 | Resource                                                |
+| ------------------------------------------------------------ | ------------------------------------------- | ------------------------------------------------------- |
+| <img src="/cv.assets/image-20220116190146368.png" alt="image-20220116190146368" style="zoom:33%;" /> <br/>My Homepage (Continuously updated.) | A simple academic page, maintained by Hugo. | [[Codes]](https://github.com/rzy0901/rzy0901.github.io) |
+| Undetermined...                                              | In Progress...                              |                                                         |
 
 ## Awards
 
