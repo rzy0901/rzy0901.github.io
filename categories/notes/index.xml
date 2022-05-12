@@ -6,10 +6,19 @@
     <description>Recent content in Notes on Ren Zhenyu&#39;s Website </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 22 Feb 2022 00:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 12 May 2022 00:00:00 +0800</lastBuildDate>
     
 	<atom:link href="/categories/notes/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Linux Summary</title>
+      <link>/post/linux/</link>
+      <pubDate>Thu, 12 May 2022 00:00:00 +0800</pubDate>
+      
+      <guid>/post/linux/</guid>
+      <description>Linux Summary windows双系统干净删除Ubuntu 磁盘管理 删除卷。 CMD： 1 2 3 4 5 6 diskpart list disk select disk 0 list partition select partition 1 assign letter = j 管理员权限打开记事本，删除J/</description>
+    </item>
     
     <item>
       <title>Notebook for Applied Stochastic Processes</title>
