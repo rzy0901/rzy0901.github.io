@@ -31,10 +31,10 @@ author: Ren Zhenyu
    assign letter = j
    ```
 
-   ![image-20220512205919353](../linux.assets/image-20220512205919353.png)
+   ![image-20220512205919353](../../linux.assets/image-20220512205919353.png)
 
 3. 管理员权限打开记事本，删除`J/WFI/Ubuntu`文件夹。
 
-   ![image-20220512210227664](../linux.assets/image-20220512210227664.png)
+   ![image-20220512210227664](../../linux.assets/image-20220512210227664.png)
 
 4. CMD `remove letter=j`
