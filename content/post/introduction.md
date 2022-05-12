@@ -3,8 +3,8 @@ title: "Intoduction（写在前面）"
 date: 2022-01-18T23:09:36+08:00
 lastmod: 2022-01-18T23:09:36+08:00
 draft: false
-tags: ["Diary"]
-catagories: ["Diary"]
+#tags: ["Diary"]
+#catagories: ["Diary"]
 
 
 contentCopyright: MIT
