@@ -27,7 +27,14 @@ Email: 11812214[at]sustech.edu.cn;
 
 My CV (Last Updated: March, 2022): [Website](/cv/) | [PDF](/cv.pdf).
 
+
 <details>
+<summary><li>Click to see website status.</li></summary>
+<script type="text/javascript" src="//rf.revolvermaps.com/0/0/7.js?i=5cl6rs2stn2&amp;m=0&amp;c=ff0000&amp;cr1=ffffff&amp;sx=0" async="async"></script>
+<script type="text/javascript" src="//rf.revolvermaps.com/0/0/8.js?i=5cl6rs2stn2&amp;m=0&amp;c=ff0000&amp;cr1=ffffff&amp;f=arial&amp;l=33" async="async"></script>
+</details>
+
+<!-- <details>
 <summary><li>Click to see website status.</li></summary>
 <table>
 <thead>
@@ -49,7 +56,7 @@ My CV (Last Updated: March, 2022): [Website](/cv/) | [PDF](/cv.pdf).
 </table>
 </details>
 
-</font>
+</font> -->
 
 <!-- | <center>3-D Global Visitor Map </center>                     | <center> 2-D Global Visitor Map </center>                    | <center> 24h Visitor Charts</center>                         | Status                                                       |
 | ------------------------------------------------------------ | ------------------------------------------------------------ | :----------------------------------------------------------- | ------------------------------------------------------------ |
