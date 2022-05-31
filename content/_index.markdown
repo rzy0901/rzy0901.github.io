@@ -13,7 +13,7 @@ toc: false
 autoCollapseToc: true
 ---
 
-[<img src="/profile.png" style="max-width: 25%; float: right; zoom: 25%;" alt="Github account" />](https://github.com/rzy0901)
+<img src="/profile.png" style="max-width: 25%; float: right; zoom: 25%;" alt="Profile img" />
 
 <font size = 4pt>
 
@@ -33,33 +33,5 @@ My CV (Last Updated: March, 2022): [Website](/cv/) | [PDF](/cv.pdf).
 <script type="text/javascript" src="//rf.revolvermaps.com/0/0/7.js?i=5cl6rs2stn2&amp;m=0&amp;c=ff0000&amp;cr1=ffffff&amp;sx=0" async="async"></script>
 <script type="text/javascript" src="//rf.revolvermaps.com/0/0/8.js?i=5cl6rs2stn2&amp;m=0&amp;c=ff0000&amp;cr1=ffffff&amp;f=arial&amp;l=33" async="async"></script>
 </details>
-
-<!-- <details>
-<summary><li>Click to see website status.</li></summary>
-<table>
-<thead>
-<tr>
-<th><center>3-D Global Visitor Map </center></th>
-<th><center> 2-D Global Visitor Map </center></th>
-<th align="left"><center> 24h Visitor Charts</center></th>
-<th>Status</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><script type="text/javascript" src="//rf.revolvermaps.com/0/0/8.js?i=5cl6rs2stn2&amp;m=0&amp;c=ff0000&amp;cr1=ffffff&amp;f=arial&amp;l=33" async="async"></script></td>
-<td><script type="text/javascript" src="//rf.revolvermaps.com/0/0/7.js?i=5cl6rs2stn2&amp;m=0&amp;c=ff0000&amp;cr1=ffffff&amp;sx=0" async="async"></script></td>
-<td align="left"><script type="text/javascript" src="//rf.revolvermaps.com/0/0/0.js?i=5cl6rs2stn2&amp;d=2&amp;p=1&amp;b=0&amp;w=193&amp;g=2&amp;f=arial&amp;fs=12&amp;r=0&amp;c0=362b05&amp;c1=375363&amp;c2=000000&amp;ic0=0&amp;ic1=0" async="async"></script></td>
-<td><script type="text/javascript" src="//rf.revolvermaps.com/0/0/9.js?i=5cl6rs2stn2&amp" async="async"></script></td>
-</tr>
-</tbody>
-</table>
-</details>
-
-</font> -->
-
-<!-- | <center>3-D Global Visitor Map </center>                     | <center> 2-D Global Visitor Map </center>                    | <center> 24h Visitor Charts</center>                         | Status                                                       |
-| ------------------------------------------------------------ | ------------------------------------------------------------ | :----------------------------------------------------------- | ------------------------------------------------------------ |
-| <script type="text/javascript" src="//rf.revolvermaps.com/0/0/8.js?i=5cl6rs2stn2&amp;m=0&amp;c=ff0000&amp;cr1=ffffff&amp;f=arial&amp;l=33" async="async"></script> | <script type="text/javascript" src="//rf.revolvermaps.com/0/0/7.js?i=5cl6rs2stn2&amp;m=0&amp;c=ff0000&amp;cr1=ffffff&amp;sx=0" async="async"></script> | <script type="text/javascript" src="//rf.revolvermaps.com/0/0/0.js?i=5cl6rs2stn2&amp;d=2&amp;p=1&amp;b=0&amp;w=193&amp;g=2&amp;f=arial&amp;fs=12&amp;r=0&amp;c0=362b05&amp;c1=375363&amp;c2=000000&amp;ic0=0&amp;ic1=0" async="async"></script> | <script type="text/javascript" src="//rf.revolvermaps.com/0/0/9.js?i=5cl6rs2stn2&amp" async="async"></script> | -->
 
 
