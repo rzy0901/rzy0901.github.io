@@ -8,7 +8,7 @@ categories: ["Notes"]
 
 # contentCopyright: MIT
 mathjax: true
-autoCollapseToc: true
+autoCollapseToc: false
 postMetaInFooter: true
 reward: false
 author: Ren Zhenyu
@@ -45,7 +45,7 @@ author: Ren Zhenyu
 >
 > 原本参考的链接找不到了，一个基本思想相似的链接：<https://docs.microsoft.com/en-us/windows-server/storage/disk-management/change-a-dynamic-disk-back-to-a-basic-disk>
 
-##  幻14安装rog-core
+##  幻14安装rog-core以及桌面卡顿bug梳理
 
 ```
 git clone https://github.com/flukejones/rog-core.git
