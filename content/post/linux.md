@@ -47,6 +47,8 @@ author: Ren Zhenyu
 
 ##  幻14安装rog-core以及桌面卡顿bug梳理
 
+安装rog-core:
+
 ```
 git clone https://github.com/flukejones/rog-core.git
 cd rog-core/
@@ -57,11 +59,15 @@ sudo make install
 
 > 幻14安装ubuntu后桌面卡顿？
 >
+> + 先使用20.04，22.04有点不适配。
+>
 > + 查了很多教程（修改SWAP，更新内核，驱动等，反反复复重装了几次），无解（所有驱动都被正确安装，我的台式机双系统没有卡顿的bug）。
 >
 > + 可能是屏幕的问题，我将我的屏幕设置为FPS模式，打字延迟完全消失，图像仍然存在。
 >
 > + 将显卡设置为高性能模式，卡顿一定程度缓解。
+>
+> + 关闭代理软件clash的开机自启动（好像它才是罪魁祸首）。
 >
 >   附，我的幻14配置：
 >
