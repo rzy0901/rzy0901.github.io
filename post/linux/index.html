@@ -49,7 +49,7 @@
 <meta itemprop="description" content="Linux Summary windows双系统干净删除Ubuntu 磁盘管理 删除卷。 CMD： 1 2 3 4 5 6 diskpart list disk select disk 0 list partition select partition 1 assign letter = j 管理员权限打开记事本，删除J/">
 <meta itemprop="datePublished" content="2022-05-12T00:00:00&#43;08:00" />
 <meta itemprop="dateModified" content="2022-05-12T00:00:00&#43;08:00" />
-<meta itemprop="wordCount" content="485">
+<meta itemprop="wordCount" content="545">
 
 
 
@@ -205,6 +205,7 @@ assign letter = j
 <p>原本参考的链接找不到了，一个基本思想相似的链接：<a href="https://docs.microsoft.com/en-us/windows-server/storage/disk-management/change-a-dynamic-disk-back-to-a-basic-disk">https://docs.microsoft.com/en-us/windows-server/storage/disk-management/change-a-dynamic-disk-back-to-a-basic-disk</a></p>
 </blockquote>
 <h2 id="幻14安装rog-core以及桌面卡顿bug梳理">幻14安装rog-core以及桌面卡顿bug梳理</h2>
+<p>安装rog-core:</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
@@ -225,6 +226,9 @@ sudo make install
 <p>幻14安装ubuntu后桌面卡顿？</p>
 <ul>
 <li>
+<p>先使用20.04，22.04有点不适配。</p>
+</li>
+<li>
 <p>查了很多教程（修改SWAP，更新内核，驱动等，反反复复重装了几次），无解（所有驱动都被正确安装，我的台式机双系统没有卡顿的bug）。</p>
 </li>
 <li>
@@ -232,6 +236,9 @@ sudo make install
 </li>
 <li>
 <p>将显卡设置为高性能模式，卡顿一定程度缓解。</p>
+</li>
+<li>
+<p>关闭代理软件clash的开机自启动（好像它才是罪魁祸首）。</p>
 <p>附，我的幻14配置：</p>
 <p><img src="../../linux.assets/rog_ubuntu.png" alt="rog_ubuntu"></p>
 </li>
