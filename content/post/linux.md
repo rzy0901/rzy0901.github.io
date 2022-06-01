@@ -38,3 +38,31 @@ author: Ren Zhenyu
    ![image-20220512210227664](../../linux.assets/image-20220512210227664.png)
 
 4. CMD `remove letter=j`
+
+> 不小心把磁盘变为动态分区咋办（如何转回主分区）？
+>
+> （大致思路）备份数据，clear disk将整个硬盘转为未分配的空间。
+>
+> 原本参考的链接找不到了，一个基本思想相似的链接：<https://docs.microsoft.com/en-us/windows-server/storage/disk-management/change-a-dynamic-disk-back-to-a-basic-disk>
+
+##  幻14安装rog-core
+
+```
+git clone https://github.com/flukejones/rog-core.git
+cd rog-core/
+sudo apt install rustc cargo make libusb-1.0-0-dev libdbus-1-dev llvm libclang-dev
+make
+sudo make install
+```
+
+> 幻14安装ubuntu后桌面卡顿？
+>
+> + 查了很多教程（修改SWAP，更新内核，驱动等，反反复复重装了几次），无解（所有驱动都被正确安装，我的台式机双系统没有卡顿的bug）。
+>
+> + 可能是屏幕的问题，我将我的屏幕设置为FPS模式，打字延迟完全消失，图像仍然存在。
+>
+> + 将显卡设置为高性能模式，卡顿一定程度缓解。
+>
+>   附，我的幻14配置：
+>
+>   ![rog_ubuntu](../../linux.assets/rog_ubuntu.png)
