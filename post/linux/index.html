@@ -35,7 +35,7 @@
 
 
 
-<link href="/sass/main.min.b874a8796a492f0d7c86bb24c33cbf052935783a5778ebaf819a8e514bf49f10.css" rel="stylesheet">
+<link href="/sass/main.min.b87e76cd589b185c91369316107a6cff8b59e96cf13a7e3b13b57dfb75b68d79.css" rel="stylesheet">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
 
 
@@ -49,7 +49,7 @@
 <meta itemprop="description" content="Linux Summary windows双系统干净删除Ubuntu 磁盘管理 删除卷。 CMD： 1 2 3 4 5 6 diskpart list disk select disk 0 list partition select partition 1 assign letter = j 管理员权限打开记事本，删除J/">
 <meta itemprop="datePublished" content="2022-05-12T00:00:00&#43;08:00" />
 <meta itemprop="dateModified" content="2022-05-12T00:00:00&#43;08:00" />
-<meta itemprop="wordCount" content="87">
+<meta itemprop="wordCount" content="474">
 
 
 
@@ -155,6 +155,7 @@
     <li><a href="#linux-summary">Linux Summary</a>
       <ul>
         <li><a href="#windows双系统干净删除ubuntu">windows双系统干净删除Ubuntu</a></li>
+        <li><a href="#幻14安装rog-core">幻14安装rog-core</a></li>
       </ul>
     </li>
   </ul>
@@ -198,6 +199,44 @@ assign letter = j
 <p>CMD <code>remove letter=j</code></p>
 </li>
 </ol>
+<blockquote>
+<p>不小心把磁盘变为动态分区咋办（如何转回主分区）？</p>
+<p>（大致思路）备份数据，clear disk将整个硬盘转为未分配的空间。</p>
+<p>原本参考的链接找不到了，一个基本思想相似的链接：<a href="https://docs.microsoft.com/en-us/windows-server/storage/disk-management/change-a-dynamic-disk-back-to-a-basic-disk">https://docs.microsoft.com/en-us/windows-server/storage/disk-management/change-a-dynamic-disk-back-to-a-basic-disk</a></p>
+</blockquote>
+<h2 id="幻14安装rog-core">幻14安装rog-core</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">git clone https://github.com/flukejones/rog-core.git
+cd rog-core/
+sudo apt install rustc cargo make libusb-1.0-0-dev libdbus-1-dev llvm libclang-dev
+make
+sudo make install
+</code></pre></td></tr></table>
+</div>
+</div><blockquote>
+<p>幻14安装ubuntu后桌面卡顿？</p>
+<ul>
+<li>
+<p>查了很多教程（修改SWAP，更新内核，驱动等，反反复复重装了几次），无解（所有驱动都被正确安装，我的台式机双系统没有卡顿的bug）。</p>
+</li>
+<li>
+<p>可能是屏幕的问题，我将我的屏幕设置为FPS模式，打字延迟完全消失，图像仍然存在。</p>
+</li>
+<li>
+<p>将显卡设置为高性能模式，卡顿一定程度缓解。</p>
+<p>附，我的幻14配置：</p>
+<p><img src="../../linux.assets/rog_ubuntu.png" alt="rog_ubuntu"></p>
+</li>
+</ul>
+</blockquote>
 
     </div>
 
