@@ -1,7 +1,7 @@
 ---
 title: "Linux Summary"
 date: 2022-05-12T00:00:00+08:00
-lastmod: 2022-05-12T00:00:00+08:00
+lastmod: 2022-06-2T00:00:00+08:00
 draft: false
 tags: ["Linux"]
 categories: ["Notes"]
@@ -72,3 +72,32 @@ sudo make install
 >   附，我的幻14配置：
 >
 >   ![rog_ubuntu](../../linux.assets/rog_ubuntu.png)
+
+## 安装配置代理软件Clash
+
+> 参考：<https://zhuanlan.zhihu.com/p/430035973>
+
+1. 前往<https://github.com/Dreamacro/clash/releases>下载最新版本的clash.
+
+2. 解压，并修改权限。
+
+   ```
+   gunzip clash-linux-amd64-v1.10.6.gz
+   chmod +x clash-linux-amd64-v1.10.6
+   # 改名
+   mv clash-linux-amd64-v1.10.6 clash
+   wget -O config.yaml [订阅链接]
+   wget -O Country.mmdb https://www.sub-speeder.com/client-download/Country.mmdb
+   ```
+
+3. 启动clash
+
+   ```
+   ./clash -d .
+   ```
+
+4. 设置系统的代理端口：
+
+   <center><img src="../../linux.assets/proxy.png" style="zoom:35%;"/></center>
+
+5. 访问<https://clash.razord.top/>设置代理节点。
