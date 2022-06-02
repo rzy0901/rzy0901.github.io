@@ -49,7 +49,7 @@
 <meta itemprop="description" content="Linux Summary windows双系统干净删除Ubuntu 磁盘管理 删除卷。 CMD： 1 2 3 4 5 6 diskpart list disk select disk 0 list partition select partition 1 assign letter = j 管理员权限打开记事本，删除J/">
 <meta itemprop="datePublished" content="2022-05-12T00:00:00&#43;08:00" />
 <meta itemprop="dateModified" content="2022-05-12T00:00:00&#43;08:00" />
-<meta itemprop="wordCount" content="545">
+<meta itemprop="wordCount" content="751">
 
 
 
@@ -156,6 +156,7 @@
       <ul>
         <li><a href="#windows双系统干净删除ubuntu">windows双系统干净删除Ubuntu</a></li>
         <li><a href="#幻14安装rog-core以及桌面卡顿bug梳理">幻14安装rog-core以及桌面卡顿bug梳理</a></li>
+        <li><a href="#安装配置代理软件clash">安装配置代理软件Clash</a></li>
       </ul>
     </li>
   </ul>
@@ -244,6 +245,54 @@ sudo make install
 </li>
 </ul>
 </blockquote>
+<h2 id="安装配置代理软件clash">安装配置代理软件Clash</h2>
+<blockquote>
+<p>参考：<a href="https://zhuanlan.zhihu.com/p/430035973">https://zhuanlan.zhihu.com/p/430035973</a></p>
+</blockquote>
+<ol>
+<li>
+<p>前往<a href="https://github.com/Dreamacro/clash/releases">https://github.com/Dreamacro/clash/releases</a>下载最新版本的clash.</p>
+</li>
+<li>
+<p>解压，并修改权限。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">gunzip clash-linux-amd64-v1.10.6.gz
+chmod +x clash-linux-amd64-v1.10.6
+# 改名
+mv clash-linux-amd64-v1.10.6 clash
+wget -O config.yaml [订阅链接]
+wget -O Country.mmdb https://www.sub-speeder.com/client-download/Country.mmdb
+</code></pre></td></tr></table>
+</div>
+</div></li>
+<li>
+<p>启动clash</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">./clash -d .
+</code></pre></td></tr></table>
+</div>
+</div></li>
+<li>
+<p>设置系统的代理端口：</p>
+<center><img src="../../linux.assets/proxy.png" style="zoom:35%;"/></center>
+</li>
+<li>
+<p>访问<a href="https://clash.razord.top/">https://clash.razord.top/</a>设置代理节点。</p>
+</li>
+</ol>
 
     </div>
 
