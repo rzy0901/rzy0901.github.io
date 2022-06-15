@@ -9,30 +9,27 @@ weight: 1000
 ## Brief Bio
 
 + I'm an undergraduate student in the Department of Electrical and Electronics Engineering at **Southern University of Science and Technology** (**[SUSTech](https://www.sustech.edu.cn/en/)**). I am currently studying in **LA**b of **W**ireles**S** communications and **S**ystem **O**ptimization (**[LASSO](http://lasso.eee.sustech.edu.cn/)**) and being supervised by **Prof. [Wang Rui](https://eee.sustech.edu.cn/p/wangrui/index.html)**.
-+ I'm also currently working as an internship student in the **Integrated Sensing And Communication ([ISAC](https://www.ieee-isac.org/))** group in **Wireless Technology** (**WT**) LAB of Huawei Technology. My supervisor at the company is **Dr. [Tony Han Xiao](https://scholar.google.com/citations?hl=en&user=cqvSehcAAAAJ)**.
 + My research interest focuses on:
   1. Wireless Communication.
   2. Integrated Sensing And Communication (ISAC).
 
-## Academia
+## Academia & Research Experience
 
-+ <b>Southern University of Science and Technology | Bachelor</b> <i style="float: right">September. 2018 - present</i>
++ <b>Southern University of Science and Technology | Bachelor</b> <i style="float: right">September. 2018 - July. 2022</i>
 
-  Majoring in Communication Engineering, supervised by Prof. [Wang Rui](https://eee.sustech.edu.cn/p/wangrui/index.html)
+  Majoring in Communication Engineering, supervised by Prof. [Wang Rui](https://eee.sustech.edu.cn/p/wangrui/index.html).
 
   GPA: (3.69/4.00), ranked 5/26.
 
-+ <b>Huawei Technology, Wireless Technology Laboratory | Research Intern</b> <i style="float: right">June. 2021 - present</i>
++ <b>Huawei Technology, Wireless Technology Laboratory | Research Intern</b> <i style="float: right">June. 2021 - June. 2022</i>
 
-  Supervised by Dr. [Tony Han Xiao](https://scholar.google.com/citations?hl=en&user=cqvSehcAAAAJ)
-
-## Publications
-
-+ I still have no publications.
+  Supervised by Dr. [Tony Han Xiao](https://scholar.google.com/citations?hl=en&user=cqvSehcAAAAJ). 
+  
+  Internship Certificate: [[pdf]](/cv.assets/实习证明.pdf).
 
 ## Projects & Software
 
-Note: You can look up my [Github](https://github.com/rzy0901) for my full project lists.
+Note: You can look up my [GitHub](https://github.com/rzy0901) for my full project lists.
 
 **1. Integrated Sensing and Communication**:
 
@@ -50,5 +47,7 @@ Note: You can look up my [Github](https://github.com/rzy0901) for my full projec
 
 ## Awards
 
-+ 南方科技大学优秀学生三等奖学金（2次）
-+ 2020年全国大学生数学建模大赛省级一等奖
++ 2022年南方科技大学电子系优秀毕业生；
++ 2022年南方科技大学致仁书院优秀毕业生；
++ 南方科技大学优秀学生三等奖学金（2次）；
++ 2020年全国大学生数学建模大赛省级一等奖；

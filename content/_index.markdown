@@ -27,6 +27,10 @@ Email: 11812214[at]sustech.edu.cn;
 
 My CV (Last Updated: March, 2022): [Website](/cv/) | [PDF](/cv.pdf).
 
+Recent news:
+
++ *2022-6-15*: I completed my one-year internship in Huawei Technology.
+
 
 <details>
 <summary><li>Click to see website status.</li></summary>
