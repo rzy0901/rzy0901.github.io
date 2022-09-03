@@ -23,7 +23,7 @@ Brief Bio: UG@SUSTech || Intern@Huawei.
 
 Major: Communication Engineering (通信工程).
 
-Email: 11812214[at]sustech.edu.cn;
+Email: renzy2022[at]mail.sustech.edu.cn;
 
 My CV (Last Updated: March, 2022): [Website](/cv/) | [PDF](/cv.pdf).
 

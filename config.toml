@@ -182,7 +182,7 @@ copyright = ""            # default: author.name ↓        # 默认为下面配
     alipay = "/reward/alipay.jpg"           # 支付宝二维码
 
   [params.social]                                         # 社交链接
-    a-email = "mailto:1182214@sustech.edu.cn"
+    a-email = "mailto:renzy2022@mail.sustech.edu.cn"
     # b-stack-overflow = "http://localhost:1313"
     # c-twitter = "http://localhost:1313"
     # d-facebook = "http://localhost:1313"
