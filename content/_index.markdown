@@ -19,9 +19,9 @@ autoCollapseToc: true
 
 Hi, this is Ren Zhenyu (任振裕). 🌏
 
-Brief Bio: UG@SUSTech || Intern@Huawei.
+<!-- Brief Bio: UG@SUSTech || Intern@Huawei. -->
 
-Major: Communication Engineering (通信工程).
+Research Interest: Communication Engineering (通信工程).
 
 Email: renzy2022[at]mail.sustech.edu.cn;
 
@@ -29,8 +29,9 @@ My CV (Last Updated: March, 2022): [Website](/cv/) | [PDF](/cv.pdf).
 
 Recent news:
 
-+ *2022-6-15*: I completed my one-year internship in Huawei Technology.
-+ *2022-8-27* I further my study as a master in Southern University of Science and Technology.
++ *2022-8-27* I further my study as a master student at Southern University of Science and Technology.
++ *2022-6-15*: I completed my one-year internship at Huawei Technology.
+
 
 
 <details>
