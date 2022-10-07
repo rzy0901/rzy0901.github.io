@@ -28,7 +28,7 @@ author: Ren Zhenyu
 ## OpenPose API 测试
 
 ```bash
-./build/example/openpose/openpose.bin
+./build/examples/openpose/openpose.bin
 ```
 
 ![test1](../../openpose.assets/test1.png)
