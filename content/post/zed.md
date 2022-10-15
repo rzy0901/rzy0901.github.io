@@ -3,7 +3,7 @@ title: "基于深度摄像机ZED 2i提取导出三维人体骨骼"
 date: 2022-10-14T00:00:00+08:00
 lastmod: 2022-10-14T00:00:00+08:00
 draft: false
-tags: ["Linux","OpenPose"]
+tags: ["Linux","OpenPose","3d skeletons"]
 categories: ["Notes"]
 
 # contentCopyright: MIT
@@ -37,7 +37,10 @@ author: Ren Zhenyu
    > + 先录制`.svo`文件，后验的处理`.svo`不会出现以上问题。
 
 ## 处理结果
++ 将.dat导入MATLAB处理结果：
 
-![test1](../../zed.assets/test.gif)
+<center><img src="../../zed.assets/test.gif" alt="test1" style="zoom:50%;" /></center>
 
-<center><video width="700"  controls="controls" src="../../zed.assets/zed.webm"></video></center>
++ 实时处理结果：
+
+<center><video width="75%"  controls="controls" src="../../zed.assets/zed.webm"></video></center>

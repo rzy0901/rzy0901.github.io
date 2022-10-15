@@ -4,7 +4,7 @@ date: 2022-02-22T00:00:00+08:00
 lastmod: 2022-03-04T00:00:00+08:00
 draft: false
 tags: ["Math"]
-categories: ["Notes"]
+categories: ["Math"]
 
 # contentCopyright: MIT
 mathjax: true
