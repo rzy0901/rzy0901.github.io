@@ -4,7 +4,7 @@ menu: "main"
 weight: 50
 ---
 
-Website status:
+Website status (It takes several seconds to show):
 <script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=080808&w=a&t=tt&d=KNhUkfBz0L7ehCNZBExvsbzI3i4WYHNo7km8lQI9Cuc&co=ffffff&cmo=3acc3a&cmn=ff5353&ct=808080'></script>
 
 Friend Links（友链）:
