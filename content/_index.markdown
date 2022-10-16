@@ -25,21 +25,9 @@ Research Interest: Communication Engineering (通信工程).
 
 Email: renzy2022[at]mail.sustech.edu.cn;
 
-My CV (Last Updated: March, 2022): [Website](/cv/) | [PDF](/cv.pdf).
+<!-- My CV (Last Updated: March, 2022): [Website](/cv/) | [PDF](/cv.pdf). -->
 
 Recent news:
 
 + *2022-8-27* I further my study as a master student at Southern University of Science and Technology.
 + *2022-6-15*: I completed my one-year internship at Huawei Technology.
-
-
-
-<details>
-<summary><li>Click to see website status.</li></summary>
-<script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=080808&w=a&t=tt&d=KNhUkfBz0L7ehCNZBExvsbzI3i4WYHNo7km8lQI9Cuc&co=ffffff&cmo=3acc3a&cmn=ff5353&ct=808080'></script>
-<!-- <script type="text/javascript" id="clstr_globe" src="//clustrmaps.com/globe.js?d=KNhUkfBz0L7ehCNZBExvsbzI3i4WYHNo7km8lQI9Cuc"></script> -->
-<!-- <script type="text/javascript" src="//rf.revolvermaps.com/0/0/7.js?i=5cl6rs2stn2&amp;m=0&amp;c=ff0000&amp;cr1=ffffff&amp;sx=0" async="async"></script>
-<script type="text/javascript" src="//rf.revolvermaps.com/0/0/8.js?i=5cl6rs2stn2&amp;m=0&amp;c=ff0000&amp;cr1=ffffff&amp;f=arial&amp;l=33" async="async"></script> -->
-</details>
-
-

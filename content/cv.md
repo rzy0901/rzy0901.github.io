@@ -1,6 +1,7 @@
 ---
 title: "CV"
 menu: "main"
+draft: true
 weight: 1000
 ---
 
