@@ -37,6 +37,7 @@ author: Ren Zhenyu
    > + 先录制`.svo`文件，后验的处理`.svo`不会出现以上问题。
 
 ## 处理结果
+
 + 将.dat导入MATLAB处理结果：
 
 <center><img src="../../zed.assets/test.gif" alt="test1" style="zoom:50%;" /></center>
@@ -44,3 +45,11 @@ author: Ren Zhenyu
 + 实时处理结果：
 
 <center><video width="75%"  controls="controls" src="../../zed.assets/zed.webm"></video></center>
+
+## 彩蛋：一个男子在打拳
+
+<center><img src="../../zed.assets/lqr.png" alt="test1" style="zoom:25%;" /></center>
+</br>
+<center>
+<img src="../../zed.assets/test2.gif" alt="test2" style="zoom: 50%;" />
+</center>
