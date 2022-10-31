@@ -25,7 +25,7 @@ Research Interest: Communication Engineering (通信工程).
 
 Email: 
 + renzy2022[at]mail.sustech.edu.cn;
-+ zern664[at]gmail.com;
++ zren664[at]gmail.com;
 
 <!-- My CV (Last Updated: March, 2022): [Website](/cv/) | [PDF](/cv.pdf). -->
 
