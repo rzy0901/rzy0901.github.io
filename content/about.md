@@ -5,7 +5,9 @@ weight: 50
 ---
 
 Website status (It takes several seconds to show):
-<script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=080808&w=a&t=tt&d=KNhUkfBz0L7ehCNZBExvsbzI3i4WYHNo7km8lQI9Cuc&co=ffffff&cmo=3acc3a&cmn=ff5353&ct=808080'></script>
+<!-- cluster Map 搞笑的，加载太慢了 -->
+<script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=a&t=tt&d=KNhUkfBz0L7ehCNZBExvsbzI3i4WYHNo7km8lQI9Cuc'></script>
+<!-- <a href='https://clustrmaps.com/site/1bp0e'  title='Visit tracker'><img src='//clustrmaps.com/map_v2.png?cl=ffffff&w=a&t=tt&d=KNhUkfBz0L7ehCNZBExvsbzI3i4WYHNo7km8lQI9Cuc'/></a> -->
 
 Friend Links（友链）:
 
