@@ -23,7 +23,7 @@ Hi, this is Ren Zhenyu (任振裕). 🌏
 
 Research Interest: Communication Engineering (通信工程).
 
-Email: 
+Emails: 
 + renzy2022[at]mail.sustech.edu.cn;
 + zren664[at]gmail.com;
 
