@@ -17,8 +17,5 @@
         <a class="menu-item-link" href="{{ .URL | safeURL }}">{{ .Name }}</a>
       </li>         
     {{- end }}
-    <li class="menu-item">
-      {{ partial "toggle.html" . }}
-    </li>
   </ul>
 </nav>
