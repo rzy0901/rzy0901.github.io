@@ -31,5 +31,5 @@ Emails:
 
 Recent news:
 
-+ *2022-8-27* I further my study as a master student at Southern University of Science and Technology.
++ *2022-8-27* I furthered my study as a master student at Southern University of Science and Technology.
 + *2022-6-15*: I completed my one-year internship at Huawei Technology.

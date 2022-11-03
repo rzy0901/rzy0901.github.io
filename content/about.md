@@ -1,6 +1,7 @@
 ---
 title: "About"
 menu: "main"
+noComment: true
 weight: 50
 ---
 
