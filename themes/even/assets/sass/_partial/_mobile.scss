@@ -39,7 +39,7 @@
     float: left;
     position: relative;
     transition: background 0.5s;
-
+    box-shadow: 0px 2px 2px $gray;
     @include mobile-menu-icon();
   }
 }
