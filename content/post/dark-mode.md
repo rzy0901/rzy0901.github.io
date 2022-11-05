@@ -17,7 +17,10 @@ author: Ren Zhenyu
 # 暗黑模式介绍
 
 > + Hugo的[even](https://github.com/olOwOlo/hugo-theme-even)主题在github已经两年没有更新了，我应该是第一个为该主题提供暗黑模式的人（但是由于在手机端还有bug，我暂时还不想发起pull request，不过大家可以随便的copy我的代码并做出改进发起PR:smile:。）
+>
 > + 最近试了很多方法，终于简单的在浏览器端实现了dark mode（点击右上角导航栏里的图标即可）。
+>
+>   ![image](../../dark-mode.assets/200128941-81d53c52-010f-4bd6-9dc7-5933291c5ecd.png)
 
 ![](../../dark-mode.assets/GIF.gif)
 
