@@ -1,5 +1,5 @@
 ---
-title: "在Hugo theme-even上简单实现暗黑模式。"
+title: "在Hugo theme-even上简单实现暗黑模式"
 date: 2022-11-05T00:00:00+08:00
 lastmod: 2022-11-05T00:00:00+08:00
 draft: false
@@ -27,11 +27,19 @@ author: Ren Zhenyu
 
 首先，我们注意到chrome浏览器中有一个很好用的插件, 这意味着我们只要copy这个插件的源码就可以了。所以我实现的代码流程如下（具体间[commit: Add Dark Theme feature.](https://github.com/rzy0901/rzy0901.github.io/commit/c08c69da33ab361368fcb64dba066c15dd6d5fbd)）：
 
-1. 为even主题`/themes/even/layouts/partials/head.html`添加fontawsome的css代码（之前有试过官网推荐的引用js代码的方式，虽然也可行，但是加载太慢，不推荐）:
+1. 为even主题`/themes/even/layouts/partials/head.html`添加`fontawsome`的`css`代码（之前有试过官网推荐的引用js代码的方式，虽然也可行，但是加载太慢，不推荐）:
 ```html
 <link href="https://cdn.bootcdn.net/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 ```
-2. 安装[dark mode](https://mybrowseraddon.com/dark-mode.html)，在本机`C:\Users\RZY\AppData\Local\Google\Chrome\User Data\Default\Extensions\dmghijelimhndkbmpgbldicpogfkceaj\0.4.6_0\data\content_script\general`处选择自己喜欢的`dark.css`，拷贝到`/static/css/`下，并在`/themes/even/layouts/partials/head.html`下添加以下代码：
+> 上述方法使用`font-awsome`的CDN，如果CDN挂了就g了，所以我将`font-awsome`部署到了本地：
+>
+> + 在[官方教程](https://fontawesome.com/v4/get-started/)之下下载`font-awesome-4.7.0`文件夹，将其放置于`/themes/even/static/css/`之下，在`head.html`添加如下代码：
+>
+>   ```html
+>   <link rel="stylesheet" href = "/css/font-awesome-4.7.0/css/font-awesome.css"></link>
+>   ```
+
+2. 安装[dark mode](https://mybrowseraddon.com/dark-mode.html)，在本机`C:\Users\RZY\AppData\Local\Google\Chrome\User Data\Default\Extensions\dmghijelimhndkbmpgbldicpogfkceaj\0.4.6_0\data\content_script\general`处选择自己喜欢的`dark.css`，拷贝到`/themes/even/static/css/`下，并在`/themes/even/layouts/partials/head.html`下添加以下代码：
 
 ```html
 <link disabled id="dark-mode-theme" rel="stylesheet" href="/css/dark.css"></link>

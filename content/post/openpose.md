@@ -1,5 +1,5 @@
 ---
-title: "OpenPose初使用: CV的方法提取人体骨骼。"
+title: "OpenPose初使用: CV的方法提取人体骨骼"
 date: 2022-10-06T00:00:00+08:00
 lastmod: 2022-10-06T00:00:00+08:00
 draft: false
