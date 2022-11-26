@@ -1,7 +1,7 @@
 ---
 title: "基于深度摄像机ZED 2i提取导出三维人体骨骼"
 date: 2022-10-14T00:00:00+08:00
-lastmod: 2022-10-14T00:00:00+08:00
+lastmod: 2022-11-26T00:00:00+08:00
 draft: false
 tags: ["Linux","OpenPose","3d skeletons"]
 categories: ["Notes"]
@@ -38,13 +38,28 @@ author: Ren Zhenyu
 
 ## 处理结果
 
+> 2022-11-26 更新：安装最新的SDK并在安装时选择对模型进行优化，可以得到更好的tracking效果。
+
 + 将.dat导入MATLAB处理结果：
 
-<center><img src="../../zed.assets/test.gif" alt="test1" style="zoom:50%;" /></center>
+  + Walk:
 
-+ 实时处理结果：
+    | ![](https://github.com/rzy0901/testZED/blob/main/README.assets/walk1.gif?raw=true) | ![](https://github.com/rzy0901/testZED/blob/main/README.assets/walk2.gif?raw=true) |
+    | ------------------------------------------------------------ | ------------------------------------------------------------ |
 
-<center><video width="75%"  controls="controls" src="../../zed.assets/zed.webm"></video></center>
+  + run：
+  
+    | ![](https://github.com/rzy0901/testZED/blob/main/README.assets/run1.gif?raw=true) | ![](https://github.com/rzy0901/testZED/blob/main/README.assets/run2.gif?raw=true) |
+    | ------------------------------------------------------------ | ------------------------------------------------------------ |
+  
+  + squat:
+  
+    |![](https://github.com/rzy0901/testZED/blob/main/README.assets/squat.gif?raw=true)|
+    | ------------------------------------------------------------ |
+  
+    
+
+
 
 ## 彩蛋：一个男子在打拳
 
