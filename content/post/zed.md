@@ -47,12 +47,12 @@ author: Ren Zhenyu
     | ![](https://github.com/rzy0901/testZED/blob/main/README.assets/walk1.gif?raw=true) | ![](https://github.com/rzy0901/testZED/blob/main/README.assets/walk2.gif?raw=true) |
     | ------------------------------------------------------------ | ------------------------------------------------------------ |
 
-  + run：
+  + Run：
   
     | ![](https://github.com/rzy0901/testZED/blob/main/README.assets/run1.gif?raw=true) | ![](https://github.com/rzy0901/testZED/blob/main/README.assets/run2.gif?raw=true) |
     | ------------------------------------------------------------ | ------------------------------------------------------------ |
   
-  + squat:
+  + Squat:
   
     |![](https://github.com/rzy0901/testZED/blob/main/README.assets/squat.gif?raw=true)|
     | ------------------------------------------------------------ |
