@@ -38,7 +38,8 @@ $$
 + Simply to use `<div></div>` to render the markdown as html! 
 
 ```markdowns
-We know $\mathcal{A}= \{a_1,a_2,a_3\}$ is a set.
+<div style ="display: inline;">We know $\mathcal{A}= \{a_1,a_2,a_3\}$ is a set.</div> 
+
 <div>
 $$
 \mathcal{A}= \{a_1,a_2,a_3\}
