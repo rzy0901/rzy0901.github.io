@@ -19,7 +19,7 @@ author: Ren Zhenyu
 > + 3D Body Tracking需要CUDA11.1以上的版本(本文测试于CUDA11.6)以及ZED 2以上的深度摄像机（本文使用ZED 2i测试）。
 > + 如果电脑是双显卡，需设置Nvidia显卡为Primary GPU，参考：[How can I solve OpenGL issues under Ubuntu?](https://support.stereolabs.com/hc/en-us/articles/8422008229143-How-can-I-solve-OpenGL-issues-under-Ubuntu-)。
 
-## ZED 视频录制以及对视频后验处理流程。
+## ZED 视频录制以及对视频后验处理流程
 
 1. 连接摄像头，首先在`/usr/local/zed/tools/`中选择ZED_Explorer软件进行录制。
 

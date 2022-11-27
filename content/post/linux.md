@@ -1,7 +1,7 @@
 ---
 title: "Linux Summary"
 date: 2022-05-12T00:00:00+08:00
-lastmod: 2022-06-2T00:00:00+08:00
+# lastmod: 2022-06-2T00:00:00+08:00
 draft: false
 tags: ["Linux"]
 categories: ["Notes"]

@@ -1,7 +1,6 @@
 ---
 title: "Notebook for Applied Stochastic Processes"
 date: 2022-02-22T00:00:00+08:00
-lastmod: 2022-03-04T00:00:00+08:00
 draft: false
 tags: ["Math"]
 categories: ["Math"]
@@ -44,7 +43,7 @@ This is a collection of  my notes for SUSTech MA208 "Applied Stochastic Processe
 + closed under complement, that is, if $E\in \mathcal{F}$, then $E^c \in \mathcal{F}$;
 + closed under countable unions of events, that is, $E_i \in \mathcal{F}$, $i=1,2,\cdots$, then $\cup_iE_i \in \mathcal{F}$.
 
-_Remark_: $\mathcal{F}$ is collection of sets (For example,  $\Omega = \\{a,b,c,d\\}, \mathcal{F}=\\{\emptyset,\Omega,\\{a,b\\},\\{c,d\\}\\}.$
+_Remark_: $\mathcal{F}$ is collection of sets (For example, $\Omega = \\{a,b,c,d\\}$, $\mathcal{F}=\\{\emptyset,\Omega,\\{a,b\\},\\{c,d\\}\\}$).
 
 {{% /admonition %}}
 

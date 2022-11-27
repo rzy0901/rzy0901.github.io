@@ -1,13 +1,16 @@
 ---
 title: "CV"
-menu: "main"
-draft: true
-weight: 1000
+# menu: "main"
+draft: false
+noComment: true
+hideHeaderAndFooter: true
 ---
 
-
+<center><font size = 6pt>任振裕（Ren Zhenyu)</font></center>
 
 ## Brief Bio
+
++  [[Mail]](mailto:ren2022@mail.sustech.edu.cn) | [[Personal Website]](https://rzy0901.github.io) | [[CV.pdf]](https://rzy0901.github.io/cv.pdf) |[[Github]](https://github.com/rzy0901).
 
 + I'm an undergraduate student in the Department of Electrical and Electronics Engineering at **Southern University of Science and Technology** (**[SUSTech](https://www.sustech.edu.cn/en/)**). I am currently studying in **LA**b of **W**ireles**S** communications and **S**ystem **O**ptimization (**[LASSO](http://lasso.eee.sustech.edu.cn/)**) and being supervised by **Prof. [Wang Rui](https://eee.sustech.edu.cn/p/wangrui/index.html)**.
 + My research interest focuses on:
@@ -36,8 +39,8 @@ Note: You can look up my [GitHub](https://github.com/rzy0901) for my full projec
 
 | Project Name                                                 | Description                                                  | Resource                                                     |
 | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| <img src="/cv.assets/image-20211204033131472.png" style="zoom:35%;" /> <br/>Indoor and Outdoor Channel Simulations using Winprop API (Mostly finished) | <li> This project uses a Ray-Tracing Software (Winprop) and its API (C++) to do Channel simulations. | [[Slides]](https://raw.githubusercontent.com/rzy0901/testWinprop/master/2021_7_12.pdf) <br/>[[Codes]](https://github.com/rzy0901/testWinprop) |
-| <img src="/cv.assets/image-20220510230834702.png" alt="image-20220510230834702" style="zoom: 35%;" /><br/>UG Graduate Thesis. (Wi-Fi Based Indoor Near Field Imaging.) | <li>This project was done during my internship of Huawei WT Lab.<br/><li>An impressive experiment based on AD9361 and digital-controlled rail (driven by C++ or MATLAB function) is also given. |[[Slides]](/cv.assets/任振裕毕业设计20220528v3.pdf) |
+| <img src="/cv.assets/image-20211204033131472.png" style="zoom:35%;" /> <br/>Indoor and Outdoor Channel Simulations using Winprop API (Mostly finished) | <li> This project uses a Ray-Tracing Software (Winprop) and its API (C++) to do Channel simulations. | [[Slides]](https://github.com/rzy0901/testWinprop/blob/master/2021_7_12.pptx?raw=true) <br/>[[Codes]](https://github.com/rzy0901/testWinprop) |
+| <img src="/cv.assets/image-20220510230834702.png" alt="image-20220510230834702" style="zoom: 35%;" /><br/>UG Graduate Thesis. (Wi-Fi Based Indoor Near Field Imaging.) | <li>This project was done during my internship of Huawei WT Lab.<br/><li>An impressive experiment based on AD9361 and digital-controlled rail (driven by C++ or MATLAB function) is also given. | [[Slides]](/cv.assets/任振裕毕业设计20220528v3.pdf)          |
 
 **2. Personal Interest**:
 

@@ -11,6 +11,7 @@ weight: 10
 mathjax: true
 toc: false
 autoCollapseToc: true
+enabelGithubFork: true
 ---
 
 <img src="/profile.png" style="max-width: 25%; float: right; zoom: 25%;" alt="Profile img" />
@@ -27,7 +28,7 @@ Emails:
 + renzy2022[at]mail.sustech.edu.cn;
 + zren664[at]gmail.com;
 
-<!-- My CV (Last Updated: March, 2022): [Website](/cv/) | [PDF](/cv.pdf). -->
+My CV (Last Updated: March, 2022): [Website](/cv/) | [PDF](/cv.pdf).
 
 Recent news:
 

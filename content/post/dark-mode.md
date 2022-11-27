@@ -1,7 +1,7 @@
 ---
 title: "在Hugo theme-even上简单实现暗黑模式"
 date: 2022-11-05T00:00:00+08:00
-lastmod: 2022-11-05T00:00:00+08:00
+# lastmod: 2022-11-05T00:00:00+08:00
 draft: false
 tags: ["Hugo"]
 categories: ["Hugo"]

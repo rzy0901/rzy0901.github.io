@@ -1,7 +1,7 @@
 ---
 title: "Intoduction（写在前面）"
 date: 2022-01-18T23:09:36+08:00
-lastmod: 2022-01-18T23:09:36+08:00
+# lastmod: 2022-01-18T23:09:36+08:00
 draft: false
 #tags: ["Diary"]
 #catagories: ["Diary"]
@@ -14,7 +14,7 @@ postMetaInFooter: true
 reward: false
 ---
 
-# Why I set up such a Personal Website.[^1]
+# Why I set up such a Personal Website[^1]
 [^1]:This website is based on [Hugo](https://gohugo.io/) and its theme [even](https://github.com/olOwOlo/hugo-theme-even), deploying on GitHub using [GitHub Actions](https://github.com/features/actions).
 <font size = 4pt>
 
