@@ -48,12 +48,12 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/post/asp/" /><meta property="article:section" content="post" />
 <meta property="article:published_time" content="2022-02-22T00:00:00+08:00" />
-<meta property="article:modified_time" content="2022-02-22T00:00:00+08:00" />
+<meta property="article:modified_time" content="2022-11-30T20:28:42+08:00" />
 
 <meta itemprop="name" content="Notebook for Applied Stochastic Processes">
 <meta itemprop="description" content="info This is a collection of my notes for SUSTech MA208 &ldquo;Applied Stochastic Processes&rdquo;, in the spring semester of 2022, based on Professor Zhang Yiying (张艺赢)&rsquo;s lectures and slides. 毕业压力好大，暂时更新了第一章，可以作为概率论知识汇总作为"><meta itemprop="datePublished" content="2022-02-22T00:00:00+08:00" />
-<meta itemprop="dateModified" content="2022-02-22T00:00:00+08:00" />
-<meta itemprop="wordCount" content="1410">
+<meta itemprop="dateModified" content="2022-11-30T20:28:42+08:00" />
+<meta itemprop="wordCount" content="1412">
 <meta itemprop="keywords" content="Math," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Notebook for Applied Stochastic Processes"/>
 <meta name="twitter:description" content="info This is a collection of my notes for SUSTech MA208 &ldquo;Applied Stochastic Processes&rdquo;, in the spring semester of 2022, based on Professor Zhang Yiying (张艺赢)&rsquo;s lectures and slides. 毕业压力好大，暂时更新了第一章，可以作为概率论知识汇总作为"/>
@@ -280,7 +280,7 @@
 </ul>
 <p><span class="math display">\[\mathbb{P}(\lim\limits_{n \to \infty}\sup E_n)=\mathbb{P}(\text{an infinite number of }E_i \text{ occur})=1.
 \]</span></p>
-<p>Proof. For any <span class="math inline">\(n<m<\infty\)</span>, since <span class="math inline">\(1-x<e^{-x}\)</span>,</p>
+<p>Proof. For any <span class="math inline">\(n\lt m\lt \infty\)</span>, since <span class="math inline">\(1-x\lt e^{-x}\)</span>,</p>
 <p><span class="math display">\[\begin{align}
 &\mathbb{P}(\left(\cup_{i=n}^{m}E_i\right)^c)=\mathbb{P}(\cap_{i=n}^{m}E_i^c)=\prod_{i=n}^m \mathbb{P} (E_i^c) \text{ (By independence)} \newline
 &= \prod_{i=n}^m (1-\mathbb{P}(E_i)) \leq \prod_{i=n}^m \exp(-\mathbb{P}(E_i))=\exp\left(-\sum_{i=n}^m \mathbb{P}(E_i)\right) \stackrel{m \rightarrow \infty}{\longrightarrow} 0,
@@ -318,8 +318,8 @@ r
 <hr>
 <p>Properties of distribution function:</p>
 <ul>
-<li>Right-continous; Non-decreasing (<span class="math inline">\(\lim_\limits{x\to+\infty}F(x)=1,\lim_\limits{x\to-\infty}F(x)=0\)</span>);</li>
-<li>If <span class="math inline">\(X\)</span> is discrete random varibale, <span class="math inline">\(F(x)=\sum_{z\leq x}\mathbb{P}(x)\)</span>. If <span class="math inline">\(X\)</span> takes uncountably many values, summation makes NO sense.</li>
+<li>Right-continuous; Non-decreasing (<span class="math inline">\(\lim_\limits{x\to+\infty}F(x)=1,\lim_\limits{x\to-\infty}F(x)=0\)</span>);</li>
+<li>If <span class="math inline">\(X\)</span> is discrete random variable, <span class="math inline">\(F(x)=\sum_{z\leq x}\mathbb{P}(x)\)</span>. If <span class="math inline">\(X\)</span> takes uncountably many values, summation makes NO sense.</li>
 </ul>
 <hr>
 <p><strong>(Continuous Random Variable).</strong> <span class="math inline">\(X\)</span> is said to be a continuous random variable if there exists a function <span class="math inline">\(f(x)\)</span> such that for any Borel set <span class="math inline">\(B \subset \mathbb{R}\)</span>,</p>
@@ -383,7 +383,7 @@ E[X^n] &= \int_{0}^{\infty}x^ndF(x) \newline
 \]</span></p>
 </div>
 <h1 id="关于本博客撰写的一些统一规范">关于本博客撰写的一些统一规范</h1>
-<p>关于Mathjex结合markdown使用Latex的bug记录:</p>
+<p>关于Mathjax结合markdown使用Latex的bug记录:</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -394,7 +394,7 @@ E[X^n] &= \int_{0}^{\infty}x^ndF(x) \newline
 二、公式换行：必须使用\begin{aligned} \newline \end{aligned}或\begin{align} \newline \end{align}
 </code></pre></td></tr></table>
 </div>
-</div><p>Adomonition文本框，撰写规范:</p>
+</div><p>Admonition文本框，撰写规范:</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -416,8 +416,8 @@ E[X^n] &= \int_{0}^{\infty}x^ndF(x) \newline
   <p class="copyright-item">
     <span class="item-title">LastMod</span>
     <span class="item-content">
-        2022-02-22
-        
+        2022-11-30
+        <a href="https://github.com/rzy0901/blog/commit/94bb42af3caed5b53e56f635a3a2293123458b4e" title="fix typos">(94bb42a)</a>
     </span>
   </p>
   
