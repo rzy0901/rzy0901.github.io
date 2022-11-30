@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>mathjax on Ren Zhenyu&#39;s Website </title>
+    <link>/tags/mathjax/</link>
+    <description>Recent content in mathjax on Ren Zhenyu&#39;s Website </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 27 Nov 2022 13:49:19 +0800</lastBuildDate><atom:link href="/tags/mathjax/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>A trick to fix Hugo Mathjax bugs: \$\{\}\$ display error</title>
+      <link>/post/hugo_mathjax/</link>
+      <pubDate>Sun, 27 Nov 2022 13:49:19 +0800</pubDate>
+      
+      <guid>/post/hugo_mathjax/</guid>
+      <description>Brief Bug Description  See the output of following text:  1 2 3 4 5  We know $\mathcal{A}= \{a_1,a_2,a_3\}$ is a set. $$ \mathcal{A}= \{a_1,a_2,a_3\} $$    Output (\{\} is not recognized!):   We know \(\mathcal{A}= \{a_1,a_2,a_3\}\) is a set.
+\[\mathcal{A}= \{a_1,a_2,a_3\}\]
+ How to get the desired output?  Simply to use &amp;lt;div&amp;gt;&amp;lt;/div&amp;gt; to render the markdown as html!  1 2 3 4 5 6 7  &amp;lt;div style =&amp;#34;display: inline;&amp;#34;&amp;gt;We know $\mathcal{A}= \{a_1,a_2,a_3\}$ is a set.</description>
+    </item>
+    
+  </channel>
+</rss>

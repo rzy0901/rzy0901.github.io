@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hugo on Ren Zhenyu&#39;s Website </title>
+    <link>/tags/hugo/</link>
+    <description>Recent content in Hugo on Ren Zhenyu&#39;s Website </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 05 Nov 2022 00:00:00 +0800</lastBuildDate><atom:link href="/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>在Hugo theme-even上简单实现暗黑模式</title>
+      <link>/post/dark-mode/</link>
+      <pubDate>Sat, 05 Nov 2022 00:00:00 +0800</pubDate>
+      
+      <guid>/post/dark-mode/</guid>
+      <description>暗黑模式介绍 Hugo的even主题在github已经两年没有更新了，我应该是第一个为该主题提供暗黑模式的人（但是由于在手机端还有bug，我暂</description>
+    </item>
+    
+  </channel>
+</rss>

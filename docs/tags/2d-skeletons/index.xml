@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>2d skeletons on Ren Zhenyu&#39;s Website </title>
+    <link>/tags/2d-skeletons/</link>
+    <description>Recent content in 2d skeletons on Ren Zhenyu&#39;s Website </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 06 Oct 2022 00:00:00 +0800</lastBuildDate><atom:link href="/tags/2d-skeletons/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>OpenPose初使用: CV的方法提取人体骨骼</title>
+      <link>/post/openpose/</link>
+      <pubDate>Thu, 06 Oct 2022 00:00:00 +0800</pubDate>
+      
+      <guid>/post/openpose/</guid>
+      <description>OpenPose安装及测试环境 OpenPose官网; 参考安装教程; 注意OpenPose与Anaconda不兼容。 测试环境： Ubuntu 20.04和NV</description>
+    </item>
+    
+  </channel>
+</rss>

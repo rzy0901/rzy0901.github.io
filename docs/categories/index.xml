@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on Ren Zhenyu&#39;s Website </title>
+    <link>/categories/</link>
+    <description>Recent content in Categories on Ren Zhenyu&#39;s Website </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 05 Nov 2022 00:00:00 +0800</lastBuildDate><atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hugo</title>
+      <link>/categories/hugo/</link>
+      <pubDate>Sat, 05 Nov 2022 00:00:00 +0800</pubDate>
+      
+      <guid>/categories/hugo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Notes</title>
+      <link>/categories/notes/</link>
+      <pubDate>Fri, 14 Oct 2022 00:00:00 +0800</pubDate>
+      
+      <guid>/categories/notes/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Math</title>
+      <link>/categories/math/</link>
+      <pubDate>Tue, 22 Feb 2022 00:00:00 +0800</pubDate>
+      
+      <guid>/categories/math/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

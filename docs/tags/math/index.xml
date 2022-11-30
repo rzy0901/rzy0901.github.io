@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Math on Ren Zhenyu&#39;s Website </title>
+    <link>/tags/math/</link>
+    <description>Recent content in Math on Ren Zhenyu&#39;s Website </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 22 Feb 2022 00:00:00 +0800</lastBuildDate><atom:link href="/tags/math/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Notebook for Applied Stochastic Processes</title>
+      <link>/post/asp/</link>
+      <pubDate>Tue, 22 Feb 2022 00:00:00 +0800</pubDate>
+      
+      <guid>/post/asp/</guid>
+      <description>info This is a collection of my notes for SUSTech MA208 &amp;ldquo;Applied Stochastic Processes&amp;rdquo;, in the spring semester of 2022, based on Professor Zhang Yiying (张艺赢)&amp;rsquo;s lectures and slides. 毕业压力好大，暂时更新了第一章，可以作为概率论知识汇总作为</description>
+    </item>
+    
+  </channel>
+</rss>

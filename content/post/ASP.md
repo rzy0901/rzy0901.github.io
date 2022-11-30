@@ -43,7 +43,7 @@ This is a collection of  my notes for SUSTech MA208 "Applied Stochastic Processe
 + closed under complement, that is, if $E\in \mathcal{F}$, then $E^c \in \mathcal{F}$;
 + closed under countable unions of events, that is, $E_i \in \mathcal{F}$, $i=1,2,\cdots$, then $\cup_iE_i \in \mathcal{F}$.
 
-_Remark_: $\mathcal{F}$ is collection of sets (For example, $\Omega = \\{a,b,c,d\\}$, $\mathcal{F}=\\{\emptyset,\Omega,\\{a,b\\},\\{c,d\\}\\}$).
+_Remark_: $\mathcal{F}$ is collection of sets (For example, $\Omega = \{a,b,c,d\}$, $\mathcal{F}=\{\emptyset,\Omega,\{a,b\},\{c,d\}\}$).
 
 {{% /admonition %}}
 
@@ -61,7 +61,7 @@ _Remark_: $\mathbb{P}(\cup_iE_i)\leq \sum_i\mathbb{P}(E_i)$ (subadditivitiy prop
 
 {{% admonition info "Remark (Continuity property of $\mathbb{P}$)." %}}
 
-For a monotone sequence $\\{E_n,n \geq 1\\}$,  if and only if $\lim\limits_{n\to \infty}\mathbb{P}(E_n)=\mathbb{P}(\lim\limits_{n \to \infty}E_n)$. 
+For a monotone sequence $\{E_n,n \geq 1\}$,  if and only if $\lim\limits_{n\to \infty}\mathbb{P}(E_n)=\mathbb{P}(\lim\limits_{n \to \infty}E_n)$. 
 
 + (Increasing sequence). If $E_1 \subset E_2 \subset \cdots$, then $\lim\limits_{n\to \infty}\mathbb{P}(E_n)=\mathbb{P}(\lim\limits_{n \to \infty}E_n)=\mathbb{P}(\cup_{n=1}^{\infty}E_n)$.
 
@@ -71,7 +71,7 @@ For a monotone sequence $\\{E_n,n \geq 1\\}$,  if and only if $\lim\limits_{n\to
 
 {{% admonition tip"Definition (Infimum and Supremum, 上下确界)." %}}
 
- Suppose $\\{A_n\\}_{n=1}^{\infty}$ is a sequence of sets. 
+ Suppose $\{A_n\}_{n=1}^{\infty}$ is a sequence of sets. 
 
 Define：
 $$
@@ -117,7 +117,7 @@ Let $L_n=\cap_{j\geq n}A_j$, $U_n = \cup_{j\geq n}A_j$, then $L_n \leq A_n \leq 
 
 Taking $\lim\limits_{n\to\infty}$ we have: $\lim\limits_{n\to\infty}L_n \leq \lim\limits_{n\to\infty}A_n \leq \lim\limits_{n\to\infty} U_n$.
 
-Since  $\\{L_n\\}$ and $\\{U_n\\}$ are monotonically increasing and decreasing sequences seperately, by the continuity property of $\mathbb{P}$, we have:
+Since  $\{L_n\}$ and $\{U_n\}$ are monotonically increasing and decreasing sequences seperately, by the continuity property of $\mathbb{P}$, we have:
 $$
 \underbrace{\lim\limits_{n\to\infty}\cup_{n\geq1}\cap_{j\geq n}A_j}_{\lim_\limits{n\to \infty}\inf A_n} \leq \lim\limits_{n\to\infty}A_n \leq \underbrace{\lim\limits_{n\to\infty}\cap_{n\geq1}\cup_{j\geq n}A_j}_{\lim_\limits{n\to \infty}\sup A_n}
 $$
@@ -129,7 +129,7 @@ $$
 
 Let  $E_1,E_2,\cdots$ denote a sequence of events, define 
 $$
-\lim\limits_{n \to \infty}\sup E_n = \cap_{n=0}^{\infty} \cup_{i=n}^{\infty}E_i=\\{\text{an infinite number of }E_i \text{ occur}\\}.
+\lim\limits_{n \to \infty}\sup E_n = \cap_{n=0}^{\infty} \cup_{i=n}^{\infty}E_i=\{\text{an infinite number of }E_i \text{ occur}\}.
 $$
 
 + **Proposition** **(Borel-Cantelli Lemma I).** If $\sum_{i=1}^\infty\mathbb{P}(E_i)<\infty$, then
@@ -166,11 +166,13 @@ $$
   = \mathbb{P}(\lim_\limits{n \to \infty}\cup_{i=n}^{\infty}E_i)=\lim_\limits{n \to \infty}\mathbb{P} (\cup_{i=n}^{\infty}E_i)=1.
   $$
 
+
+
 {{% /admonition %}}
 
 + (容斥原理，Inclusion-exclusion Principle): $A_1,A_2,\dots,A_n$ are events, then:
   $$
-  \mathbb{P}\left(\cup_{i=1}^{n} A_{i}\right)=\sum_{i=1}^{n} \mathbb{P}\left(A_{i}\right)-\sum_{i<j} \mathbb{P}\left(A_{i} A_{j}\right)+\sum_{i<j<k} \mathbb{P}\left(A_{i} A_{j} A_{k}\right) 
+  \mathbb{P}\left(\cup_{i=1}^{n} A_{i}\right)=\sum_{i=1}^{n} \mathbb{P}\left(A_{i}\right)-\sum_{i\lt j} \mathbb{P}\left(A_{i} A_{j}\right)+\sum_{i\lt j\lt k} \mathbb{P}\left(A_{i} A_{j} A_{k}\right) 
   -\cdots+(-1)^{n+1} \mathbb{P}\left(A_{1} \cdots A_{n}\right).
   $$
 
@@ -180,8 +182,9 @@ $$
   =\sum_{i=0}^{n-r}(-1)^{i}\left(\begin{array}{c}
   r+i \newline
   r
-  \end{array}\right) \sum_{j_{1}<j_{2}<\cdots<j_{r+i}} \mathbb{P}\left(A_{j_{1}} A_{j_{2}} \cdots A_{j_{r+i}}\right).
+  \end{array}\right) \sum_{j_{1}\lt j_{2}\lt \cdots\lt j_{r+i}} \mathbb{P}\left(A_{j_{1}} A_{j_{2}} \cdots A_{j_{r+i}}\right).
   $$
+
 
 ## Random Variable and Distributions
 
@@ -189,7 +192,7 @@ $$
 
 A **random variable** $X$ is a mapping from $\Omega$ to $\mathbb{R}$, and for any Borel Set $A\subset \mathbb{R}$ (这里等价认为，$(-\infty,a],\forall a \in \mathbb{R}$),
 $$
-\mathbb{P}(X(\omega)\in A) = \mathbb{P}(X^{-1}(A))=\mathbb{P}\\{\omega:X(\omega)\in A\\}.
+\mathbb{P}(X(\omega)\in A) = \mathbb{P}(X^{-1}(A))=\mathbb{P}\{\omega:X(\omega)\in A\}.
 $$
 The **distribution function** $F$ of a random variable $X$ is defined for any real number $x \in \mathbb{R}$,
 $$
@@ -240,7 +243,7 @@ $$
 
 For a random variable $X$, if $\int_{-\infty}^\infty xdF(x)$ exists, then we say it is the expectation or mean of $X$, denoted by $\mathbb{E}[X]$. 
 $$
-\mathbb{E}[X]=\int_{-\infty}^{\infty} x d F(x)=\left\\{
+\mathbb{E}[X]=\int_{-\infty}^{\infty} x d F(x)=\left\{
 \begin{array}{ll}\Sigma_{x} x \mathbb{P}(X=x) & \text { if } X \text { is discrete. } \newline
 \int_{-\infty}^{\infty} x f(x) d x & \text { if } X \text { is continuous. }\end{array}\right.
 $$
@@ -254,7 +257,7 @@ $$
   \mathbb{E}[N]=\sum_{k=1}^{\infty}\mathbb{P} \\{ N\geq k \\}
   $$
 
-+ In general, if $X$ is nonnegative with distribution $F$, then
++ In general, if $X$ is  nonnegative with distribution $F$, then
   
   $$
   \mathbb{E}[X]=\int_0^{\infty}\overline{F}(x)dx
@@ -269,11 +272,11 @@ $$
 Proof. 
 $$
 \begin{align} 
-E[N] &= \sum_{k=0}^{\infty}kP\\{N=k\\} \newline
-&= \sum_{k=0}^{\infty}k[P\\{N \geq k\\} – P\\{N \geq k+1\\} ] \newline
-&= P\\{N \geq 1\\} – P\\{N \geq 2\\} + 2\cdot P\\{N \geq 2\\} – 2\cdot P\\{N \geq 3\\} + \dots \newline
-&= \sum_{k=1}^{\infty} P\\{N\geq k\\}
-= \sum_{k=0}^{\infty} P\\{N > k\\}. \newline
+E[N] &= \sum_{k=0}^{\infty}kP\{N=k\} \newline
+&= \sum_{k=0}^{\infty}k[P\{N \geq k\} – P\{N \geq k+1\} ] \newline
+&= P\{N \geq 1\} – P\{N \geq 2\} + 2\cdot P\{N \geq 2\} – 2\cdot P\{N \geq 3\} + \dots \newline
+&= \sum_{k=1}^{\infty} P\{N\geq k\}
+= \sum_{k=0}^{\infty} P\{N > k\}. \newline
 E[X^n] &= \int_{0}^{\infty}x^ndF(x) \newline
 &= \int_{0}^{\infty}\int_{0}^{x}nt^{n-1}dtdF(x) \newline
 &= \int_{0}^{\infty}\int_{t}^{\infty} nt^{n-1} dF(x)dt \newline
@@ -290,7 +293,7 @@ $$
 关于Mathjex结合markdown使用Latex的bug记录:
 
 ```html
-一、集合\{\}的转义问题: $\{\}$需要写为$\\{\\}$
+一、集合\{\}的转义问题: 使用结合goldmark-mathjax的hugo解决（该PR没有被hugo合并）。https://github.com/xjzsq/hugo
 二、公式换行：必须使用\begin{aligned} \newline \end{aligned}或\begin{align} \newline \end{align}
 ```
 
