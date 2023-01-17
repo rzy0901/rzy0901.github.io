@@ -6,22 +6,22 @@
     <description>Recent content in Categories on Ren Zhenyu&#39;s Website </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 05 Nov 2022 00:00:00 +0800</lastBuildDate><atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 17 Jan 2023 10:35:32 +0800</lastBuildDate><atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>notes</title>
+      <link>/categories/notes/</link>
+      <pubDate>Tue, 17 Jan 2023 10:35:32 +0800</pubDate>
+      
+      <guid>/categories/notes/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Hugo</title>
       <link>/categories/hugo/</link>
       <pubDate>Sat, 05 Nov 2022 00:00:00 +0800</pubDate>
       
       <guid>/categories/hugo/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Notes</title>
-      <link>/categories/notes/</link>
-      <pubDate>Fri, 14 Oct 2022 00:00:00 +0800</pubDate>
-      
-      <guid>/categories/notes/</guid>
       <description></description>
     </item>
     
