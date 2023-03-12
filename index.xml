@@ -13,7 +13,16 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/about/</guid>
-      <description>Website status (It takes several seconds to show): -- Friend Links（友链）: Website Description Panlong Wu（吴攀龙） 本科大佬同学，平时一起学习通信知识，香港中文大学（深圳）phd。 Weibao Fu （傅伟堡） 本</description>
+      <description>Website status (It takes several seconds to show): Friend Links（友链）: Website Description Panlong Wu（吴攀龙） 本科大佬同学，平时一起学习通信知识，香港中文大学（深圳）phd。 Weibao Fu （傅伟堡） 本科</description>
+    </item>
+    
+    <item>
+      <title>Ubuntu源码编译Opencv-GPU 4.7.0踩坑记录</title>
+      <link>/post/opencv-gpu/</link>
+      <pubDate>Sun, 12 Mar 2023 11:10:39 +0800</pubDate>
+      
+      <guid>/post/opencv-gpu/</guid>
+      <description></description>
     </item>
     
     <item>

@@ -23,7 +23,7 @@
 
 
 
-<meta name="generator" content="Hugo 0.92.2 with theme even" />
+<meta name="generator" content="Hugo 0.102.0-DEV with theme even" />
 
 
 <link rel="canonical" href="/post/dark-mode/" />
@@ -187,8 +187,8 @@
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">link</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;https://cdn.bootcdn.net/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css&#34;</span> <span class="na">rel</span><span class="o">=</span><span class="s">&#34;stylesheet&#34;</span><span class="p">&gt;</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">link</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;https://cdn.bootcdn.net/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css&#34;</span> <span class="na">rel</span><span class="o">=</span><span class="s">&#34;stylesheet&#34;</span><span class="p">&gt;</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><blockquote>
 <p>上述方法使用<code>font-awsome</code>的CDN，如果CDN挂了就g了，所以我将<code>font-awsome</code>部署到了本地：</p>
@@ -200,8 +200,8 @@
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">&#34;stylesheet&#34;</span> <span class="na">href </span><span class="o">=</span> <span class="s">&#34;/css/font-awesome-4.7.0/css/font-awesome.css&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">link</span><span class="p">&gt;</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">&#34;stylesheet&#34;</span> <span class="na">href </span><span class="o">=</span> <span class="s">&#34;/css/font-awesome-4.7.0/css/font-awesome.css&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">link</span><span class="p">&gt;</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div></li>
 </ul>
@@ -214,8 +214,8 @@
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">link</span> <span class="na">disabled</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;dark-mode-theme&#34;</span> <span class="na">rel</span><span class="o">=</span><span class="s">&#34;stylesheet&#34;</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;/css/dark.css&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">link</span><span class="p">&gt;</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">link</span> <span class="na">disabled</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;dark-mode-theme&#34;</span> <span class="na">rel</span><span class="o">=</span><span class="s">&#34;stylesheet&#34;</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;/css/dark.css&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">link</span><span class="p">&gt;</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><ol start="3">
 <li>在<code>/themes/even/layouts/partials/header.html</code>的<code>menu</code>中添加切换暗黑模式的图标：</li>
@@ -229,12 +229,12 @@
 </span><span class="lnt">5
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">li</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;menu-item&#34;</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">a</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;dark-mode-toggle&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;menu-item-link&#34;</span><span class="p">&gt;</span>
-      <span class="p">&lt;</span><span class="nt">i</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;dark-mode-toggle-i&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;fa fa-moon-o&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">i</span><span class="p">&gt;</span>
-    <span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
-<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">li</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;menu-item&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">a</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;dark-mode-toggle&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;menu-item-link&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">      <span class="p">&lt;</span><span class="nt">i</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;dark-mode-toggle-i&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;fa fa-moon-o&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">i</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><ol start="4">
 <li>在<code>/themes/even/layouts/partials/scripts.html</code>添加以下js代码（网上copy的代码<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>），</li>
@@ -328,101 +328,101 @@
 </span><span class="lnt">85
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span>
-  <span class="c1">//通过时间判断夜间模式，否则会完全手动切换并本地持久化模式，下次自动渲染本地持久化的模式
-</span><span class="c1"></span><span class="kd">var</span> <span class="nx">darkMode</span> <span class="o">=</span> <span class="p">{</span>
-  <span class="nx">config</span><span class="o">:</span><span class="p">{</span>    
-    <span class="nx">startHour</span><span class="o">:</span><span class="mi">19</span><span class="p">,</span><span class="c1">//19点开始
-</span><span class="c1"></span>    <span class="nx">endHour</span><span class="o">:</span><span class="mi">7</span><span class="p">,</span><span class="c1">//7点结束    
-</span><span class="c1"></span>  <span class="p">},</span>
-  <span class="nx">_darkTheme</span><span class="o">:</span><span class="kc">null</span><span class="p">,</span>  <span class="c1">//dark.css标签
-</span><span class="c1"></span>  <span class="nx">_modeToggle</span><span class="o">:</span><span class="kc">null</span><span class="p">,</span> <span class="c1">//手动切换按钮块
-</span><span class="c1"></span>  <span class="nx">_modeToggleParent</span><span class="o">:</span><span class="kc">null</span><span class="p">,</span> <span class="c1">//手动切换按钮wrap
-</span><span class="c1"></span>  <span class="nx">_currentHour</span><span class="o">:</span><span class="mi">0</span><span class="p">,</span> <span class="c1">//当前小时
-</span><span class="c1"></span>  <span class="nx">_storageKey</span><span class="o">:</span><span class="s2">&#34;dark-mode-storage&#34;</span><span class="p">,</span>
-  <span class="nx">_storageByHandLastTIme</span><span class="o">:</span><span class="mi">0</span><span class="p">,</span> <span class="c1">//上次手动设置模式时间 毫秒
-</span><span class="c1"></span>  <span class="nx">_storageOverdueHours</span><span class="o">:</span><span class="mi">12</span><span class="p">,</span>  <span class="c1">//每隔12小时重新检查本地持久化
-</span><span class="c1"></span>
-  <span class="nx">init</span><span class="o">:</span><span class="kd">function</span><span class="p">(){</span>
-    <span class="c1">//夜间模式切换配置
-</span><span class="c1"></span>    <span class="k">this</span><span class="p">.</span><span class="nx">_modeToggleParent</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">&#34;dark-mode-toggle&#34;</span><span class="p">);</span>
-    <span class="k">this</span><span class="p">.</span><span class="nx">_modeToggle</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">&#34;dark-mode-toggle-i&#34;</span><span class="p">);</span>    
-    <span class="k">this</span><span class="p">.</span><span class="nx">_darkTheme</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">&#34;dark-mode-theme&#34;</span><span class="p">);</span>  
-    <span class="k">this</span><span class="p">.</span><span class="nx">_currentHour</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Date</span><span class="p">().</span><span class="nx">getHours</span><span class="p">();</span>  
-
-    <span class="k">this</span><span class="p">.</span><span class="nx">toggleListen</span><span class="p">();</span>
-    <span class="k">this</span><span class="p">.</span><span class="nx">initMode</span><span class="p">();</span>
-  <span class="p">},</span>
-  <span class="nx">initMode</span><span class="o">:</span><span class="kd">function</span><span class="p">(){</span>
-    <span class="c1">//初始化模式，来源本地持久化或自动检测模式    
-</span><span class="c1"></span>    <span class="kd">let</span> <span class="nx">initMode</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">getModeFromStorage</span><span class="p">()</span> <span class="o">||</span> <span class="k">this</span><span class="p">.</span><span class="nx">autoMode</span><span class="p">();</span> 
-    <span class="k">this</span><span class="p">.</span><span class="nx">setMode</span><span class="p">(</span><span class="nx">initMode</span><span class="p">);</span>
-  <span class="p">},</span>
-  <span class="nx">toggleListen</span><span class="o">:</span><span class="kd">function</span><span class="p">(){</span>
-    <span class="kd">let</span> <span class="nx">_this</span> <span class="o">=</span> <span class="k">this</span><span class="p">;</span>
-    <span class="c1">//手动切换触发模式更改
-</span><span class="c1"></span>    <span class="k">this</span><span class="p">.</span><span class="nx">_modeToggleParent</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s2">&#34;click&#34;</span><span class="p">,</span> <span class="p">()</span> <span class="p">=&gt;</span> <span class="p">{</span>
-        <span class="k">if</span> <span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">_modeToggle</span><span class="p">.</span><span class="nx">className</span> <span class="o">===</span> <span class="s2">&#34;fa fa-moon-o&#34;</span><span class="p">)</span> <span class="p">{</span>
-            <span class="nx">_this</span><span class="p">.</span><span class="nx">setModeByHand</span><span class="p">(</span><span class="s2">&#34;dark&#34;</span><span class="p">);</span>
-        <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">_modeToggle</span><span class="p">.</span><span class="nx">className</span> <span class="o">===</span> <span class="s2">&#34;fa fa-sun-o&#34;</span><span class="p">)</span> <span class="p">{</span>
-            <span class="nx">_this</span><span class="p">.</span><span class="nx">setModeByHand</span><span class="p">(</span><span class="s2">&#34;light&#34;</span><span class="p">);</span>
-        <span class="p">}</span>
-    <span class="p">});</span>
-
-  <span class="p">},</span>  
-  <span class="nx">autoMode</span><span class="o">:</span><span class="kd">function</span><span class="p">(){</span>
-    <span class="kd">let</span> <span class="nx">_currentHour</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">_currentHour</span><span class="p">;</span>
-    <span class="k">if</span><span class="p">(</span><span class="nx">_currentHour</span> <span class="o">&gt;</span> <span class="k">this</span><span class="p">.</span><span class="nx">config</span><span class="p">.</span><span class="nx">startHour</span> <span class="o">||</span> <span class="nx">_currentHour</span> <span class="o">&lt;</span> <span class="k">this</span><span class="p">.</span><span class="nx">config</span><span class="p">.</span><span class="nx">endHour</span><span class="p">){</span>
-      <span class="k">return</span> <span class="s2">&#34;dark&#34;</span><span class="p">;</span>  
-    <span class="p">}</span>  
-    <span class="k">return</span> <span class="s2">&#34;light&#34;</span><span class="p">;</span>    
-  <span class="p">},</span>
-  <span class="nx">setMode</span><span class="o">:</span><span class="kd">function</span><span class="p">(</span><span class="nx">mode</span><span class="p">){</span>
-    <span class="k">if</span> <span class="p">(</span><span class="nx">mode</span> <span class="o">===</span> <span class="s2">&#34;dark&#34;</span><span class="p">)</span> <span class="p">{</span>
-        <span class="k">this</span><span class="p">.</span><span class="nx">_darkTheme</span><span class="p">.</span><span class="nx">disabled</span> <span class="o">=</span> <span class="kc">false</span><span class="p">;</span>
-        <span class="k">this</span><span class="p">.</span><span class="nx">_modeToggle</span><span class="p">.</span><span class="nx">className</span> <span class="o">=</span> <span class="s2">&#34;fa fa-sun-o&#34;</span><span class="p">;</span>
-    <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="nx">mode</span> <span class="o">===</span> <span class="s2">&#34;light&#34;</span><span class="p">)</span> <span class="p">{</span>
-        <span class="k">this</span><span class="p">.</span><span class="nx">_darkTheme</span><span class="p">.</span><span class="nx">disabled</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
-        <span class="k">this</span><span class="p">.</span><span class="nx">_modeToggle</span><span class="p">.</span><span class="nx">className</span> <span class="o">=</span> <span class="s2">&#34;fa fa-moon-o&#34;</span><span class="p">;</span>
-    <span class="p">}</span>          
-  <span class="p">},</span>
-  <span class="nx">setModeByHand</span><span class="o">:</span><span class="kd">function</span><span class="p">(</span><span class="nx">mode</span><span class="p">){</span>
-    <span class="k">this</span><span class="p">.</span><span class="nx">setMode</span><span class="p">(</span><span class="nx">mode</span><span class="p">);</span>
-    <span class="k">this</span><span class="p">.</span><span class="nx">setModeToStorage</span><span class="p">(</span><span class="nx">mode</span><span class="p">);</span>    
-  <span class="p">},</span>
-  <span class="nx">setModeToStorage</span><span class="o">:</span><span class="kd">function</span><span class="p">(</span><span class="nx">mode</span><span class="p">){</span>
-    <span class="nx">localStorage</span><span class="p">.</span><span class="nx">setItem</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">_storageKey</span><span class="p">,</span> <span class="nx">mode</span><span class="p">);</span>
-    <span class="nx">localStorage</span><span class="p">.</span><span class="nx">setItem</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">_storageKey</span><span class="o">+</span><span class="s2">&#34;-last-time&#34;</span><span class="p">,</span> <span class="p">(</span><span class="k">new</span> <span class="nb">Date</span><span class="p">().</span><span class="nx">getTime</span><span class="p">()));</span>     
-  <span class="p">},</span>
-  <span class="nx">getModeFromStorage</span><span class="o">:</span><span class="kd">function</span><span class="p">(){</span>
-    <span class="kd">let</span> <span class="nx">_mode</span> <span class="o">=</span> <span class="nx">localStorage</span><span class="p">.</span><span class="nx">getItem</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">_storageKey</span><span class="p">);</span>
-    <span class="kd">let</span> <span class="nx">_lastSetTime</span> <span class="o">=</span> <span class="nx">localStorage</span><span class="p">.</span><span class="nx">getItem</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">_storageKey</span><span class="o">+</span><span class="s2">&#34;-last-time&#34;</span><span class="p">);</span>
-    <span class="k">if</span><span class="p">(</span><span class="nx">_mode</span> <span class="o">&amp;&amp;</span> <span class="nx">_lastSetTime</span><span class="p">){</span>
-      <span class="nx">_lastSetTime</span> <span class="o">=</span> <span class="nx">_lastSetTime</span><span class="o">/</span><span class="mi">1000</span><span class="p">;</span>
-      <span class="kd">let</span> <span class="nx">_currentTime</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Date</span><span class="p">().</span><span class="nx">getTime</span><span class="p">()</span><span class="o">/</span><span class="mi">1000</span><span class="p">;</span>
-      <span class="kd">let</span> <span class="nx">_overdueSeconds</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">_storageOverdueHours</span> <span class="o">*</span> <span class="mi">3600</span><span class="p">;</span>
-      <span class="k">if</span><span class="p">(</span><span class="nx">_currentTime</span> <span class="o">-</span> <span class="nx">_lastSetTime</span> <span class="o">&lt;</span> <span class="nx">_overdueSeconds</span><span class="p">){</span>            
-        <span class="k">return</span> <span class="nx">_mode</span><span class="p">;</span>
-      <span class="p">}</span>
-    <span class="p">}</span>
-    <span class="nx">localStorage</span><span class="p">.</span><span class="nx">removeItem</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">_storageKey</span><span class="p">);</span>
-    <span class="nx">localStorage</span><span class="p">.</span><span class="nx">removeItem</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">_storageKey</span><span class="o">+</span><span class="s2">&#34;-last-time&#34;</span><span class="p">);</span>
-    <span class="k">return</span> <span class="kc">false</span><span class="p">;</span>
-
-  <span class="p">},</span>
-<span class="p">};</span>
-<span class="nx">darkMode</span><span class="p">.</span><span class="nx">init</span><span class="p">();</span>
-<span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span> 
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="c1">//通过时间判断夜间模式，否则会完全手动切换并本地持久化模式，下次自动渲染本地持久化的模式
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kd">var</span> <span class="nx">darkMode</span> <span class="o">=</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">config</span><span class="o">:</span><span class="p">{</span>    
+</span></span><span class="line"><span class="cl">    <span class="nx">startHour</span><span class="o">:</span><span class="mi">19</span><span class="p">,</span><span class="c1">//19点开始
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="nx">endHour</span><span class="o">:</span><span class="mi">7</span><span class="p">,</span><span class="c1">//7点结束    
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="p">},</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">_darkTheme</span><span class="o">:</span><span class="kc">null</span><span class="p">,</span>  <span class="c1">//dark.css标签
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="nx">_modeToggle</span><span class="o">:</span><span class="kc">null</span><span class="p">,</span> <span class="c1">//手动切换按钮块
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="nx">_modeToggleParent</span><span class="o">:</span><span class="kc">null</span><span class="p">,</span> <span class="c1">//手动切换按钮wrap
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="nx">_currentHour</span><span class="o">:</span><span class="mi">0</span><span class="p">,</span> <span class="c1">//当前小时
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="nx">_storageKey</span><span class="o">:</span><span class="s2">&#34;dark-mode-storage&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">_storageByHandLastTIme</span><span class="o">:</span><span class="mi">0</span><span class="p">,</span> <span class="c1">//上次手动设置模式时间 毫秒
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="nx">_storageOverdueHours</span><span class="o">:</span><span class="mi">12</span><span class="p">,</span>  <span class="c1">//每隔12小时重新检查本地持久化
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>
+</span></span><span class="line"><span class="cl">  <span class="nx">init</span><span class="o">:</span><span class="kd">function</span><span class="p">(){</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">//夜间模式切换配置
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="k">this</span><span class="p">.</span><span class="nx">_modeToggleParent</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">&#34;dark-mode-toggle&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="k">this</span><span class="p">.</span><span class="nx">_modeToggle</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">&#34;dark-mode-toggle-i&#34;</span><span class="p">);</span>    
+</span></span><span class="line"><span class="cl">    <span class="k">this</span><span class="p">.</span><span class="nx">_darkTheme</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">&#34;dark-mode-theme&#34;</span><span class="p">);</span>  
+</span></span><span class="line"><span class="cl">    <span class="k">this</span><span class="p">.</span><span class="nx">_currentHour</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Date</span><span class="p">().</span><span class="nx">getHours</span><span class="p">();</span>  
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">this</span><span class="p">.</span><span class="nx">toggleListen</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">    <span class="k">this</span><span class="p">.</span><span class="nx">initMode</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">  <span class="p">},</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">initMode</span><span class="o">:</span><span class="kd">function</span><span class="p">(){</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">//初始化模式，来源本地持久化或自动检测模式    
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="kd">let</span> <span class="nx">initMode</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">getModeFromStorage</span><span class="p">()</span> <span class="o">||</span> <span class="k">this</span><span class="p">.</span><span class="nx">autoMode</span><span class="p">();</span> 
+</span></span><span class="line"><span class="cl">    <span class="k">this</span><span class="p">.</span><span class="nx">setMode</span><span class="p">(</span><span class="nx">initMode</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="p">},</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">toggleListen</span><span class="o">:</span><span class="kd">function</span><span class="p">(){</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">let</span> <span class="nx">_this</span> <span class="o">=</span> <span class="k">this</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">//手动切换触发模式更改
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="k">this</span><span class="p">.</span><span class="nx">_modeToggleParent</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s2">&#34;click&#34;</span><span class="p">,</span> <span class="p">()</span> <span class="p">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">_modeToggle</span><span class="p">.</span><span class="nx">className</span> <span class="o">===</span> <span class="s2">&#34;fa fa-moon-o&#34;</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="nx">_this</span><span class="p">.</span><span class="nx">setModeByHand</span><span class="p">(</span><span class="s2">&#34;dark&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">_modeToggle</span><span class="p">.</span><span class="nx">className</span> <span class="o">===</span> <span class="s2">&#34;fa fa-sun-o&#34;</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="nx">_this</span><span class="p">.</span><span class="nx">setModeByHand</span><span class="p">(</span><span class="s2">&#34;light&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="p">});</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="p">},</span>  
+</span></span><span class="line"><span class="cl">  <span class="nx">autoMode</span><span class="o">:</span><span class="kd">function</span><span class="p">(){</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">let</span> <span class="nx">_currentHour</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">_currentHour</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span><span class="p">(</span><span class="nx">_currentHour</span> <span class="o">&gt;</span> <span class="k">this</span><span class="p">.</span><span class="nx">config</span><span class="p">.</span><span class="nx">startHour</span> <span class="o">||</span> <span class="nx">_currentHour</span> <span class="o">&lt;</span> <span class="k">this</span><span class="p">.</span><span class="nx">config</span><span class="p">.</span><span class="nx">endHour</span><span class="p">){</span>
+</span></span><span class="line"><span class="cl">      <span class="k">return</span> <span class="s2">&#34;dark&#34;</span><span class="p">;</span>  
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>  
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="s2">&#34;light&#34;</span><span class="p">;</span>    
+</span></span><span class="line"><span class="cl">  <span class="p">},</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">setMode</span><span class="o">:</span><span class="kd">function</span><span class="p">(</span><span class="nx">mode</span><span class="p">){</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="p">(</span><span class="nx">mode</span> <span class="o">===</span> <span class="s2">&#34;dark&#34;</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="k">this</span><span class="p">.</span><span class="nx">_darkTheme</span><span class="p">.</span><span class="nx">disabled</span> <span class="o">=</span> <span class="kc">false</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="k">this</span><span class="p">.</span><span class="nx">_modeToggle</span><span class="p">.</span><span class="nx">className</span> <span class="o">=</span> <span class="s2">&#34;fa fa-sun-o&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="nx">mode</span> <span class="o">===</span> <span class="s2">&#34;light&#34;</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="k">this</span><span class="p">.</span><span class="nx">_darkTheme</span><span class="p">.</span><span class="nx">disabled</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="k">this</span><span class="p">.</span><span class="nx">_modeToggle</span><span class="p">.</span><span class="nx">className</span> <span class="o">=</span> <span class="s2">&#34;fa fa-moon-o&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>          
+</span></span><span class="line"><span class="cl">  <span class="p">},</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">setModeByHand</span><span class="o">:</span><span class="kd">function</span><span class="p">(</span><span class="nx">mode</span><span class="p">){</span>
+</span></span><span class="line"><span class="cl">    <span class="k">this</span><span class="p">.</span><span class="nx">setMode</span><span class="p">(</span><span class="nx">mode</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="k">this</span><span class="p">.</span><span class="nx">setModeToStorage</span><span class="p">(</span><span class="nx">mode</span><span class="p">);</span>    
+</span></span><span class="line"><span class="cl">  <span class="p">},</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">setModeToStorage</span><span class="o">:</span><span class="kd">function</span><span class="p">(</span><span class="nx">mode</span><span class="p">){</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">localStorage</span><span class="p">.</span><span class="nx">setItem</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">_storageKey</span><span class="p">,</span> <span class="nx">mode</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">localStorage</span><span class="p">.</span><span class="nx">setItem</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">_storageKey</span><span class="o">+</span><span class="s2">&#34;-last-time&#34;</span><span class="p">,</span> <span class="p">(</span><span class="k">new</span> <span class="nb">Date</span><span class="p">().</span><span class="nx">getTime</span><span class="p">()));</span>     
+</span></span><span class="line"><span class="cl">  <span class="p">},</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">getModeFromStorage</span><span class="o">:</span><span class="kd">function</span><span class="p">(){</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">let</span> <span class="nx">_mode</span> <span class="o">=</span> <span class="nx">localStorage</span><span class="p">.</span><span class="nx">getItem</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">_storageKey</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">let</span> <span class="nx">_lastSetTime</span> <span class="o">=</span> <span class="nx">localStorage</span><span class="p">.</span><span class="nx">getItem</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">_storageKey</span><span class="o">+</span><span class="s2">&#34;-last-time&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span><span class="p">(</span><span class="nx">_mode</span> <span class="o">&amp;&amp;</span> <span class="nx">_lastSetTime</span><span class="p">){</span>
+</span></span><span class="line"><span class="cl">      <span class="nx">_lastSetTime</span> <span class="o">=</span> <span class="nx">_lastSetTime</span><span class="o">/</span><span class="mi">1000</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">      <span class="kd">let</span> <span class="nx">_currentTime</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Date</span><span class="p">().</span><span class="nx">getTime</span><span class="p">()</span><span class="o">/</span><span class="mi">1000</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">      <span class="kd">let</span> <span class="nx">_overdueSeconds</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">_storageOverdueHours</span> <span class="o">*</span> <span class="mi">3600</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">      <span class="k">if</span><span class="p">(</span><span class="nx">_currentTime</span> <span class="o">-</span> <span class="nx">_lastSetTime</span> <span class="o">&lt;</span> <span class="nx">_overdueSeconds</span><span class="p">){</span>            
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="nx">_mode</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">      <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">localStorage</span><span class="p">.</span><span class="nx">removeItem</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">_storageKey</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">localStorage</span><span class="p">.</span><span class="nx">removeItem</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">_storageKey</span><span class="o">+</span><span class="s2">&#34;-last-time&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="kc">false</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="p">},</span>
+</span></span><span class="line"><span class="cl"><span class="p">};</span>
+</span></span><span class="line"><span class="cl"><span class="nx">darkMode</span><span class="p">.</span><span class="nx">init</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span> 
+</span></span></code></pre></td></tr></table>
 </div>
-</div><section class="footnotes" role="doc-endnotes">
+</div><div class="footnotes" role="doc-endnotes">
 <hr>
 <ol>
-<li id="fn:1" role="doc-endnote">
+<li id="fn:1">
 <p><a href="https://zhuanlan.zhihu.com/p/363949798">https://zhuanlan.zhihu.com/p/363949798</a>&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 </ol>
-</section>
+</div>
 
     </div>
 
@@ -525,7 +525,7 @@
 
 
 
-<script type="text/javascript" src="/js/main.min.c99b103c33d1539acf3025e1913697534542c4a5aa5af0ccc20475ed2863603b.js"></script>
+<script type="text/javascript" src="/js/main.min.4ae89da218555efa0e7093a20b92017d2e1202b66fff9fc2edf4cb8d44b44c6e.js"></script>
   <script type="text/javascript">
     window.MathJax = {
       tex: {
