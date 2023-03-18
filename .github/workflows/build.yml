@@ -1,0 +1,28 @@
+name: Deploy Hugo
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@v2
+
+      - name: Setup Hugo
+        run: |
+          wget https://github.com/rzy0901/hugo/releases/download/v1.0.0/hugo_math
+          chmod +x hugo_math
+
+      - name: Build
+        run: ./hugo_math --minify
+
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          personal_token: ${{ secrets.MY_SECRET }}
+          publish_dir: ./public
