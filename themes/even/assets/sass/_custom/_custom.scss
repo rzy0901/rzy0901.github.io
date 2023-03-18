@@ -2,3 +2,48 @@
 // Custom style
 // ==============================
 // You can override the variables in _variables.scss to customize the style
+@media print {
+  .header {
+    display: none !important;
+  }
+
+  .post-toc {
+    display: none !important;
+  }
+
+  .utterances {
+    display: none !important;
+  }
+
+  .back-to-top {
+    display: none !important;
+  }
+
+  .footer {
+    display: none !important;
+  }
+
+  .post-footer {
+    display: none !important;
+  }
+
+  .post-meta {
+    display: none !important;
+  }
+
+  .post-copyright {
+    display: none !important;
+  }
+}
+
+@media print {
+  .personal-info {
+    display: block;
+  }
+}
+
+@media not print {
+  .personal-info {
+    display: none;
+  }
+}

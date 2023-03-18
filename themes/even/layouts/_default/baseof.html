@@ -15,17 +15,15 @@
 </head>
 <body>
 
-{{if .Params.enabelGithubFork}}
+<!-- {{if .Params.enabelGithubFork}}
 {{ with .Site.Params.githubForkUrl }}
-<!-- fork me on github --->
-<!-- see https://github.blog/2008-12-19-github-ribbons/ -->
 <a href="{{ . }}" title="{{ . }}" target="_blank">  
 <img style="position: fixed; top: 0; right: 0; border: 0; z-index:9999;" 
  src="/forkme_right_gray.png" 
  alt="Fork me on GitHub">
 </a>
 {{ end }}
-{{end}}
+{{end}} -->
 
   {{ partial "slideout.html" . }}
   <div class="container" id="mobile-panel">
@@ -38,6 +36,22 @@
     <main id="main" class="main">
       <div class="content-wrapper">
         <div id="content" class="content">
+          <div class="personal-info">
+            <!-- <ul>
+              <li>Author: <a href="https://rzy0901.github.io">Ren Zhenyu (12232140)</a></li>
+              <li>Affiliation: Department of EEE, <a href="https://www.sustech.edu.cn/">SUSTech</a></li>
+              <li>Email: <a href="mailto:renzy2022@mail.sustech.edu.com">renzy2022@mail.sustech.edu.com</a></li>
+              <li>Website: <a href="https://rzy0901.github.io">https://rzy0901.github.io</a></li>
+            </ul> -->
+            <div style="overflow: hidden">
+              <br>
+              <div style="text-align: left; float: left;"><b>Author:</b> <a href="https://rzy0901.github.io"> Ren Zhenyu (SID: 12232140)</a></div>
+              <div style="text-align: right;"><b>Affiliation:</b> Department of EEE, <a href="https://www.sustech.edu.cn/">SUSTech</a></div>
+              <div style="text-align: left; float: left;"><b>Email:</b> <a href="mailto:renzy2022@mail.sustech.edu.com">renzy2022@mail.sustech.edu.com</a></div>
+              <div style="text-align: right;"><b>Website:</b> <a href="https://rzy0901.github.io">https://rzy0901.github.io</a></div>
+            </div>                     
+          </div>
+
           {{ block "content" . }}{{ end }}
         </div>
         {{ partial "comments.html" . }}

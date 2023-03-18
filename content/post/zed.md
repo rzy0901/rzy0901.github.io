@@ -3,7 +3,7 @@ title: "基于深度摄像机ZED 2i提取导出三维人体骨骼"
 date: 2022-10-14T00:00:00+08:00
 lastmod: 2022-11-26T00:00:00+08:00
 draft: false
-tags: ["Linux","OpenPose","3d skeletons"]
+tags: ["Linux","OpenPose","3d skeletons","opencv"]
 categories: ["Notes"]
 
 # contentCopyright: MIT

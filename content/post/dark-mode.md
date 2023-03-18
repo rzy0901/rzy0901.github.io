@@ -4,7 +4,7 @@ date: 2022-11-05T00:00:00+08:00
 # lastmod: 2022-11-05T00:00:00+08:00
 draft: false
 tags: ["Hugo"]
-categories: ["Hugo"]
+categories: ["diary"]
 
 # contentCopyright: MIT
 mathjax: true

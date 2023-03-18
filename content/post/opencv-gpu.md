@@ -6,7 +6,7 @@ draft: false
 # keywords: []
 description: ""
 tags: ["opencv"]
-categories: ["opencv"]
+categories: ["notes"]
 author: ""
 
 # You can also close(false) or open(true) something for this content.
@@ -133,13 +133,13 @@ sequenceDiagrams:
 
 ## C++, Python cuda测试
 
-### 文件结构及测试（下面copy代码）：
++ 文件结构:
 
-```
-├── CMakeLists.txt
-├── main.cpp
-└── main.py
-```
+  ```
+  ├── CMakeLists.txt
+  ├── main.cpp
+  └── main.py
+  ```
 
 + CPP测试：
 
@@ -157,7 +157,7 @@ sequenceDiagrams:
 
   ![](/opencv-gpu.assets/4.png)
 
-### C++测试代码：
+### C++测试代码
 
 `main.cpp`
 
@@ -203,7 +203,7 @@ set(CPACK_PROJECT_VERSION ${PROJECT_VERSION})
 include(CPack)
 ```
 
-#### Python测试代码
+### Python测试代码
 
 ```python
 import cv2
