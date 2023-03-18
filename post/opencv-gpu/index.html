@@ -1,0 +1,160 @@
+<!doctype html><html lang=en><head><meta charset=utf-8><meta http-equiv=x-ua-compatible content="IE=edge,chrome=1"><title>Ubuntu源码编译Opencv-GPU 4.7.0踩坑记录 - Ren Zhenyu's Website</title><meta name=renderer content="webkit"><meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1"><meta http-equiv=cache-control content="no-transform"><meta http-equiv=cache-control content="no-siteapp"><meta name=theme-color content="#f8f5ec"><meta name=msapplication-navbutton-color content="#f8f5ec"><meta name=apple-mobile-web-app-capable content="yes"><meta name=apple-mobile-web-app-status-bar-style content="#f8f5ec"><meta name=author content="Ren Zhenyu"><meta name=description content><meta name=keywords content="Ren Zhenyu,blog"><meta name=generator content="Hugo 0.102.0-DEV with theme even"><link rel=canonical href=/post/opencv-gpu/><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png><link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><link rel=manifest href=/manifest.json><link rel=mask-icon href=/safari-pinned-tab.svg color=#5bbad5><link href=/sass/main.min.658fb0b27de49fb36784fb02eac62cb539f3392d0da7e42bba43bb256d06deda.css rel=stylesheet><link rel=stylesheet href=/css/font-awesome-4.7.0/css/font-awesome.css></link>
+<link disabled id=dark-mode-theme rel=stylesheet href=/css/dark.css></link><meta property="og:title" content="Ubuntu源码编译Opencv-GPU 4.7.0踩坑记录"><meta property="og:description" content><meta property="og:type" content="article"><meta property="og:url" content="/post/opencv-gpu/"><meta property="article:section" content="post"><meta property="article:published_time" content="2023-03-12T11:10:39+08:00"><meta property="article:modified_time" content="2023-03-18T21:04:41+08:00"><meta itemprop=name content="Ubuntu源码编译Opencv-GPU 4.7.0踩坑记录"><meta itemprop=description content><meta itemprop=datePublished content="2023-03-12T11:10:39+08:00"><meta itemprop=dateModified content="2023-03-18T21:04:41+08:00"><meta itemprop=wordCount content="1100"><meta itemprop=keywords content="opencv,"><meta name=twitter:card content="summary"><meta name=twitter:title content="Ubuntu源码编译Opencv-GPU 4.7.0踩坑记录"><meta name=twitter:description content><!--[if lte IE 9]><script src=https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js></script><![endif]--><!--[if lt IE 9]><script src=https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js></script>
+<script src=https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js></script><![endif]--></head><body><div id=mobile-navbar class=mobile-navbar><div class=mobile-header-logo><a href=/ class=logo>Ren Zhenyu</a></div><div class=mobile-navbar-icon><span></span>
+<span></span>
+<span></span></div></div><nav id=mobile-menu class="mobile-menu slideout-menu"><ul class=mobile-menu-list><a href=/><li class=mobile-menu-item>Home</li></a><a href=/post/><li class=mobile-menu-item>Archives</li></a><a href=/tags/><li class=mobile-menu-item>Tags</li></a><a href=/categories/><li class=mobile-menu-item>Categories</li></a><a href=/about/><li class=mobile-menu-item>About</li></a></ul></nav><div class=container id=mobile-panel><header id=header class=header><div class=logo-wrapper><a href=/ class=logo>Ren Zhenyu</a></div><nav class=site-navbar><ul id=menu class=menu><li class=menu-item><a class=menu-item-link href=/>Home</a></li><li class=menu-item><a class=menu-item-link href=/post/>Archives</a></li><li class=menu-item><a class=menu-item-link href=/tags/>Tags</a></li><li class=menu-item><a class=menu-item-link href=/categories/>Categories</a></li><li class=menu-item><a class=menu-item-link href=/about/>About</a></li><li class=menu-item><a id=dark-mode-toggle class=menu-item-link><i id=dark-mode-toggle-i class="fa fa-moon-o"></i></a></li></ul></nav></header><main id=main class=main><div class=content-wrapper><div id=content class=content><article class=post><header class=post-header><h1 class=post-title>Ubuntu源码编译Opencv-GPU 4.7.0踩坑记录</h1><div class=post-meta><span class=post-time>2023-03-12</span><div class=post-category><a href=/categories/opencv/>opencv</a></div></div></header><div class=post-toc id=post-toc><h2 class=post-toc-title>Contents</h2><div class="post-toc-content always-active"><nav id=TableOfContents><ul><li><ul><li><a href=#源码编译过程>源码编译过程</a></li><li><a href=#cpython代码自动补全vscode设置>C++，Python代码自动补全vscode设置</a></li><li><a href=#c-python-cuda测试>C++, Python cuda测试</a><ul><li><a href=#文件结构及测试下面copy代码>文件结构及测试（下面copy代码）：</a></li><li><a href=#c测试代码>C++测试代码：</a></li></ul></li></ul></li></ul></nav></div></div><div class=post-content><blockquote><ul><li><p>网上安装opencv有很多教程，但是一旦涉及到使用cuda加速的opencv DNN模型等，很多教程就毫无意义，opencv官网2.4k的issues也说明了其bug之多。</p></li><li><p>本文是作者对opencv gpu源码编译的总结。</p></li><li><p>参考教程（有些问题，但是大体思路不错）：<a href=https://learnopencv.com/opencv-dnn-with-gpu-support/>https://learnopencv.com/opencv-dnn-with-gpu-support/</a></p></li></ul></blockquote><h2 id=源码编译过程>源码编译过程</h2><ol><li><p>安装依赖。</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span><span class=lnt>6
+</span><span class=lnt>7
+</span><span class=lnt>8
+</span><span class=lnt>9
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>sudo apt-get update
+</span></span><span class=line><span class=cl>sudo apt-get upgrade
+</span></span><span class=line><span class=cl>sudo apt-get install build-essential cmake unzip pkg-config
+</span></span><span class=line><span class=cl>sudo apt-get install libjpeg-dev libpng-dev libtiff-dev
+</span></span><span class=line><span class=cl>sudo apt-get install libavcodec-dev libavformat-dev libswscale-dev
+</span></span><span class=line><span class=cl>sudo apt-get install libv4l-dev libxvidcore-dev libx264-dev
+</span></span><span class=line><span class=cl>sudo apt-get install libgtk-3-dev
+</span></span><span class=line><span class=cl>sudo apt-get install libblas-dev liblapack-dev gfortran
+</span></span><span class=line><span class=cl>sudo apt-get install python3-dev
+</span></span></code></pre></td></tr></table></div></div></li><li><p>CUDA CUDNN安装。网上已经有很多教程，这里不再赘述。</p><ul><li>本文使用CUDA 11.6以及CUDNN 8.4.1。</li><li>只要CUDA和CUDNN的版本匹配就好了，不需要卸载已经有的版本重新安装，后续源码编译CMakeLists.txt会自动检测最低要求的CUDA和CUDNN要求。</li></ul></li><li><p>下载并解压opencv及opencv_contrib（注意这个路径，cmake编译时候需要使用）源码到home下：</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>cd ~
+</span></span><span class=line><span class=cl>wget -O opencv-4.7.0.zip https://github.com/opencv/opencv/archive/refs/tags/4.7.0.zip
+</span></span><span class=line><span class=cl>unzip -q opencv-4.7.0.zip
+</span></span><span class=line><span class=cl>mv opencv-4.7.0 opencv
+</span></span><span class=line><span class=cl>rm -f opencv-4.7.0.zip 
+</span></span></code></pre></td></tr></table></div></div><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>wget -O opencv_contrib-4.7.0.zip https://github.com/opencv/opencv_contrib/archive/4.7.0.zip
+</span></span><span class=line><span class=cl>unzip -q opencv_contrib-4.7.0.zip
+</span></span><span class=line><span class=cl>mv opencv_contrib-4.7.0 opencv_contrib
+</span></span><span class=line><span class=cl>rm -f opencv_contrib-4.7.0.zip 
+</span></span></code></pre></td></tr></table></div></div></li><li><p>安装numpy：<code>pip install numpy</code>。</p></li><li><p>源码编译opencv：</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>cd ~/opencv
+</span></span><span class=line><span class=cl>mkdir build
+</span></span><span class=line><span class=cl>cd build
+</span></span></code></pre></td></tr></table></div></div><ul><li>我习惯使用<code>cmake-gui</code>编译，可以更好的选择编译选项：</li></ul><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>cmake-gui
+</span></span></code></pre></td></tr></table></div></div><ul><li><p>默认使用configure。</p></li><li><p>设置OPENCV_EXTRA_MODULES_PATH为~/opencv_contrib/modules。</p></li><li><p>勾选OPENCV_ENABLE_NONFREE，WITH_CUDNN，WITH_CUDA，WITH_CUBLAS，BUILD_EXAMPLES（如果勾选这个，我的经验是需要要按照<a href=https://github.com/opencv/opencv/pull/22245/commits/5acf351e4b9d099d446f401df690d559ed5dfdad>#22245</a>修改<code>samples/cpp/CMakeLists.txt</code>，不然会有bug：<a href=https://github.com/opencv/opencv/issues/21804>21804</a>）等等。</p></li><li><p>configure以后再点击generate。</p></li></ul></li><li><p>安装opencv（很慢，有时候会在某个选项卡很久。）</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-mysql data-lang=mysql><span class=line><span class=cl><span class=n>make</span><span class=w> </span><span class=o>-</span><span class=n>j</span><span class=w> </span><span class=o>`</span><span class=n>nproc</span><span class=o>`</span><span class=w> </span><span class=o>&amp;&amp;</span><span class=w> </span><span class=n>sudo</span><span class=w> </span><span class=n>make</span><span class=w> </span><span class=n>install</span><span class=w>
+</span></span></span></code></pre></td></tr></table></div></div></li><li><p>建立软连接。</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl># 本机python3.8的site-pakages
+</span></span><span class=line><span class=cl>cd /home/rzy/.local/lib/python3.8/site-packages
+</span></span><span class=line><span class=cl># cv2.so文件安装位置
+</span></span><span class=line><span class=cl>ln -s /usr/local/lib/python3.8/site-packages/cv2/python-3.8/cv2.cpython-38-x86_64-linux-gnu.so cv2.so
+</span></span></code></pre></td></tr></table></div></div></li><li><p>现在opencv-gpu就已经安装好了。</p></li></ol><h2 id=cpython代码自动补全vscode设置>C++，Python代码自动补全vscode设置</h2><p><img src=/opencv-gpu.assets/1.png alt></p><p><img src=/opencv-gpu.assets/2.png alt></p><h2 id=c-python-cuda测试>C++, Python cuda测试</h2><h3 id=文件结构及测试下面copy代码>文件结构及测试（下面copy代码）：</h3><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>├── CMakeLists.txt
+</span></span><span class=line><span class=cl>├── main.cpp
+</span></span><span class=line><span class=cl>└── main.py
+</span></span></code></pre></td></tr></table></div></div><ul><li><p>CPP测试：</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>mkdir build
+</span></span><span class=line><span class=cl>cd build
+</span></span><span class=line><span class=cl>cmake ..
+</span></span><span class=line><span class=cl>make
+</span></span><span class=line><span class=cl>./main
+</span></span></code></pre></td></tr></table></div></div><p><img src=/opencv-gpu.assets/3.png alt></p></li><li><p>Python测试：<code>python3 main.py</code></p><p><img src=/opencv-gpu.assets/4.png alt></p></li></ul><h3 id=c测试代码>C++测试代码：</h3><p><code>main.cpp</code></p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-c++ data-lang=c++><span class=line><span class=cl><span class=cp>#include</span> <span class=cpf>&lt;iostream&gt;</span><span class=cp>
+</span></span></span><span class=line><span class=cl><span class=cp>#include</span> <span class=cpf>&lt;opencv2/dnn.hpp&gt;</span><span class=cp>
+</span></span></span><span class=line><span class=cl><span class=cp>#include</span> <span class=cpf>&lt;opencv2/imgproc.hpp&gt;</span><span class=cp>
+</span></span></span><span class=line><span class=cl><span class=cp>#include</span> <span class=cpf>&lt;opencv2/highgui.hpp&gt;</span><span class=cp>
+</span></span></span><span class=line><span class=cl><span class=cp>#include</span> <span class=cpf>&lt;iostream&gt;</span><span class=cp>
+</span></span></span><span class=line><span class=cl><span class=cp>#include</span> <span class=cpf>&lt;opencv2/core/cuda.hpp&gt;</span><span class=cp>
+</span></span></span><span class=line><span class=cl><span class=cp></span>
+</span></span><span class=line><span class=cl><span class=k>using</span> <span class=k>namespace</span> <span class=n>std</span><span class=p>;</span>
+</span></span><span class=line><span class=cl><span class=k>using</span> <span class=k>namespace</span> <span class=n>cv</span><span class=p>;</span>
+</span></span><span class=line><span class=cl><span class=k>using</span> <span class=k>namespace</span> <span class=n>dnn</span><span class=p>;</span>
+</span></span><span class=line><span class=cl><span class=k>using</span> <span class=k>namespace</span> <span class=n>cuda</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kt>int</span> <span class=nf>main</span><span class=p>(</span><span class=kt>int</span><span class=p>,</span> <span class=kt>char</span><span class=o>**</span><span class=p>)</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=n>printCudaDeviceInfo</span><span class=p>(</span><span class=mi>0</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=n>cout</span> <span class=o>&lt;&lt;</span> <span class=s>&#34;Hello, world!</span><span class=se>\n</span><span class=s>&#34;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span></code></pre></td></tr></table></div></div><p><code>CMakelists.txt</code></p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-cmake data-lang=cmake><span class=line><span class=cl><span class=nb>cmake_minimum_required</span><span class=p>(</span><span class=s>VERSION</span> <span class=s>3.0.0</span><span class=p>)</span><span class=err>
+</span></span></span><span class=line><span class=cl><span class=err></span><span class=nb>project</span><span class=p>(</span><span class=s>main</span><span class=p>)</span><span class=err>
+</span></span></span><span class=line><span class=cl><span class=err>
+</span></span></span><span class=line><span class=cl><span class=err></span><span class=nb>include</span><span class=p>(</span><span class=s>CTest</span><span class=p>)</span><span class=err>
+</span></span></span><span class=line><span class=cl><span class=err></span><span class=nb>enable_testing</span><span class=p>()</span><span class=err>
+</span></span></span><span class=line><span class=cl><span class=err>
+</span></span></span><span class=line><span class=cl><span class=err></span><span class=nb>find_package</span><span class=p>(</span> <span class=s>OpenCV</span> <span class=s>REQUIRED</span> <span class=p>)</span><span class=err>
+</span></span></span><span class=line><span class=cl><span class=err></span><span class=nb>include_directories</span><span class=p>(</span> <span class=o>${</span><span class=nv>OpenCV_INCLUDE_DIRS</span><span class=o>}</span> <span class=p>)</span><span class=err>
+</span></span></span><span class=line><span class=cl><span class=err>
+</span></span></span><span class=line><span class=cl><span class=err></span><span class=nb>add_executable</span><span class=p>(</span><span class=s>main</span> <span class=s>main.cpp</span><span class=p>)</span><span class=err>
+</span></span></span><span class=line><span class=cl><span class=err>
+</span></span></span><span class=line><span class=cl><span class=err></span><span class=nb>target_link_libraries</span><span class=p>(</span> <span class=s>main</span> <span class=o>${</span><span class=nv>OpenCV_LIBS</span><span class=o>}</span> <span class=p>)</span><span class=err>
+</span></span></span><span class=line><span class=cl><span class=err>
+</span></span></span><span class=line><span class=cl><span class=err></span><span class=nb>set</span><span class=p>(</span><span class=s>CPACK_PROJECT_NAME</span> <span class=o>${</span><span class=nv>PROJECT_NAME</span><span class=o>}</span><span class=p>)</span><span class=err>
+</span></span></span><span class=line><span class=cl><span class=err></span><span class=nb>set</span><span class=p>(</span><span class=s>CPACK_PROJECT_VERSION</span> <span class=o>${</span><span class=nv>PROJECT_VERSION</span><span class=o>}</span><span class=p>)</span><span class=err>
+</span></span></span><span class=line><span class=cl><span class=err></span><span class=nb>include</span><span class=p>(</span><span class=s>CPack</span><span class=p>)</span><span class=err>
+</span></span></span></code></pre></td></tr></table></div></div><h4 id=python测试代码>Python测试代码</h4><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-python data-lang=python><span class=line><span class=cl><span class=kn>import</span> <span class=nn>cv2</span>
+</span></span><span class=line><span class=cl><span class=kn>from</span> <span class=nn>cv2</span> <span class=kn>import</span> <span class=n>cuda</span>
+</span></span><span class=line><span class=cl><span class=n>cuda</span><span class=o>.</span><span class=n>printCudaDeviceInfo</span><span class=p>(</span><span class=mi>0</span><span class=p>)</span>
+</span></span></code></pre></td></tr></table></div></div></div><footer class=post-footer><div class=post-tags><a href=/tags/opencv/>opencv</a></div><nav class=post-nav><a class=next href=/post/ielts/><span class="next-text nav-default">Self Learning Notes for IELTS</span>
+<span class="next-text nav-mobile">Next</span>
+<i class="iconfont icon-right"></i></a></nav></footer></article></div><script src=https://utteranc.es/client.js repo=rzy0901/blog-comment issue-term=pathname theme=github-light crossorigin=anonymous async></script><noscript>Please enable JavaScript to view the <a href=https://github.com/utterance>comments powered by utterances.</a></noscript></div></main><footer id=footer class=footer><div class=social-links><a href=mailto:renzy2022@mail.sustech.edu.cn class="iconfont icon-email" title=email></a>
+<a href=https://github.com/rzy0901 class="iconfont icon-github" title=github></a>
+<a href="https://space.bilibili.com/485868285?spm_id_from=333.1007.0.0" class="iconfont icon-bilibili" title=bilibili></a>
+<a href=/index.xml type=application/rss+xml class="iconfont icon-rss" title=rss></a></div><div class=copyright><span class=copyright-year>Copyright &copy;
+2021 -
+2023&nbsp;
+<span>Ren Zhenyu | <span class=power-by>Powered by <a class=hexo-link href=https://gohugo.io>Hugo</a></span></span></span></div></footer><div class=back-to-top id=back-to-top><i class="iconfont icon-up"></i></div></div><script type=text/javascript src=/lib/jquery/jquery-3.2.1.min.js></script>
+<script type=text/javascript src=/lib/slideout/slideout-1.0.1.min.js></script>
+<script type=text/javascript src=/js/main.min.4ae89da218555efa0e7093a20b92017d2e1202b66fff9fc2edf4cb8d44b44c6e.js></script>
+<script>function createCopyButton(e){const t=document.createElement("div");t.className="copy-code",t.innerText="Copy",t.addEventListener("click",()=>copyCodeToClipboard(t,e)),addCopyButtonToDom(t,e)}async function copyCodeToClipboard(e,t){const n=t.querySelector(":last-child > .chroma > code").innerText;await navigator.clipboard.writeText(n),e.blur(),e.innerText="Copied!",setTimeout(()=>e.innerText="Copy",2e3)}function addCopyButtonToDom(e,t){t.insertBefore(e,t.firstChild);const n=document.createElement("div");n.className="highlight-wrapper",t.parentNode.insertBefore(n,t),n.appendChild(t)}var isMobile=/iPhone|iPad|iPod|Android/i.test(navigator.userAgent);isMobile||document.querySelectorAll(".highlight").forEach(e=>createCopyButton(e))</script><script>var darkMode={config:{startHour:19,endHour:7},_darkTheme:null,_modeToggle:null,_modeToggleParent:null,_currentHour:0,_storageKey:"dark-mode-storage",_storageByHandLastTIme:0,_storageOverdueHours:12,init:function(){this._modeToggleParent=document.getElementById("dark-mode-toggle"),this._modeToggle=document.getElementById("dark-mode-toggle-i"),this._darkTheme=document.getElementById("dark-mode-theme"),this._currentHour=(new Date).getHours(),this.toggleListen(),this.initMode()},initMode:function(){let e=this.getModeFromStorage()||this.autoMode();this.setMode(e)},toggleListen:function(){let e=this;this._modeToggleParent.addEventListener("click",()=>{this._modeToggle.className==="fa fa-moon-o"?e.setModeByHand("dark"):this._modeToggle.className==="fa fa-sun-o"&&e.setModeByHand("light")})},autoMode:function(){let e=this._currentHour;return e>this.config.startHour||e<this.config.endHour?"dark":"light"},setMode:function(e){e==="dark"?(this._darkTheme.disabled=!1,this._modeToggle.className="fa fa-sun-o"):e==="light"&&(this._darkTheme.disabled=!0,this._modeToggle.className="fa fa-moon-o")},setModeByHand:function(e){this.setMode(e),this.setModeToStorage(e)},setModeToStorage:function(e){localStorage.setItem(this._storageKey,e),localStorage.setItem(this._storageKey+"-last-time",(new Date).getTime())},getModeFromStorage:function(){let t=localStorage.getItem(this._storageKey),e=localStorage.getItem(this._storageKey+"-last-time");if(t&&e){e=e/1e3;let n=(new Date).getTime()/1e3,s=this._storageOverdueHours*3600;if(n-e<s)return t}return localStorage.removeItem(this._storageKey),localStorage.removeItem(this._storageKey+"-last-time"),!1}};darkMode.init()</script></body></html>
