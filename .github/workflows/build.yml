@@ -13,7 +13,7 @@ jobs:
       - name: Checkout Repo
         uses: actions/checkout@v2
 
-      - name: Setup Hugo
+      - name: Download hugo_math
         run: |
           wget https://github.com/rzy0901/hugo/releases/download/v1.0.0/hugo_math
           chmod +x hugo_math
