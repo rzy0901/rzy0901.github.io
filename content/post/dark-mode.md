@@ -12,17 +12,20 @@ autoCollapseToc: false
 postMetaInFooter: true
 reward: true
 author: Ren Zhenyu
+typora-root-url: ./..\..\static
 ---
 
 # 暗黑模式介绍
 
-> + Hugo的[even](https://github.com/olOwOlo/hugo-theme-even)主题在github已经两年没有更新了，我应该是第一个为该主题提供暗黑模式的人（但是由于在手机端还有bug，我暂时还不想发起pull request，不过大家可以随便的copy我的代码并做出改进发起PR:smile:。）
+> + Hugo的[even](https://github.com/olOwOlo/hugo-theme-even)主题在github已经两年没有更新了，我应该是第一个为该主题提供暗黑模式的人（~~但是由于在手机端还有bug，我暂时还不想发起pull request，不过大家可以随便的copy我的代码并做出改进发起PR:smile:。~~）
+>
+> + <font color =  "red">**2023.4.10更新：** 添加了移动端的暗黑模式显示，见[commit: update mobile dark mode](https://github.com/rzy0901/rzy0901.github.io/commit/1c4874d94dd61f918c7fd27edd6574b379abfd23)，这意味着暗黑模式的全部bug已经得到解决，有时间我打算向[even](https://github.com/olOwOlo/hugo-theme-even)发起PR（虽然似乎even的作者失踪了）。</font>
 >
 > + 最近试了很多方法，终于简单的在浏览器端实现了dark mode（点击右上角导航栏里的图标即可）。
 >
->   ![image](../../dark-mode.assets/200128941-81d53c52-010f-4bd6-9dc7-5933291c5ecd.png)
+>   <img src="/dark-mode.assets/200128941-81d53c52-010f-4bd6-9dc7-5933291c5ecd.png" alt="image" style="zoom: 50%;" />
 
-![](../../dark-mode.assets/GIF.gif)
+![](/dark-mode.assets/GIF.gif)
 
 # 零前端基础具体代码实现 (Copy!)
 
