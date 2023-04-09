@@ -21,7 +21,9 @@
         <li class="mobile-menu-item">{{ .Name }}</li>
       </a>
     {{- end }}
+    <li id="dark-mode-toggle-mobile" class="mobile-menu-item">
+      <i id="dark-mode-toggle-mobile-i" class="fa fa-moon-o"></i>
+    </li>
   </ul>
-
   {{ partial "header/language-selector.html" . }}
 </nav>

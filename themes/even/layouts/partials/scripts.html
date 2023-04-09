@@ -179,6 +179,8 @@ var darkMode = {
   _darkTheme:null,  //dark.css标签
   _modeToggle:null, //手动切换按钮块
   _modeToggleParent:null, //手动切换按钮wrap
+  _modeToggleMobile:null, //手动切换按钮块
+  _modeToggleParentMobile:null, //手动切换按钮wrap
   _currentHour:0, //当前小时
   _storageKey:"dark-mode-storage",
   _storageByHandLastTIme:0, //上次手动设置模式时间 毫秒
@@ -187,7 +189,9 @@ var darkMode = {
   init:function(){
     //夜间模式切换配置
     this._modeToggleParent = document.getElementById("dark-mode-toggle");
-    this._modeToggle = document.getElementById("dark-mode-toggle-i");    
+    this._modeToggle = document.getElementById("dark-mode-toggle-i");
+    this._modeToggleParentMobile = document.getElementById("dark-mode-toggle-mobile");
+    this._modeToggleMobile = document.getElementById("dark-mode-toggle-mobile-i");         
     this._darkTheme = document.getElementById("dark-mode-theme");  
     this._currentHour = new Date().getHours();  
 
@@ -196,7 +200,7 @@ var darkMode = {
   },
   initMode:function(){
     //初始化模式，来源本地持久化或自动检测模式    
-    let initMode = this.getModeFromStorage() || this.autoMode();
+    let initMode = this.getModeFromStorage(); //|| this.autoMode();
     this.setMode(initMode);
   },
   toggleListen:function(){
@@ -206,6 +210,14 @@ var darkMode = {
         if (this._modeToggle.className === "fa fa-moon-o") {
             _this.setModeByHand("dark");
         } else if (this._modeToggle.className === "fa fa-sun-o") {
+            _this.setModeByHand("light");
+        }
+    });
+
+    this._modeToggleParentMobile.addEventListener("click", () => {
+        if (this._modeToggleMobile.className === "fa fa-moon-o") {
+            _this.setModeByHand("dark");
+        } else if (this._modeToggleMobile.className === "fa fa-sun-o") {
             _this.setModeByHand("light");
         }
     });
@@ -222,9 +234,11 @@ var darkMode = {
     if (mode === "dark") {
         this._darkTheme.disabled = false;
         this._modeToggle.className = "fa fa-sun-o";
+        this._modeToggleMobile.className = "fa fa-sun-o";
     } else if (mode === "light") {
         this._darkTheme.disabled = true;
         this._modeToggle.className = "fa fa-moon-o";
+        this._modeToggleMobile.className = "fa fa-moon-o";
     }          
   },
   setModeByHand:function(mode){
