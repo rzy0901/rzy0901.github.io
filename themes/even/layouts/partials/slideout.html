@@ -1,10 +1,10 @@
 <div id="mobile-navbar" class="mobile-navbar">
   <div class="mobile-header-logo">
-    <a href="{{ "/" | relLangURL }}" class="logo">
+    <a href="{{ " /" | relLangURL }}" class="logo">
       {{- if .Site.Params.logoTitle -}}
-        {{ .Site.Params.logoTitle }}
+      {{ .Site.Params.logoTitle }}
       {{- else -}}
-        {{ .Site.Title }}
+      {{ .Site.Title }}
       {{- end -}}
     </a>
   </div>
@@ -13,17 +13,22 @@
     <span></span>
     <span></span>
   </div>
+    <div id="dark-mode-toggle-mobile" class="mobile-dark-icon"> 
+      <div class="text">
+        <i id="dark-mode-toggle-mobile-i" class="fa fa-moon-o" style="font-size:24px;"></i>
+      </div>
+    </div>
 </div>
 <nav id="mobile-menu" class="mobile-menu slideout-menu">
   <ul class="mobile-menu-list">
     {{ range .Site.Menus.main -}}
-      <a href="{{ .URL | safeURL }}">
-        <li class="mobile-menu-item">{{ .Name }}</li>
-      </a>
+    <a href="{{ .URL | safeURL }}">
+      <li class="mobile-menu-item">{{ .Name }}</li>
+    </a>
     {{- end }}
-    <li id="dark-mode-toggle-mobile" class="mobile-menu-item">
+    <!-- <li id="dark-mode-toggle-mobile" class="mobile-menu-item">
       <i id="dark-mode-toggle-mobile-i" class="fa fa-moon-o"></i>
-    </li>
+    </li> -->
   </ul>
   {{ partial "header/language-selector.html" . }}
 </nav>
