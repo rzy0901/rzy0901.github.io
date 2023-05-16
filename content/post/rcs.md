@@ -92,7 +92,7 @@ $$
 + For monostatic case ($\theta_i = \theta_s$, $\phi_i = \phi_s$), we have:
 
 $$
-\sigma_{monostatic}=\frac{\pi a^2b^2c^2}{[a^2\sin^2\theta_i\cos^2\phi_i+b^2\sin^2\theta_i\cos^2\phi_i+c^2\cos^2\theta]^2}.
+\sigma_{monostatic}=\frac{\pi a^2b^2c^2}{[a^2\sin^2\theta_i\cos^2\phi_i+b^2\sin^2\theta_i\sin^2\phi_i+c^2\cos^2\theta]^2}.
 $$
 
 + When $a=b=c=r$, we have rcs estimation of a sphere:
