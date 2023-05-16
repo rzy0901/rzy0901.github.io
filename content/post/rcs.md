@@ -115,7 +115,7 @@ $$
 
   + $P_t$, $P_r$ refer to transmit and receive power.
   + $G_t$, $G_r$ refer to transmit and receive antenna gain.
-  + $\sigma_B$ and $\sigma_M$ refer to monostatic and bistatic RCS.
+  + $\sigma_B$ and $\sigma_M$ refer to bistatic and monostatic RCS.
   + $R_{Tx}$, $R_{Rx}$ refer to distance of transmitter-target and receiver-target.
 
 [^1]:Balanis, Constantine A. *Advanced engineering electromagnetics*. John Wiley & Sons, 2012.
