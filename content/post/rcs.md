@@ -89,10 +89,10 @@ Denote the incident and scattered wave directions in spherical coordinate form a
 $$
 \sigma_{bistatic} = \frac{4\pi a^2b^2c^2[(1+\cos \theta_i\cos\theta_s)\cos(\phi_s-\phi_i)+\sin\theta_i\sin\theta_s]^2}{\left[a^2(\sin\theta_i\cos\phi_i+\sin\theta_s\cos\phi_s)^2+b^2(\sin\theta_i\sin\phi_i+\sin\theta_s\sin\phi_s)^2+c^2(\cos\theta_i+\cos\theta_s)^2\right]^2}.
 $$
-+ For monostatic case ($\theta_i = \theta_s$, $\phi_i = \phi_s$), we have:
++ For monostatic case ($\theta_i = \theta_s=\theta$, $\phi_i = \phi_s=\phi$), we have:
 
 $$
-\sigma_{monostatic}=\frac{\pi a^2b^2c^2}{[a^2\sin^2\theta_i\cos^2\phi_i+b^2\sin^2\theta_i\sin^2\phi_i+c^2\cos^2\theta]^2}.
+\sigma_{monostatic}=\frac{\pi a^2b^2c^2}{[a^2\sin^2\theta\cos^2\phi+b^2\sin^2\theta\sin^2\phi+c^2\cos^2\theta]^2}.
 $$
 
 + When $a=b=c=r$, we have rcs estimation of a sphere:
