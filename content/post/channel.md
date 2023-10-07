@@ -27,7 +27,7 @@ typora-root-url: ../../static
 
   + $t$: time domain; $\tau$: delay domain; $f$: frequency domain.
 
-  + sDiscrete Fourier Transform (DFT), Inverse Discrete Fourier Transform (IDFT) formula:
+  + Discrete Fourier Transform (DFT), Inverse Discrete Fourier Transform (IDFT) formula:
     $$
     \begin{cases}
     X[k]=\sum_{n=0}^{N-1}x[n]\exp\left(-\frac{\mathrm{j}2\pi kn}{N}\right)\\=\sum_{n=-\infty}^{\infty}x[n]\exp(-\mathrm j \omega n)|_{\omega=2\pi k/N}=X(e^{\mathrm j\omega})|_{\omega=2\pi k/N}\\
@@ -67,4 +67,4 @@ typora-root-url: ../../static
 
 # Wideband/Narrowband Channel Models
 
-To be updated tomorrow (2023.10.7)...
+To be updated tomorrow (2023.10.8)...
