@@ -1,3 +1,6 @@
 public/
 hugo_math.exe
 hugo_math
+content/.DS_Store
+.DS_Store
+*.agx
