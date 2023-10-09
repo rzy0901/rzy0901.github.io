@@ -1,5 +1,5 @@
 ---
-title: "About"
+title: "Links"
 menu: "main"
 noComment: true
 weight: 50
