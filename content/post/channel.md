@@ -7,7 +7,7 @@ categories: ["Math"]
 
 contentCopyright: MIT
 mathjax: true
-autoCollapseToc: false
+autoCollapseToc: true
 postMetaInFooter: true
 reward: false
 author: Ren Zhenyu
@@ -15,7 +15,7 @@ typora-copy-images-to: ../../static/channel.assets
 typora-root-url: ../../static
 ---
 
->**DISCLAIMER:** This note is for reference only. I am not 100% sure of the accuracy of my note. If you find any errors/typos, feel free to contact me.
+>**DISCLAIMER:** This note is for reference only. I am not 100% sure of the accuracy of my note. If you find any mistakes/typos, feel free to contact me.
 >
 >This note records some interesting issues that I met in wireless channel modeling :smile:.
 
@@ -32,7 +32,7 @@ typora-root-url: ../../static
     \begin{cases}
     X[k]=\sum_{n=0}^{N-1}x[n]\exp\left(-\frac{\mathrm{j}2\pi kn}{N}\right)\\=\sum_{n=-\infty}^{\infty}x[n]\exp(-\mathrm j \omega n)|_{\omega=2\pi k/N}=X(e^{\mathrm j\omega})|_{\omega=2\pi k/N}\\
     x[n]=\frac{1}{N}\sum_{k=0}^{N-1}X[k]\exp\left(\frac{\mathrm j 2\pi kn}{N}\right)
-    \end{cases}
+    \end{cases}.
     $$
 
   + Simple proof (Considering CIR/CFR at one time slot $t$):
@@ -41,19 +41,19 @@ typora-root-url: ../../static
 
     We have CIR in below form:
     $$
-    h(\tau)=\sum_{i=0}^{N-1}\alpha_0\delta(\tau-\tau_i)\rightarrow \mathbf{h}=[\alpha_0,\ldots,\alpha_{N-1}],
+    h(\tau)=\sum_{i=0}^{N-1}\alpha_0\delta(\tau-\tau_i)\rightarrow \mathbf{h}=[\alpha_0,\ldots,\alpha_{N-1}].
     $$
 
     Do DFT at $k$:                                                                                                                      
     $$
-    H(k)=\sum_{n=0}^{N-1}\alpha_n\exp(-\frac{\mathrm{j2\pi kn}}{N})
+    H(k)=\sum_{n=0}^{N-1}\alpha_n\exp(-\frac{\mathrm{j2\pi kn}}{N}).
     $$
-    
-    Substitute $k$ with $f$ at the left of, and substitute $k$ with $f/\Delta f$ at the right side of the equation, we have:
+
+    Substitute $k$ with $f$ at the left of the equation, and substitute $k$ with $f/\Delta f$ at the right side of the equation, we have:
     $$
     \begin{aligned}
-    H(f)&=\sum_{n=0}^{N-1}\alpha_n\exp(-\frac{\mathrm{j2\pi f/\Delta f n}}{N}) \\
-    &\xlongequal[]{\Delta f =1/(N\Delta t)}\sum_{n=0}^{N-1}\alpha_n\exp(-\mathrm{j2\pi f\tau_n})
+    H(f)&=\sum_{n=0}^{N-1}\alpha_n\exp(-\frac{\mathrm{j2\pi f/\Delta f n}}{N}), \\
+    &\xlongequal[]{\Delta f =1/(N\Delta t)}\sum_{n=0}^{N-1}\alpha_n\exp(-\mathrm{j2\pi f\tau_n}).
     \end{aligned}
     $$
 
@@ -65,6 +65,57 @@ typora-root-url: ../../static
 
 + 一个靠谱的知乎问题：[在通信专业里的时域，频域，空域，角域到底都有怎样的联系呢？](https://www.zhihu.com/question/315208907/answer/2742955196)
 
-# Wideband/Narrowband Channel Models
+# Real Bandpass Signals, Equivalent Complex Baseband (Lowpass) Signals Conversion
 
-To be updated tomorrow (2023.10.8)...
+## Definition
+
++ **Real** bandpass signal:
+  $$
+  s(t)=s_\text{I}(t)\cos(2\pi f_\text{c} t) -s_\text{Q}(2\pi f_\text{c} t).
+  $$
+
+  + $s_\text{I}(t)$: lowpass in phase component.
+  + $s_\text{Q}(t)$: lowpass quadrature component.
+
+  > Many involved signals in wireless communication are always bandpass signal with carrier frequency $f_\text{c}$ and bandwidth $2B$, with $2B \ll f_\text{c}$.
+
++ Equivalent **complex** baseband (lowpass) signal (real bandpass $\rightarrow$ complex baseband):
+  $$
+  u(t)=s_\text{I}(t)+\mathrm{j}s_\text{Q}(t).
+  $$
+
++ Complex baseband $\rightarrow$ real bandpass:
+  $$
+  \begin{aligned}
+  \text{Real bandpass signal} &= \text{Re}\{\text{Complex baseband signal}\times\exp(\mathrm j2\pi f_\text{c}t)\},\\
+  s(t) &= \text{Re}\{u(t)\times\exp(\mathrm j2\pi f_\text{c}t)\}.
+  \end{aligned}
+  $$
+
+## Two types of CIR: Real Bandpass Channel, Equivalent Complex Baseband (Lowpass) Channel
+
++ Real bandpass channel:
+  $$
+  h(t,\tau)=\sum_{n=0}^{N-1}\alpha_{n}(t)\delta(\tau-\tau_n(t)),
+  $$
+  where:
+
+  + $t$ and $\tau$: time domain and delay domain.
+
+  + $N$: number of multipaths.
+  + $\alpha_n(t)$ and $\tau_n(t)$: path loss (amplitude) and delay for $n$-th path at time slot $t$.
+
++ Equivalent complex baseband (lowpass) channel:
+  $$
+  h(t,\tau)=\sum_{n=0}^{N-1}\alpha_n(t)\exp(-\mathrm{j}\phi_n(t))\delta(\tau-\tau_n(t)),
+  $$
+
+  where $\phi_n(t)=2\pi f_\text{c} \tau_n(t)+\phi_{\text{D}_n}(t)$ denotes the phase of $n$-th path at time slot $t$, with $\phi_{\text{D}_n}(t)$ denotes the Doppler phase shif t.
+  
+  > + Doppler phase shift $\phi_{\text{D}_n}(t)$ is a function of Doppler frequency $f_{\text{D}_n}(t)$: $\phi_{\text{D}_n}(t)=\int_t 2\pi f_{\text{D}_n}(t) \mathrm d t$.
+  >
+  > + Doppler frequency shift $f_{\text{D}_n}(t)=v\cos(\theta(t))/\lambda$ with motion velocity $v$, angel of arrival relative to the direction of motion $\theta(t)$ and signal wavelength $\lambda$.
+
+# Wideband / Narrowband Channel Models
+
+To be updated (DDL: before 2023.10.13)...
