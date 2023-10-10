@@ -41,19 +41,19 @@ typora-root-url: ../../static
 
     We have CIR in below form:
     $$
-    h(\tau)=\sum_{i=0}^{N-1}\alpha_0\delta(\tau-\tau_i)\rightarrow \mathbf{h}=[\alpha_0,\ldots,\alpha_{N-1}].
+    h(t,\tau)=\sum_{n=0}^{N(t)-1}\alpha_n(t)\delta(\tau-\tau_n(t))\rightarrow \mathbf{h}=[\alpha_0(t),\ldots,\alpha_{N-1}(t)].
     $$
 
     Do DFT at $k$:                                                                                                                      
     $$
-    H(k)=\sum_{n=0}^{N-1}\alpha_n\exp(-\frac{\mathrm{j2\pi kn}}{N}).
+    H(t,k)=\sum_{n=0}^{N(t)-1}\alpha_n(t)\exp(-\frac{\mathrm{j2\pi kn}}{N}).
     $$
 
     Substitute $k$ with $f$ at the left of the equation, and substitute $k$ with $f/\Delta f$ at the right side of the equation, we have:
     $$
     \begin{aligned}
-    H(f)&=\sum_{n=0}^{N-1}\alpha_n\exp(-\frac{\mathrm{j2\pi f/\Delta f n}}{N}), \\
-    &\xlongequal[]{\Delta f =1/(N\Delta t)}\sum_{n=0}^{N-1}\alpha_n\exp(-\mathrm{j2\pi f\tau_n}).
+    H(t,f)&=\sum_{n=0}^{N(t)-1}\alpha_n(t)\exp(-\frac{\mathrm{j2\pi f/\Delta f n}}{N}), \\
+    &\xlongequal[]{\Delta f =1/(N\Delta t)}\sum_{n=0}^{N(t)-1}\alpha_n(t)\exp(-\mathrm{j2\pi f\tau_n(t)}).
     \end{aligned}
     $$
 
@@ -96,18 +96,18 @@ typora-root-url: ../../static
 
 + Real bandpass channel:
   $$
-  h(t,\tau)=\sum_{n=0}^{N-1}\alpha_{n}(t)\delta(\tau-\tau_n(t)),
+  h(t,\tau)=\sum_{n=0}^{N(t)-1}\alpha_{n}(t)\delta(\tau-\tau_n(t)),
   $$
   where:
 
   + $t$ and $\tau$: time domain and delay domain.
 
-  + $N$: number of multipaths.
+  + $N(t)$: number of multipaths at time slot $t$.
   + $\alpha_n(t)$ and $\tau_n(t)$: path loss (amplitude) and delay for $n$-th path at time slot $t$.
 
 + Equivalent complex baseband (lowpass) channel:
   $$
-  h(t,\tau)=\sum_{n=0}^{N-1}\alpha_n(t)\exp(-\mathrm{j}\phi_n(t))\delta(\tau-\tau_n(t)),
+  h(t,\tau)=\sum_{n=0}^{N(t)-1}\alpha_n(t)\exp(-\mathrm{j}\phi_n(t))\delta(\tau-\tau_n(t)),
   $$
 
   where $\phi_n(t)=2\pi f_\text{c} \tau_n(t)+\phi_{\text{D}_n}(t)$ denotes the phase of $n$-th path at time slot $t$, with $\phi_{\text{D}_n}(t)$ denotes the Doppler phase shif t.
