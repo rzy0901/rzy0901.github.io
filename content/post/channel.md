@@ -110,7 +110,7 @@ typora-root-url: ../../static
   h(t,\tau)=\sum_{n=0}^{N(t)-1}\alpha_n(t)\exp(-\mathrm{j}\phi_n(t))\delta(\tau-\tau_n(t)),
   $$
 
-  where $\phi_n(t)=2\pi f_\text{c} \tau_n(t)+\phi_{\text{D}_n}(t)$ denotes the phase of $n$-th path at time slot $t$, with $\phi_{\text{D}_n}(t)$ denotes the Doppler phase shif t.
+  where $\phi_n(t)=2\pi f_\text{c} \tau_n(t)+\phi_{\text{D}_n}(t)$ denotes the phase of $n$-th path at time slot $t$, with $\phi_{\text{D}_n}(t)$ denotes the Doppler phase shift.
   
   > + Doppler phase shift $\phi_{\text{D}_n}(t)$ is a function of Doppler frequency $f_{\text{D}_n}(t)$: $\phi_{\text{D}_n}(t)=\int_t 2\pi f_{\text{D}_n}(t) \mathrm d t$.
   >
