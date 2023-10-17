@@ -7,6 +7,7 @@ categories: ["Math"]
 
 contentCopyright: MIT
 mathjax: true
+mathjaxEnableAutoNumber: true
 autoCollapseToc: true
 postMetaInFooter: true
 reward: false
@@ -29,12 +30,15 @@ typora-root-url: ../../static
 
   + Discrete Fourier Transform (DFT), Inverse Discrete Fourier Transform (IDFT) formula:
     $$
+    \begin{equation}
     \begin{cases}
     X[k]=\sum_{n=0}^{N-1}x[n]\exp\left(-\frac{\mathrm{j}2\pi kn}{N}\right)\\=\sum_{n=-\infty}^{\infty}x[n]\exp(-\mathrm j \omega n)|_{\omega=2\pi k/N}=X(e^{\mathrm j\omega})|_{\omega=2\pi k/N}\\
     x[n]=\frac{1}{N}\sum_{k=0}^{N-1}X[k]\exp\left(\frac{\mathrm j 2\pi kn}{N}\right)
     \end{cases}.
+    \label{eq:DFT}
+    \end{equation}
     $$
-
+    
   + Simple proof (Considering CIR/CFR at one time slot $t$):
 
     > Note that $f_n=n\Delta f$, $\tau_n=n\Delta t$, $\Delta f\Delta t=1/N$. (Take a look at above DFT equations or time/frequency settings in  [MATLAB Fast Fourier Transform (fft) documentation](https://www.mathworks.com/help/matlab/ref/fft.html) example codes. )
@@ -44,7 +48,7 @@ typora-root-url: ../../static
     h(t,\tau)=\sum_{n=0}^{N(t)-1}\alpha_n(t)\delta(\tau-\tau_n(t))\rightarrow \mathbf{h}=[\alpha_0(t),\ldots,\alpha_{N-1}(t)].
     $$
 
-    Do DFT at $k$:                                                                                                                      
+    Do DFT at $k$ using $\eqref{eq:DFT}$:                                                                                                                      
     $$
     H(t,k)=\sum_{n=0}^{N(t)-1}\alpha_n(t)\exp(-\frac{\mathrm{j2\pi kn}}{N}).
     $$
@@ -71,51 +75,104 @@ typora-root-url: ../../static
 
 + **Real** bandpass signal:
   $$
+  \begin{align}
   s(t)=s_\text{I}(t)\cos(2\pi f_\text{c} t) -s_\text{Q}(2\pi f_\text{c} t).
+  \end{align}
   $$
-
+  
   + $s_\text{I}(t)$: lowpass in phase component.
   + $s_\text{Q}(t)$: lowpass quadrature component.
 
   > Many involved signals in wireless communication are always bandpass signal with carrier frequency $f_\text{c}$ and bandwidth $2B$, with $2B \ll f_\text{c}$.
-
+  
 + Equivalent **complex** baseband (lowpass) signal (real bandpass $\rightarrow$ complex baseband):
   $$
+  \begin{align}
   u(t)=s_\text{I}(t)+\mathrm{j}s_\text{Q}(t).
+  \end{align}
   $$
-
+  
 + Complex baseband $\rightarrow$ real bandpass:
   $$
-  \begin{aligned}
-  \text{Real bandpass signal} &= \text{Re}\{\text{Complex baseband signal}\times\exp(\mathrm j2\pi f_\text{c}t)\},\\
+  \begin{align}
+  \text{Real bandpass signal} &= \text{Re}\{\text{Complex baseband signal}\times\exp(\mathrm j2\pi f_\text{c}t)\}, \nonumber \\
   s(t) &= \text{Re}\{u(t)\times\exp(\mathrm j2\pi f_\text{c}t)\}.
-  \end{aligned}
+  \label{eq:complex2real}
+  \end{align}
   $$
 
 ## Two types of CIR: Real Bandpass Channel, Equivalent Complex Baseband (Lowpass) Channel
 
+## Channel impulse response
+
 + Real bandpass channel:
   $$
-  h(t,\tau)=\sum_{n=0}^{N(t)-1}\alpha_{n}(t)\delta(\tau-\tau_n(t)),
+  \begin{align}
+  h_\text{real}(t,\tau)=\sum_{n=0}^{N(t)-1}\alpha_{n}(t)\delta(\tau-\tau_n(t)),
+  \label{eq:ch_real}
+  \end{align}
   $$
   where:
-
+  
   + $t$ and $\tau$: time domain and delay domain.
-
+  
   + $N(t)$: number of multipaths at time slot $t$.
   + $\alpha_n(t)$ and $\tau_n(t)$: path loss (amplitude) and delay for $n$-th path at time slot $t$.
-
+  
 + Equivalent complex baseband (lowpass) channel:
   $$
-  h(t,\tau)=\sum_{n=0}^{N(t)-1}\alpha_n(t)\exp(-\mathrm{j}\phi_n(t))\delta(\tau-\tau_n(t)),
+  \begin{align}
+  h_\text{complex}(t,\tau)=\sum_{n=0}^{N(t)-1}\alpha_n(t)\exp(-\mathrm{j}\phi_n(t))\delta(\tau-\tau_n(t)),
+  \label{eq:ch_complex}
+  \end{align}
   $$
-
+  
   where $\phi_n(t)=2\pi f_\text{c} \tau_n(t)+\phi_{\text{D}_n}(t)$ denotes the phase of $n$-th path at time slot $t$, with $\phi_{\text{D}_n}(t)$ denotes the Doppler phase shift.
   
   > + Doppler phase shift $\phi_{\text{D}_n}(t)$ is a function of Doppler frequency $f_{\text{D}_n}(t)$: $\phi_{\text{D}_n}(t)=\int_t 2\pi f_{\text{D}_n}(t) \mathrm d t$.
   >
   > + Doppler frequency shift $f_{\text{D}_n}(t)=v\cos(\theta(t))/\lambda$ with motion velocity $v$, angel of arrival relative to the direction of motion $\theta(t)$ and signal wavelength $\lambda$.
 
-# Wideband / Narrowband Channel Models
+## Received signal
 
-To be updated (DDL: before 2023.10.13)...
++ Transmitted signal (See [definition](#definition)): 
+
+  + Real: $s(t)=s_\text{I}(t)\cos(2\pi f_\text{c}t)-s_\text{Q}(t)\cos(2\pi f_\text{c}t)$.
+
+  + Complex baseband: $u(t)=s_\text{I}(t)+\mathrm{j}s_\text{Q}(t)$.
+
++ Received signal:
+
+  + Real: 
+    $$
+    \begin{align}
+    r(t) &= s(t) \otimes h(t,\tau) \nonumber \\
+    &= s(t) \otimes \sum_{n=0}^{N(t)-1}\alpha_{n}(t)\delta(\tau-\tau_n(t)) \nonumber \\
+    &=\sum_{n=0}^{N(t)-1}\alpha_{n}(t)s(\tau-\tau_n(t)).
+    \end{align}
+    $$
+    
+  + Complex baseband:
+    $$
+    \begin{align}
+    u_r(t) &= u(t) \otimes h_\text{complex}(t,\tau)\nonumber \\
+    &=u(t) \otimes \sum_{n=0}^{N(t)-1}\alpha_n(t)\exp(-\mathrm{j}\phi_n(t))\delta(\tau-\tau_n(t)) \nonumber \\
+    &=\sum_{n=0}^{N(t)-1}\alpha_n(t)\exp(-\mathrm{j}\phi_n(t))u(\tau-\tau_n(t)).
+    \end{align}
+    $$
+    
+    Here, $\otimes$ denotes the convolution operation.
+  
++ Relationship (using $\eqref{eq:complex2real}$): 
+  $$
+  r(t)=\text{Re}\left\{u(t)\exp(-\mathrm{j}2\pi f_\text{c}t)\right\}.
+  $$
+
+# Wideband / Narrowband Channel Model
+
+~~To be updated (DDL: before 2023.10.18)...~~ 
+
+
+
+
+
