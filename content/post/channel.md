@@ -55,10 +55,11 @@ typora-root-url: ../../static
 
     Substitute $k$ with $f$ at the left of the equation, and substitute $k$ with $f/\Delta f$ at the right side of the equation, we have:
     $$
-    \begin{aligned}
-    H(t,f)&=\sum_{n=0}^{N(t)-1}\alpha_n(t)\exp(-\frac{\mathrm{j2\pi f/\Delta f n}}{N}), \\
+    \begin{align}
+    H(t,f)&=\sum_{n=0}^{N(t)-1}\alpha_n(t)\exp(-\frac{\mathrm{j2\pi f/\Delta f n}}{N}), \nonumber \\
     &\xlongequal[]{\Delta f =1/(N\Delta t)}\sum_{n=0}^{N(t)-1}\alpha_n(t)\exp(-\mathrm{j2\pi f\tau_n(t)}).
-    \end{aligned}
+    \label{eq:CFR}
+    \end{align}
     $$
 
 + Channel State Information (CSI): $H(t,f)$. (CSI is actually discrete time series of discrete CFR!)
@@ -127,13 +128,15 @@ typora-root-url: ../../static
   \end{align}
   $$
   
-  where $\phi_n(t)=2\pi f_\text{c} \tau_n(t)+\phi_{\text{D}_n}(t)$ denotes the phase of $n$-th path at time slot $t$, with $\phi_{\text{D}_n}(t)$ denotes the Doppler phase shift.
+  where $\phi_n(t)=2\pi f_\text{c} \tau_n(t)-\phi_{\text{D}_n}(t)$ denotes the phase of $n$-th path at time slot $t$, with $\phi_{\text{D}_n}(t)$ denotes the Doppler phase shift.
   
-  > + Doppler phase shift $\phi_{\text{D}_n}(t)$ is a function of Doppler frequency $f_{\text{D}_n}(t)$: $\phi_{\text{D}_n}(t)=\int_t 2\pi f_{\text{D}_n}(t) \mathrm d t$.
-  >
-  > + Doppler frequency shift $f_{\text{D}_n}(t)=v\cos(\theta(t))/\lambda$ with motion velocity $v$, angel of arrival relative to the direction of motion $\theta(t)$ and signal wavelength $\lambda$.
+  + Doppler phase shift $\phi_{\text{D}_n}(t)$ is a function of Doppler frequency $f_{\text{D}_n}(t)$: $\phi_{\text{D}_n}(t)=\int_t 2\pi f_{\text{D}_n}(t) \mathrm d t$.
+  
+  + Doppler frequency shift $f_{\text{D}_n}(t)=v\cos(\theta(t))/\lambda$ with motion velocity $v$, angel of arrival relative to the direction of motion $\theta(t)$ and signal wavelength $\lambda$.
+  
+  + When $\phi_{\text{D}_n}(t)=0$, equations $\eqref{eq:ch_real}$ and $\eqref{eq:ch_complex}$ are equivalent (See $\eqref{eq:received_relation}$).
 
-## Received signal
+### Received signal
 
 + Transmitted signal (See [definition](#definition)): 
 
@@ -146,9 +149,10 @@ typora-root-url: ../../static
   + Real: 
     $$
     \begin{align}
-    r(t) &= s(t) \otimes h(t,\tau) \nonumber \\
+    r(t) &= s(t) \otimes h_\text{real}(t,\tau) \nonumber \\
     &= s(t) \otimes \sum_{n=0}^{N(t)-1}\alpha_{n}(t)\delta(\tau-\tau_n(t)) \nonumber \\
-    &=\sum_{n=0}^{N(t)-1}\alpha_{n}(t)s(\tau-\tau_n(t)).
+    &=\sum_{n=0}^{N(t)-1}\alpha_{n}(t)s(t-\tau_n(t)).
+    \label{eq:received_real}
     \end{align}
     $$
     
@@ -157,7 +161,9 @@ typora-root-url: ../../static
     \begin{align}
     u_r(t) &= u(t) \otimes h_\text{complex}(t,\tau)\nonumber \\
     &=u(t) \otimes \sum_{n=0}^{N(t)-1}\alpha_n(t)\exp(-\mathrm{j}\phi_n(t))\delta(\tau-\tau_n(t)) \nonumber \\
-    &=\sum_{n=0}^{N(t)-1}\alpha_n(t)\exp(-\mathrm{j}\phi_n(t))u(\tau-\tau_n(t)).
+    &=\sum_{n=0}^{N(t)-1}\alpha_n(t)u(t-\tau_n(t))\exp(-\mathrm{j}\phi_n(t)) \nonumber\\
+    &=\sum_{n=0}^{N(t)-1}\alpha_n(t)u(t-\tau_n(t))\exp(-\mathrm{j}2\pi f_\text{c}\tau_n(t)+\phi_{\text{D}_n}(t)).
+    \label{eq:received_complex}
     \end{align}
     $$
     
@@ -165,14 +171,49 @@ typora-root-url: ../../static
   
 + Relationship (using $\eqref{eq:complex2real}$): 
   $$
-  r(t)=\text{Re}\left\{u(t)\exp(-\mathrm{j}2\pi f_\text{c}t)\right\}.
+  \begin{align}
+  r(t)&=\text{Re}\left\{u_r(t)\exp(\mathrm{j}2\pi f_\text{c}t)\right\} \nonumber \\
+  &=\text{Re}\left\{\left[\sum_{n=0}^{N(t)-1}\alpha_n(t)u(t-\tau_n(t))\exp(-\mathrm{j}2\pi f_\text{c}\tau_n(t)+\phi_{\text{D}_n}(t))\right]\exp(\mathrm{j}2\pi f_\text{c}t)\right\} \nonumber \\
+  &=\text{Re}\left\{\sum_{n=0}^{N(t)-1}\alpha_n(t)u(t-\tau_n(t))\exp(\mathrm{j}2\pi f_\text{c}(t-\tau_n(t))+\phi_{\text{D}_n}(t))\right\}.
+  \end{align}
   $$
+  Now consdiering zero doppler shift that $\phi_{\text{D}_n}(t)=0$, the upper equation could be further reduced as follows:
+  $$
+  \begin{align}
+  &r(t)=\text{Re}\left\{\sum_{n=0}^{N(t)-1}\alpha_n(t)u(t-\tau_n(t))\exp(\mathrm{j}2\pi f_\text{c}(t-\tau_n(t)))\right\} \nonumber \\
+  &=\text{Re}\left\{\sum_{n=0}^{N(t)-1}\alpha_n(t)[s_\text{I}(t-\tau_n(t))+\mathrm{j}s_\text{Q}(t-\tau_n(t))]\left[\cos(2\pi f_\text{c}(t-\tau_n(t)))+\mathrm{j}\sin(2\pi f_\text{c}(t-\tau_n(t))))\right]\right\} \nonumber \\
+  &=\sum_{n=0}^{N(t)-1}\alpha_n(t)[s_\text{I}(t-\tau_n(t))\cos(2\pi f_\text{c}(t-\tau_n(t)))-s_\text{Q}(t-\tau_n(t))\sin(2\pi f_\text{c}(t-\tau_n(t)))] \nonumber\\
+  &=\sum_{n=0}^{N(t)-1}\alpha_{n}(t)s(t-\tau_n(t)).
+  \label{eq:received_relation}
+  \end{align}
+  $$
+  
 
 # Wideband / Narrowband Channel Model
 
-~~To be updated (DDL: before 2023.10.18)...~~ 
+### Narrowband Channel Model
 
+~~To be updated (DDL: before 2023.10.18)...~~  (Updated at 2023.10.18)
 
+When delay spread $T_\text{m}=\max_{i,j\in\{0,1,\ldots,N(t)-1\}}\{\tau_i-\tau_j\}$ and a manual signal period $T=1/B$ satisfies that $T_m \ll T$, we have $u(t-\tau_i)\approx u(t-\tau_0)\approx u(t)$. Equation $\eqref{eq:ch_complex}$ could be rewrote as:
+$$
+\begin{align}
+h_\text{nb}(t,\tau)&\approx\sum_{n=0}^{N(t)-1}\alpha_n(t)\exp(-\mathrm{j}\phi_n(t))\delta(\tau-\tau_0).
+\label{eq:ch_complex_nb}
+\end{align}
+$$
+Moreover, received signal could be rewrote as:
+$$
+\begin{align}
+u_r(t)&=u(t)\otimes h_\text{nb}(t,\tau) \nonumber \\
+&=\sum_{n}^{N(t)-1}\alpha_n(t)u(t-\tau_0)\exp(-\mathrm{j}\phi_n(t)) \nonumber \\
+&\approx	\sum_{n}^{N(t)-1}\alpha_n(t)u(t)\exp(-\mathrm{j}\phi_n(t))  \nonumber \\
+&=u(t)\times \underbrace{\alpha_n(t)\exp(-\mathrm{j}\phi_n(t))}_{h_\text{nb}(t)}
+\end{align}
+$$
+An interesting finding is that received signal $u_r(t)$ can be expressed as a multiplication of $u(t)$ and $h_\text{nb}(t)$ approximately at narrowband (No need of convolution!), and $h_\text{nb}(t)$ has similar expression with its CFR $H(t,f)$ in $\eqref{eq:CFR}$ if Doppler phase $\phi_{\text{D}_n} = 0$.
 
+### Wideband Channel Model
 
+**COMING SOON** (Computer science-ers' trash fake open-source style :sweat_smile:: To be updated in the infinite future... That's why i dont like them. If u can not make ur project public for some reason, it dosen't matter, but please do not cheat us and waste our time. Just a joke here.)
 
