@@ -188,6 +188,9 @@ typora-root-url: ../../static
   \end{align}
   $$
   
+  How about considering channel with doppler phase shift $\phi_{\text{D}_n}(t) \neq 0$?
+  
+  (To be updated after searching some articles...)
 
 # Wideband / Narrowband Channel Model
 
