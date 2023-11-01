@@ -218,5 +218,5 @@ An interesting finding is that received signal $u_r(t)$ can be expressed as a mu
 
 ### Wideband Channel Model
 
-**COMING SOON** (Computer science-ers' trash fake open-source style :sweat_smile:: To be updated in the infinite future... That's why i dont like them. If u can not make ur project public for some reason, it dosen't matter, but please do not cheat us and waste our time. Just a joke here.)
+<!-- **COMING SOON** (Computer science-ers' trash fake open-source style :sweat_smile:: To be updated in the infinite future... That's why i dont like them. If u can not make ur project public for some reason, it dosen't matter, but please do not cheat us and waste our time. Just a joke here.) -->
 
