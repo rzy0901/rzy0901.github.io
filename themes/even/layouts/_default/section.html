@@ -3,17 +3,32 @@
 {{- define "content" }}
 {{- $paginator := .Paginate .Data.Pages.ByDate.Reverse .Site.Params.archivePaginate }}
 <section id="archive" class="archive">
-  {{- if and (not $paginator.HasPrev) .Site.Params.showArchiveCount }}
+  <!--Raw page counter including hiddenfromhomepage elements.-->
+  <!-- {{- if and (not $paginator.HasPrev) .Site.Params.showArchiveCount }}
     <div class="archive-title">
       <span class="archive-post-counter">
         {{ T "archiveCounter" (len .Data.Pages) }}
       </span>
     </div>
+  {{- end -}} -->
+  {{ $visiblePages := slice }}
+  {{- range $paginator.Pages -}}
+    {{- if not .Params.hiddenfromhomepage -}}
+        {{ $visiblePages = $visiblePages | append . }}
+    {{- end -}}
+  {{- end -}}
+  
+  {{- if and (not $paginator.HasPrev) .Site.Params.showArchiveCount }}
+    <div class="archive-title">
+      <span class="archive-post-counter">
+        {{ T "archiveCounter" (len $visiblePages) }}
+      </span>
+    </div>
   {{- end -}}
 
-  {{- range $index, $element := $paginator.Pages -}}
+  {{- range $index, $element := $visiblePages -}}
     {{- $thisYear := $element.Date.Format "2006" }}
-    {{- $lastElement := $index | add -1 | index $paginator.Pages }}
+    {{- $lastElement := $index | add -1 | index $visiblePages }}
     {{- if or (eq $index 0) ( ne ($lastElement.Date.Format "2006") $thisYear ) }}
       <div class="collection-title">
         <h2 class="archive-year">{{ $thisYear }}</h2>
