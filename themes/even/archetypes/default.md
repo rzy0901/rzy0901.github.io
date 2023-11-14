@@ -2,26 +2,26 @@
 title: "{{ replace .TranslationBaseName "-" " " | title }}"
 date: {{ .Date }}
 lastmod: {{ .Date }}
-draft: true
+draft: false
 keywords: []
 description: ""
 tags: []
 categories: []
-author: ""
+author: "Ren Zhenyu"
 
 # You can also close(false) or open(true) something for this content.
 # P.S. comment can only be closed
-comment: false
-toc: false
-autoCollapseToc: false
-postMetaInFooter: false
+comment: true
+toc: true
+autoCollapseToc: true
+postMetaInFooter: true
 hiddenFromHomePage: false
 # You can also define another contentCopyright. e.g. contentCopyright: "This is another copyright."
-contentCopyright: false
+contentCopyright: MIT
 reward: false
-mathjax: false
-mathjaxEnableSingleDollar: false
-mathjaxEnableAutoNumber: false
+mathjax: true
+mathjaxEnableSingleDollar: true
+mathjaxEnableAutoNumber: true
 
 # You unlisted posts you might want not want the header or footer to show
 hideHeaderAndFooter: false
@@ -31,13 +31,14 @@ hideHeaderAndFooter: false
 #enableOutdatedInfoWarning: false
 
 flowchartDiagrams:
-  enable: false
+  enable: true
   options: ""
 
 sequenceDiagrams: 
-  enable: false
+  enable: true
   options: ""
-
+typora-copy-images-to: ../../static/{{ replace .TranslationBaseName "-" " " | title }}.assets
+typora-root-url: ../../static
 ---
 
 <!--more-->
