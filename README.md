@@ -1,15 +1,16 @@
 # rzy0901.github.io
 + This is my Personal Page based on [even](https://github.com/olOwOlo/hugo-theme-even).
 
-+ Usage:
++ Compared with orignal [even](https://github.com/olOwOlo/hugo-theme-even), my theme added functions:
 
-  + Do not use `hugo` with `sudo apt install hugo`, this version of `hugo` is not fully compactable with `mathjax` (`mathjax` is still unsupported for `hugo` until 2022/11/30).
-  + Instead, use `hugo` with `goldmark-mathjax` support: <https://github.com/xjzsq/hugo>.
-  + I also built binary files for `hugo` locally at <https://github.com/rzy0901/hugo/releases/tag/v1.0.0> for both windows and linux. You can use it with same usage of official `hugo`.
-    + I also use [Github Action](https://github.com/features/actions) to deploy my website using my own built binary `hugo` file (See [build.yml](./.github/workflows/build.yml) for more details and github page is deployed on [gh-pages](https://github.com/rzy0901/rzy0901.github.io/tree/gh-pages) branch). 
-  
-  
-  
+  1. Dark/Light mode.
+  2. Solve Mathjax bug (quite important for latex users).
+  3. Add print the page as pdf option (just right click and select "print..." to have a try).
+  4. Some other tiny changes such as excluding some posts from archives...
+
+  I don't make a pull request to the original [even](https://github.com/olOwOlo/hugo-theme-even) since the owner seems to be disappeared. And my codes are a little messy that I do not have time to distinguish them into several independent commits.
+
++ Usage: take a look at <https://rzy0901.github.io/post/usage/>
 
 
 

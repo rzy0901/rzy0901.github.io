@@ -5,9 +5,12 @@ noComment: true
 weight: 50
 ---
 
+If you like my theme, take a look at: [How to use this website?](/post/usage/).
+
 Website status (It takes several seconds to show):
 <!-- cluster Map 搞笑的，加载太慢了 -->
 <!-- <script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=a&t=tt&d=KNhUkfBz0L7ehCNZBExvsbzI3i4WYHNo7km8lQI9Cuc'></script> -->
+
 <center><a href='https://clustrmaps.com/site/1bp0e'  title='Visit tracker'><img src='//clustrmaps.com/map_v2.png?cl=ffffff&w=300&t=tt&d=KNhUkfBz0L7ehCNZBExvsbzI3i4WYHNo7km8lQI9Cuc&co=2d78ad&ct=ffffff'/></a></center>
 
 Friend Links（友链）:
