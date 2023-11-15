@@ -5,7 +5,7 @@ noComment: true
 weight: 50
 ---
 
-If you like my theme, take a look at: [How to use this website?](/post/usage/).
+If you like my theme, take a look at: [How to use this website?](/post/usage/)
 
 Website status (It takes several seconds to show):
 <!-- cluster Map 搞笑的，加载太慢了 -->

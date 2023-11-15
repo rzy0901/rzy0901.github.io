@@ -45,11 +45,11 @@ typora-root-url: ../../static
 
 ## What's new in this theme?
 
-Compared with orignal [even](https://github.com/olOwOlo/hugo-theme-even), my theme added functions:
+Compared with orignal [even](https://github.com/olOwOlo/hugo-theme-even), my theme added new functions as follows:
 
 1. Dark/Light mode.
 2. Solve Mathjax bug (quite important for latex users).
-3. Add print the page as pdf option (just right click and select "print..." to have a try).
+3. Add "print the page as pdf" option (just right click and select "print..." to have a try).
 4. Some other tiny changes such as excluding some posts from archives...
 
 I don't make a pull request to the original [even](https://github.com/olOwOlo/hugo-theme-even) since the owner seems to be disappeared. And my codes are a little messy that I do not have time to distinguish them into several independent commits.
