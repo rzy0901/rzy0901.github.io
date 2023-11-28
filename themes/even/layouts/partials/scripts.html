@@ -11,8 +11,23 @@
 {{- else -}}
   <script type="text/javascript" src="{{ "lib/jquery/jquery-3.2.1.min.js" | relURL }}"></script>
   <script type="text/javascript" src="{{ "lib/slideout/slideout-1.0.1.min.js" | relURL }}"></script>
-  {{ if .Site.Params.fancybox }}<script type="text/javascript" src="{{ "lib/fancybox/jquery.fancybox-3.1.20.min.js" | relURL }}"></script>{{ end }}
+  <!-- {{ if .Site.Params.fancybox }}<script type="text/javascript" src="{{ "lib/fancybox/jquery.fancybox-3.1.20.min.js" | relURL }}"></script>{{ end }} -->
+  {{ if .Site.Params.fancybox }}<script type="text/javascript" src="{{ "lib/fancybox/fancybox.umd.js" | relURL }}"></script>{{ end }}
 {{- end -}}
+<!-- https://fancyapps.com/fancybox/getting-started/ -->
+<script>
+  $(document).ready(function() {
+    // Find all images in the content and add data-fancybox attribute
+    $("article img").each(function() {
+      $(this).attr("data-fancybox", "gallery");
+    });
+
+    // Initialize Fancybox
+    Fancybox.bind("[data-fancybox]", {
+      // Optional configuration options
+    });
+  });
+</script>
 
 <!-- timeago.JS -->
 {{- if and (or .Params.enableOutdatedInfoWarning (and .Site.Params.outdatedInfoWarning.enable (ne .Params.enableOutdatedInfoWarning false))) (or .IsPage .IsHome) }}
@@ -168,7 +183,9 @@
   if(!isMobile){
      document.querySelectorAll(".highlight").forEach((highlightDiv) => createCopyButton(highlightDiv));
   }
-</script> 
+</script>
+{{ end }}
+
 <script>
   //通过时间判断夜间模式，否则会完全手动切换并本地持久化模式，下次自动渲染本地持久化的模式
 var darkMode = {
@@ -268,4 +285,4 @@ var darkMode = {
 };
 darkMode.init();
 </script> 
-{{ end }}
+
