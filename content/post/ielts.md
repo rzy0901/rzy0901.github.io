@@ -37,10 +37,13 @@ flowchartDiagrams:
 sequenceDiagrams: 
   enable: false
   options: ""
-
+typora-copy-images-to: ../../static/ielts.assets
+typora-root-url: ../../static
 ---
 
 <!--more-->
+
+![image-20231123203916113](/ielts.assets/image-20231123203916113.png)
 
 # Speaking
 
@@ -124,5 +127,72 @@ sequenceDiagrams:
 
 ## Speaking Part 2
 
+# Vocabulary
 
+> I think these words are possible usable for writing and listening.
 
++ on the premise that， 根据XXX的假设
++ Indeed，事实上
++ dubbed XXX，被称为（起绰号）
+  + Dub: 刺，配音，称做
++ Elaborate，精细的。
++ In the midst of xxx, 在xxx之中
++ plural，复数的，多元的
++ flora（植物群） and fauna（动物群）
++ inadequate（不充分的） and adequate（充分的）
++ alight（从空中掉落，燃烧） on，偶然发现
+  + Scientists have alighted on a new phenomenon.
++ be competent（有能力的，能胜任的） in doing sth
++ on a grand（宏伟的） scale，巨大规模地
++ severe，严重的（形容实物）
++ surpass（超过）oneself，超越自己
++ fences，栅栏
++ detract from，贬低，减损，使逊色
++ perfume，香水
++ consolation，安慰
++ unyielding，顽强不屈的
++ plausible explanation，看似合理的解释
++ irritation，愤怒；irrigation，灌溉；imitation，模仿
++ inhale，吸气；exhale，呼气
++ exempt from，免除/豁免 对象
++ towel，手巾；tower，塔
++ `$6.50`，six dollars and 50 cents（美分）
++ Ounce，盎司，1盎司约28克
+  + We all know there are 16 ounces in one pound.
++ Knitting，编织物
++ disposable，一次性的，可支配的。
+  + dispoable income，可支配收入
++ administrative，行政的
++ census，人口普查；censure，批评，谴责
++ lie fallow，处于闲置
++ fiction，小说；friction，摩擦力
++ console，安慰；consolation，安
++ evade，逃避，躲避；invade，入侵
++ wander，游荡，散步；stroll，散步
++ incendiary，易燃的；incendiarism，放火
++ tribe，部落；tribal，*adj.*，部落的
++ rim，边沿；brim，边缘；trim，修剪；
++ hotel，宾馆；hostel，招待所，旅社
++ venom，恶毒；venomous，*adj.*，恶毒的
++ essence，essential，in essence 本质上，of the essensce 极其重要的
++ anecdote，奇闻逸事；antidote，解毒剂
++ agility，敏捷；agile，*adj.*，敏捷的
++ crawl，爬行；scrawl，潦草的
++ collate $\approx$ revise，校准，校对
++ envisage，设想；visage，脸，外观
++ spectacle，景观；specular，镜面的；speculate，猜测；
++ excursion，短足；hide，远足
++ propel，驱动；expel，排除
++ district，区；distract，分心
++ 垂直的：sheer，steep
++ brass，黄铜；grass，草；gross，总共的，严重的，恶心的；
+  + bronze，青铜
+
++ neutral，中立的；neural，神经的
++ breeze，微风；breed，哺育；breek，小溪；weed，杂草
++ lime，酸橙，石灰；linne，亚麻布
++ quota，限额；quote，引用
++ aptitude，天赋；attitude，态度；altitude，海拔
++ sentiment，观点，看法；sediment，沉淀物
++ funiture，家具；furnace，火炉
++ 

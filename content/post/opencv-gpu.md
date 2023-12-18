@@ -37,7 +37,8 @@ flowchartDiagrams:
 sequenceDiagrams: 
   enable: false
   options: ""
-
+typora-copy-images-to: ../../static/opencv-gpu.assets
+typora-root-url: ../../static
 ---
 
 <!--more-->

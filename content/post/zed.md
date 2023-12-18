@@ -12,6 +12,8 @@ autoCollapseToc: false
 postMetaInFooter: true
 reward: false
 author: Ren Zhenyu
+typora-copy-images-to: ../../static/zed.assets
+typora-root-url: ../../static
 ---
 
 
@@ -63,8 +65,9 @@ author: Ren Zhenyu
 
 ## 彩蛋：一个男子在打拳
 
-<center><img src="../../zed.assets/lqr.png" alt="test1" style="zoom:25%;" /></center>
+<center><img src="/zed.assets/lqr.png" alt="test1" style="zoom:25%;" /></center>
+
 </br>
 <center>
-<img src="../../zed.assets/test2.gif" alt="test2" style="zoom: 50%;" />
+<img src="/zed.assets/test2.gif" alt="test2" style="zoom: 50%;" />
 </center>

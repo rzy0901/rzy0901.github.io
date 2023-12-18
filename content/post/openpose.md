@@ -12,6 +12,8 @@ autoCollapseToc: false
 postMetaInFooter: true
 reward: false
 author: Ren Zhenyu
+typora-copy-images-to: ../../static/openpose.assets
+typora-root-url: ../../static
 ---
 
 ## OpenPose安装及测试环境
@@ -31,7 +33,7 @@ author: Ren Zhenyu
 ./build/examples/openpose/openpose.bin
 ```
 
-![test1](../../openpose.assets/test1.png)
+![test1](/openpose.assets/test1.png)
 
 ## OpenPose Python 接口测试
 
@@ -40,4 +42,4 @@ cd build/examples/tutorial_api_python
 python3 01_body_from_image.py
 ```
 
-![test1](../../openpose.assets/test2.png)
+![test1](/openpose.assets/test2.png)
