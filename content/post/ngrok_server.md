@@ -5,8 +5,8 @@ lastmod: 2023-12-18T20:29:44+08:00
 draft: false
 keywords: []
 description: ""
-tags: []
-categories: []
+tags: ["linux","ssh","ngrok"]
+categories: ["notes"]
 author: "Ren Zhenyu"
 
 # You can also close(false) or open(true) something for this content.
