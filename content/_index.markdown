@@ -30,7 +30,24 @@ Emails:
 
 <!-- My CV (Last Updated: March, 2022): [Website](/cv/) | [PDF](/cv.pdf). -->
 
-Recent news:
+Recent Updates:
 
+<ul>
+    <li><em>2023-12-22</em>: This website is now also hosted on Tencent Cloud (腾讯云) at <a href="http://43.139.224.203">43.139.224.203</a> to enhance the experience for Chinese readers (previously hosted at <a href="https://rzy0901.github.io/">rzy0901.github.io</a>).
+    <ul>
+        <li>A domain name will be introduced shortly for more convenient access.</li>
+    </ul>
+    </li>
+    <!-- <li> -->
+    <!-- <details> -->
+    <!-- <summary><li>Click to expand.</li></summary> -->
+    <li><em>2022-8-27</em>: I pursued further studies as a master's student at Southern University of Science and Technology.</li>
+    <li><em>2022-6-15</em>: I successfully completed a one-year internship at Huawei Technology.</li>
+    <!-- </details> -->
+    <!-- </li> -->
+</ul>
+
+<!-- + *2023-12-22*: This website began to be also hosted on Tencent Cloud (腾讯云) at [43.139.224.203](http://43.139.224.203) to enhance the experience for Chinese readers (formerly, at [rzy0901.github.io](https://rzy0901.github.io/)).
+    + A domain name will be introduced shortly for easier access.
 + *2022-8-27*: I furthered my study as a master student at Southern University of Science and Technology.
-+ *2022-6-15*: I completed my one-year internship at Huawei Technology.
++ *2022-6-15*: I completed my one-year internship at Huawei Technology. -->
