@@ -58,13 +58,15 @@ ssh -p 1220 lasso@10.16.20.194
 
 然而，上述方法无法使得我们在非校园网的情况下访问服务器，主要原因是实验室服务器并没有一个公网ip地址。
 
-## 内网穿透
+## Ngrok内网穿透
 
 我们可以使用免费内网穿透工具[Ngrok](https://dashboard.ngrok.com/)解决该问题。（安装过程很简单，略）
 
 在内网或者使用向日葵登陆服务器，运行如下代码即可：
 
 ```zsh
+# https://dashboard.ngrok.com/get-started/setup
+ngrok config add-authtoken <your_authtoken>
 # ngrok tcp <port_number>
 # 该port_number默认为20，我们在/etc/ssh/sshd_config将端口号改为了1220
 ngrok tcp 1220
