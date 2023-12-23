@@ -33,6 +33,7 @@ Emails:
 Recent Updates:
 
 <ul>
+    <li><em>2023-12-23</em>: This website is now also hosted at <a href="https://renzhenyu.site">renzhenyu.site</a>.</li>
     <li><em>2023-12-22</em>: This website is now also hosted on Tencent Cloud (腾讯云) at <a href="http://43.139.224.203">43.139.224.203</a> to enhance the experience for Chinese readers (previously hosted at <a href="https://rzy0901.github.io/">rzy0901.github.io</a>).
     <ul>
         <li>A domain name will be introduced shortly for more convenient access.</li>
