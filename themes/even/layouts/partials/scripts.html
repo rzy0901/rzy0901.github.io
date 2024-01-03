@@ -14,12 +14,18 @@
   <!-- {{ if .Site.Params.fancybox }}<script type="text/javascript" src="{{ "lib/fancybox/jquery.fancybox-3.1.20.min.js" | relURL }}"></script>{{ end }} -->
   {{ if .Site.Params.fancybox }}<script type="text/javascript" src="{{ "lib/fancybox/fancybox.umd.js" | relURL }}"></script>{{ end }}
 {{- end -}}
+
+{{ if .Site.Params.fancybox }}
 <!-- https://fancyapps.com/fancybox/getting-started/ -->
 <script>
   $(document).ready(function() {
-    // Find all images in the content and add data-fancybox attribute
+    // Find all images in the content
     $("article img").each(function() {
-      $(this).attr("data-fancybox", "gallery");
+      // Check if the image should be excluded from Fancybox
+      if (!$(this).hasClass("disable-fancybox")) {
+        // Add data-fancybox attribute for images that should have Fancybox
+        $(this).attr("data-fancybox", "gallery");
+      }
     });
 
     // Initialize Fancybox
@@ -28,6 +34,8 @@
     });
   });
 </script>
+{{ end }}
+
 
 <!-- timeago.JS -->
 {{- if and (or .Params.enableOutdatedInfoWarning (and .Site.Params.outdatedInfoWarning.enable (ne .Params.enableOutdatedInfoWarning false))) (or .IsPage .IsHome) }}
