@@ -92,7 +92,6 @@ Note: You can look up my [GitHub](https://github.com/rzy0901) for my full projec
   </tr>
   <tr>
     <td align="center">
-      <img src="/cv.assets/channel_simulation_human.png" style="zoom:30%;" /><br/>
       <img src="/cv.assets/channel_simulation.png" style="zoom:30%;" /><br/>
       System of <i>CASTER</i> Channel Simulator and Wireless Gesture Recognition.
     </td>
