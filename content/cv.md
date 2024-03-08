@@ -37,7 +37,7 @@ hideHeaderAndFooter: true
 <div style="width: 70%; float: left;">
   <ul>
     <li>
-      <img src="/cv.assets/email.svg" style="width: 20px; height: 20px;"> Email: <a href="mailto:ren2022@mail.sustech.edu.cn">ren2022@mail.sustech.edu.cn</a>; <br/>
+      <img src="/cv.assets/email.svg" style="width: 20px; height: 20px;"> Email: <a href="mailto:renzy2022@mail.sustech.edu.cn">renzy2022@mail.sustech.edu.cn</a>; <br/>
       <img src="/cv.assets/website.svg" style="width: 20px; height: 20px;"> Website: <a href="https://renzhenyu.site">https://renzhenyu.site</a>; <br/>
       <img src="/cv.assets/github.svg" style="width: 20px; height: 20px;"> Github: <a href="https://github.com/rzy0901">https://github.com/rzy0901</a>.
     </li>
