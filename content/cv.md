@@ -4,6 +4,7 @@ menu: "main"
 draft: false
 noComment: true
 hideHeaderAndFooter: true
+weight: 100000
 ---
 
 <!-- <center><font size = 6pt>任振裕（Ren Zhenyu)</font></center> -->
@@ -73,10 +74,10 @@ hideHeaderAndFooter: true
 
 ## Publications & Patents
 
-Publication (One ongoing):
+Publications (One ongoing):
 + **Ren, Zhenyu**, Guoliang Li, Chenqing Ji, Chao Yu, Shuai Wang, and Rui Wang. "CASTER: A Computer-Vision-Assisted Wireless Channel Simulator for Gesture Recognition." arXiv preprint arXiv:2311.07169 (2023). **(Revise and Resubmit, IEEE Open Journal of the Communications Society).**
 
-Patent (One ongoing):
+Patents (One ongoing):
 + **任振裕**，陈万里，王锐，余潮，“无线信道仿真方法、装置、计算机设备及存储介质”，专利申请号：2023110356420，南方科技大学，申请日：2023.08.16（发明专利）。
 
 ## Projects & Software
