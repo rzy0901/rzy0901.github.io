@@ -3,44 +3,22 @@ title: "CV"
 menu: "main"
 draft: false
 noComment: true
-hideHeaderAndFooter: true
+hideHeaderAndFooter: false
 weight: 100000
 ---
 
-<!-- <center><font size = 6pt>任振裕（Ren Zhenyu)</font></center> -->
-
 # Resume for Zhenyu REN (任振裕)
 
-<!-- <img src="/cv.assets/rzy.jpg" style="max-width: 25%; float: right; zoom: 25%;" alt="Profile img" />
-
-<ul>
-  <li>
-    <img src="/cv.assets/email.svg" style="width: 20px; height: 20px;"> Email: <a href="mailto:ren2022@mail.sustech.edu.cn">ren2022@mail.sustech.edu.cn</a>; <br/>
-    <img src="/cv.assets/website.svg" style="width: 20px; height: 20px;"> Website: <a href="https://renzhenyu.site">https://renzhenyu.site</a>; <br/>
-    <img src="/cv.assets/github.svg" style="width: 20px; height: 20px;"> Github: <a href="https://github.com/rzy0901">https://github.com/rzy0901</a>.
-  </li>
-  <li>
-    I'm a master in the Department of Electrical and Electronics Engineering at 
-    <strong><a href="https://www.sustech.edu.cn/en/">Southern University of Science and Technology (SUSTech)</a></strong>. 
-    I am currently studying in 
-    <strong><a href="http://lasso.eee.sustech.edu.cn/">LAb of <strong>W</strong>ireles<strong>S</strong> communications and <strong>S</strong>ystem <strong>O</strong>ptimization (LASSO)</a></strong> 
-    and being supervised by <strong><a href="https://eee.sustech.edu.cn/p/wangrui/index.html">Prof. Wang Rui</a></strong>.
-  </li>
-  <li>
-    My research interest focuses on: Wireless Communication & Sensing; Channel Modeling.
-  </li>
-</ul> -->
-
 <div style="width: 30%; float: right;">
-  <img src="/cv.assets/rzy.jpg" style="max-width: 100%; float: right; zoom: 25%;" alt="Profile img" />
+  <img src="/cv.assets/rzy.jpg" style="max-width: 100%; float: right; zoom: 25%;" alt="Profile img" title="Zhenyu REN"/>
 </div>
 
 <div style="width: 70%; float: left;">
   <ul>
     <li>
-      <img src="/cv.assets/email.svg" style="width: 20px; height: 20px;"> Email: <a href="mailto:renzy2022@mail.sustech.edu.cn">renzy2022@mail.sustech.edu.cn</a>; <br/>
-      <img src="/cv.assets/website.svg" style="width: 20px; height: 20px;"> Website: <a href="https://renzhenyu.site">https://renzhenyu.site</a>; <br/>
-      <img src="/cv.assets/github.svg" style="width: 20px; height: 20px;"> Github: <a href="https://github.com/rzy0901">https://github.com/rzy0901</a>.
+      <img src="/cv.assets/email.svg" style="width: 20px; height: 20px;" class="disable-fancybox"> Email: <a href="mailto:renzy2022@mail.sustech.edu.cn">renzy2022@mail.sustech.edu.cn</a>; <br/>
+      <img src="/cv.assets/website.svg" style="width: 20px; height: 20px;" class="disable-fancybox"> Website: <a href="https://renzhenyu.site">https://renzhenyu.site</a>; <br/>
+      <img src="/cv.assets/github.svg" style="width: 20px; height: 20px;" class="disable-fancybox"> Github: <a href="https://github.com/rzy0901">https://github.com/rzy0901</a>.
     </li>
     <li>
       I'm a master in the Department of Electrical and Electronics Engineering at 
