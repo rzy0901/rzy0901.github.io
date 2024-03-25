@@ -37,7 +37,8 @@ flowchartDiagrams:
 sequenceDiagrams: 
   enable: true
   options: ""
-typora-copy-images-to: ../../static/{{ replace .TranslationBaseName "-" " " | title }}.assets
+# typora-copy-images-to: ../../static/{{ replace .TranslationBaseName "-" " " | title }}.assets
+typora-copy-images-to: ../../static/{{ replace .TranslationBaseName "-" " "}}.assets
 typora-root-url: ../../static
 ---
 
