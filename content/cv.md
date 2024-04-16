@@ -43,7 +43,7 @@ weight: 100000
 
 + <b>Huawei Technology, Wireless Technology Laboratory | Research Intern</b> <i style="float: right">June. 2021 - June. 2022</i>
 
-  Supervised by Dr. [Tony Han Xiao](https://scholar.google.com/citations?hl=en&user=cqvSehcAAAAJ). Internship Certificate: [[pdf]](/cv.assets/实习证明.pdf).
+  Supervised by Dr. [Tony Han Xiao](https://scholar.google.com/citations?hl=en&user=cqvSehcAAAAJ). Internship Certificate: [[pdf]](/cv.assets/intern_huawei_proof.pdf).
 
 + <b>Southern University of Science and Technology | Bachelor</b> <i style="float: right">September. 2018 - July. 2022</i>
 
@@ -94,7 +94,7 @@ Note: You can look up my [GitHub](https://github.com/rzy0901) for my full projec
     </td>
     <td>
       <a href="/cv.assets/main_UG_paper.pdf">[Thesis]</a><br/>
-      <a href="/cv.assets/任振裕毕业设计20220528v3.pdf">[Slides]</a>
+      <a href="/cv.assets/UG_slides.pdf">[Slides]</a>
     </td>
   </tr>
 </table>
