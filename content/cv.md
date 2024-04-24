@@ -7,7 +7,7 @@ hideHeaderAndFooter: false
 weight: 100000
 ---
 
-# Resume for Zhenyu REN (任振裕) [[resume.pdf]](/cv.assets/resume.pdf)
+# Resume for Zhenyu REN (任振裕) [[CV.pdf]](/cv.assets/CV.pdf)
 
 <div style="width: 30%; float: right;">
   <img src="/cv.assets/rzy.jpg" style="max-width: 100%; float: right; zoom: 25%;" alt="Profile img" title="Zhenyu REN"/>
