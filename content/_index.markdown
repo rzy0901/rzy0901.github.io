@@ -18,7 +18,7 @@ enabelGithubFork: true
 
 <font size = 4pt>
 
-Hi, this is Ren Zhenyu (任振裕, Ren is my family name). 🌏
+Hi, this is REN Zhenyu (任振裕, REN is my family name). 🌏
 
 <!-- Brief Bio: UG@SUSTech || Intern@Huawei. -->
 

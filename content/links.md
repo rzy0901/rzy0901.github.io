@@ -7,6 +7,8 @@ weight: 50
 
 If you like my theme, take a look at: [How to use this website?](/post/usage/)
 
+Collections of [Tags]({{% rooturl %}}tags/) and [Categories]({{% rooturl %}}categories/) for my technical blogs.
+
 Website status (It takes several seconds to show):
 <!-- cluster Map 搞笑的，加载太慢了 -->
 <!-- <script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=a&t=tt&d=KNhUkfBz0L7ehCNZBExvsbzI3i4WYHNo7km8lQI9Cuc'></script> -->

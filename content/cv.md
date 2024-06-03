@@ -7,10 +7,11 @@ hideHeaderAndFooter: false
 weight: 100000
 ---
 
-# Resume for Zhenyu REN (任振裕) [[CV.pdf]](/cv.assets/CV.pdf)
+## Resume for Zhenyu Ren (任振裕) [[CV.pdf]](/cv.assets/CV.pdf)
 
-<div style="width: 30%; float: right;">
-  <img src="/cv.assets/rzy.jpg" style="max-width: 100%; float: right; zoom: 25%;" alt="Profile img" title="Zhenyu REN"/>
+<div style="width: 20%; float: right; display: flex; flex-direction: column;">
+  <img src="/cv.assets/rzy.jpg" style="max-width: 100%; float: right; zoom: 25%;" alt="Profile img" title="Zhenyu Ren"/>
+  <div><center>Zhenyu Ren (任振裕)</center></div>
 </div>
 
 <div style="width: 70%; float: left;">
@@ -22,10 +23,10 @@ weight: 100000
     </li>
     <li>
       I'm a master in the Department of Electrical and Electronics Engineering at 
-      <strong><a href="https://www.sustech.edu.cn/en/">Southern University of Science and Technology (SUSTech)</a></strong>. 
+      <strong>Southern University of Science and Technology (SUSTech)</strong>. 
       I am currently studying in 
-      <strong><a href="http://lasso.eee.sustech.edu.cn/">LAb of <strong>W</strong>ireles<strong>S</strong> communications and <strong>S</strong>ystem <strong>O</strong>ptimization (LASSO)</a></strong> 
-      and being supervised by <strong><a href="https://eee.sustech.edu.cn/p/wangrui/index.html">Prof. Wang Rui</a></strong>.
+      <strong>LAb of <strong>W</strong>ireles<strong>S</strong> communications and <strong>S</strong>ystem <strong>O</strong>ptimization (LASSO)</strong> 
+      and being supervised by <strong><a href="http://lasso.eee.sustech.edu.cn/">Prof. WANG Rui</a></strong>.
     </li>
     <li>
       My research interest focuses on: Wireless Communication & Sensing; Channel Modeling.
@@ -39,65 +40,37 @@ weight: 100000
 
 + <b>Southern University of Science and Technology | Master</b> <i style="float: right">September. 2022 - July. 2025 (expected)</i>
 
-  Majoring in Electronic science and technology, supervised by Prof. [Wang Rui](https://eee.sustech.edu.cn/p/wangrui/index.html). GPA: (3.5/4.0).
+  Majoring in Electronic science and technology, supervised by Prof. [WANG Rui](http://lasso.eee.sustech.edu.cn/). GPA: (3.44/4.0).
 
 + <b>Huawei Technology, Wireless Technology Laboratory | Research Intern</b> <i style="float: right">June. 2021 - June. 2022</i>
 
-  Supervised by Dr. [Tony Han Xiao](https://scholar.google.com/citations?hl=en&user=cqvSehcAAAAJ). Internship Certificate: [[pdf]](/cv.assets/intern_huawei_proof.pdf).
+  Supervised by Dr. [Tony HAN Xiao](https://scholar.google.com/citations?hl=en&user=cqvSehcAAAAJ). Internship Certificate: [[pdf]](/cv.assets/intern_huawei_proof.pdf).
 
 + <b>Southern University of Science and Technology | Bachelor</b> <i style="float: right">September. 2018 - July. 2022</i>
 
-  Majoring in Communication Engineering, supervised by Prof. [Wang Rui](https://eee.sustech.edu.cn/p/wangrui/index.html). GPA: (3.69/4.00), ranked 5/26.
+  Majoring in Communication Engineering, supervised by Prof. [WANG Rui](http://lasso.eee.sustech.edu.cn/). GPA: (3.69/4.00), ranked 5/26.
 
 
 ## Publications & Patents
 
-Publications (One ongoing):
-+ **Ren, Zhenyu**, Guoliang Li, Chenqing Ji, Chao Yu, Shuai Wang, and Rui Wang. "CASTER: A Computer-Vision-Assisted Wireless Channel Simulator for Gesture Recognition." arXiv preprint arXiv:2311.07169 (2023). **(Revise and Resubmit, IEEE Open Journal of the Communications Society).**
+### Publications
 
-Patents (One ongoing):
+<div class="paper-box">
+  <div class="paper-box-image">
+    <div class="badge">
+    IEEE OJ-COMS | SYSTEM
+    </div>
+    <img src="/cv.assets/channel_simulation.png" alt="CASTER" width="100%">
+    <div class="paper-box-caption">Keywords: Wireless hand gesture recognition, channel model, simulation-to-reality inference, mmWave system.</div>
+  </div>
+  <div class="paper-box-text">
+  <p><strong>Zhenyu Ren</strong>, Guoliang Li, Chenqing Ji, Chao Yu, Shuai Wang, and Rui Wang. “CASTER: A Computer-Vision-Assisted Wireless Channel Simulator for Gesture Recognition,” in <i>IEEE Open Journal of the Communications Society</i>, vol. 5, pp. 3185-3195, 2024 (Current impact factor: 7.9, JCR Q1). <br> <a href="https://doi.org/10.1109/ojcoms.2024.3398016">[Paper]</a> | <a href="https://github.com/rzy0901/testSpectrogram">[GitHub]</a> | <a href="https://lasso-sustech.github.io/CASTER/">[Project Page]</a> (with three video demos).
+  </p>
+  </div>
+</div>
+
+### Patents
 + **任振裕**，陈万里，王锐，余潮，“无线信道仿真方法、装置、计算机设备及存储介质”，专利申请号：2023110356420，南方科技大学，申请日：2023.08.16（发明专利）。
-
-## Projects & Software
-
-Note: You can look up my [GitHub](https://github.com/rzy0901) for my full project lists.
-
-
-<table>
-  <tr>
-    <th>Project Name</th>
-    <th>Description</th>
-    <th>Resource</th>
-  </tr>
-  <tr>
-    <td align="center">
-      <img src="/cv.assets/channel_simulation.png" style="zoom:30%;" /><br/>
-      System of <i>CASTER</i> Channel Simulator and Wireless Gesture Recognition.
-    </td>
-    <td>
-      <a href="https://github.com/rzy0901/testSpectrogram">[rzy0901/testSpectrogram]</a> is a repository containing raw code related to wireless channel simulation, human/hand pose extraction, gesture spectrogram generation, and real-time gesture recognition based on millimeter-wave passive sensing and communication systems.
-    </td>
-    <td>
-      <a href="https://arxiv.org/pdf/2311.07169.pdf">[Arxiv]</a><br/>
-      <a href="https://github.com/rzy0901/testSpectrogram">[Code]</a><br/>
-      <a href="https://www.bilibili.com/video/BV14G411y7nn">[Video]</a>
-    </td>
-  </tr>
-  <tr>
-    <td align="center">
-      <img src="/cv.assets/image-20220510230834702.png" alt="image-20220510230834702" style="zoom: 35%;" /><br/>
-      UG Graduate Thesis. (Wi-Fi Based Indoor Near Field Imaging.)
-    </td>
-    <td>
-        This project was done during my internship of Huawei WT Lab.<br/>
-        An impressive experiment based on AD9361 and digital-controlled rail (driven by C++ or MATLAB function) is also given.
-    </td>
-    <td>
-      <a href="/cv.assets/main_UG_paper.pdf">[Thesis]</a><br/>
-      <a href="/cv.assets/UG_slides.pdf">[Slides]</a>
-    </td>
-  </tr>
-</table>
 
 ## Awards
 
@@ -109,4 +82,4 @@ Note: You can look up my [GitHub](https://github.com/rzy0901) for my full projec
 + 2020年全国大学生数学建模大赛省级一等奖；
 
 
-<center>LAST UPDATED: March, 2024</center>
+<center>LAST UPDATED: June, 2024</center>
