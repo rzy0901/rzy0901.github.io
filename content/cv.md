@@ -36,20 +36,25 @@ weight: 100000
 
 <div style="clear: both;"></div>
 
-## Academia & Research Experience
+## Education
 
 + <b>Southern University of Science and Technology | Master</b> <i style="float: right">September. 2022 - July. 2025 (expected)</i>
 
   Majoring in Electronic science and technology, supervised by Prof. [WANG Rui](http://lasso.eee.sustech.edu.cn/). GPA: (3.44/4.0).
 
-+ <b>Huawei Technology, Wireless Technology Laboratory | Research Intern</b> <i style="float: right">June. 2021 - June. 2022</i>
-
-  Supervised by Dr. [Tony HAN Xiao](https://scholar.google.com/citations?hl=en&user=cqvSehcAAAAJ). Internship Certificate: [[pdf]](/cv.assets/intern_huawei_proof.pdf).
-
 + <b>Southern University of Science and Technology | Bachelor</b> <i style="float: right">September. 2018 - July. 2022</i>
 
   Majoring in Communication Engineering, supervised by Prof. [WANG Rui](http://lasso.eee.sustech.edu.cn/). GPA: (3.69/4.00), ranked 5/26.
 
+## Experience
+
++ <b>Huawei Technology, Computer Network and Protocol Research Laboratory | Research Intern</b> <i style="float: right">July. 2024 - present</i>
+
+  Working on short-range wireless communication protocols (e.g., SparkLink).
+
++ <b>Huawei Technology, Wireless Technology Laboratory | Research Intern</b> <i style="float: right">June. 2021 - June. 2022</i>
+  
+  Working on wireless sensing and communication. Supervised by Dr. [Tony HAN Xiao](https://scholar.google.com/citations?hl=en&user=cqvSehcAAAAJ). Internship Certificate: [[pdf]](/cv.assets/intern_huawei_proof.pdf).
 
 ## Publications & Patents
 
@@ -82,4 +87,4 @@ weight: 100000
 + 2020年全国大学生数学建模大赛省级一等奖；
 
 
-<center>LAST UPDATED: June, 2024</center>
+<center>LAST UPDATED: July, 2024</center>
