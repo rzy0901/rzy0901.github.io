@@ -33,19 +33,23 @@ Emails:
 Recent Updates:
 
 <ul>
+    <font color = "red"><li><em>2024-8-16</em>：为2024至过年回家前的自学列个计划吧（贴于此，以勉励自己）：</li></font>    <ul>
+        <li>计算机网络，操作系统等CS的专业课看一看；</li>
+        <li>把蓝牙标准仔细读一遍。</li>
+    </ul>
+    <!-- <li> -->
+    <!-- <details>
+    <summary><li>Click to expand.</li></summary> -->
     <li><em>2023-12-23</em>: This website is now also hosted at <a href="https://renzhenyu.site">renzhenyu.site</a>.</li>
     <li><em>2023-12-22</em>: This website is now also hosted on Tencent Cloud (腾讯云) at <a href="http://43.139.224.203">43.139.224.203</a> to enhance the experience for Chinese readers (previously hosted at <a href="https://rzy0901.github.io/">rzy0901.github.io</a>).
     <ul>
         <li>A domain name will be introduced shortly for more convenient access.</li>
     </ul>
     </li>
-    <!-- <li> -->
-    <!-- <details> -->
-    <!-- <summary><li>Click to expand.</li></summary> -->
     <li><em>2022-8-27</em>: I pursued further studies as a master's student at Southern University of Science and Technology.</li>
     <li><em>2022-6-15</em>: I successfully completed a one-year internship at Huawei Technology.</li>
     <!-- </details> -->
-    <!-- </li> -->
+    </li>
 </ul>
 
 <!-- + *2023-12-22*: This website began to be also hosted on Tencent Cloud (腾讯云) at [43.139.224.203](http://43.139.224.203) to enhance the experience for Chinese readers (formerly, at [rzy0901.github.io](https://rzy0901.github.io/)).
