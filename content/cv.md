@@ -48,9 +48,9 @@ weight: 100000
 
 ## Experience
 
-+ <b>Huawei Technology, Computer Network and Protocol Research Laboratory | Research Intern</b> <i style="float: right">July. 2024 - present</i>
++ <b>Huawei Technology, Computer Network and Protocol Research Laboratory | Research Intern</b> <i style="float: right">July. 2024 - Jan. 2025</i>
 
-  Working on short-range wireless communication protocols (e.g., SparkLink).
+  Working on short-range wireless communication protocols (e.g., SparkLink, Bluetooth, ...). Internship Certificate: [[pdf]](/cv.assets/intern_huawei_proof2.pdf).
 
 + <b>Huawei Technology, Wireless Technology Laboratory | Research Intern</b> <i style="float: right">June. 2021 - June. 2022</i>
   
@@ -87,4 +87,4 @@ weight: 100000
 + 2020年全国大学生数学建模大赛省级一等奖；
 
 
-<center>LAST UPDATED: July, 2024</center>
+<center>LAST UPDATED: Jan, 2025</center>

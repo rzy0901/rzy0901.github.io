@@ -33,6 +33,7 @@ Emails:
 Recent Updates:
 
 <ul>
+    <li><em>2025-1-25</em>: I finished half a year internship at Huawei Technology.</li>
     <font color = "red"><li><em>2024-8-16</em>：为2024至过年回家前的自学列个计划吧（贴于此，以勉励自己）：</li></font>    <ul>
         <li>计算机网络，操作系统等CS的专业课看一看；</li>
         <li>把蓝牙标准仔细读一遍。</li>
