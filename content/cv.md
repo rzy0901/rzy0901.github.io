@@ -7,6 +7,26 @@ hideHeaderAndFooter: false
 weight: 100000
 ---
 
+<style>
+/* 让该页面行距更紧凑 */
+article {
+    line-height: 1.3;
+}
+
+/* 列表项缩短垂直间距 */
+article li {
+    margin-bottom: 0.2em;
+}
+
+/* 段落间距更紧凑 */
+article p {
+    margin-top: 0.2em;
+    margin-bottom: 0.2em;
+}
+</style>
+
+<font color="red" size = 4pt><strong>⚠ This page is outdated and will not be maintained until job hunting | 此简历在找工作前不再更新. (2025-09-24)</strong></font>
+
 ## Resume for Zhenyu Ren (任振裕) [[CV.pdf]](/cv.assets/CV.pdf)
 
 <div style="width: 20%; float: right; display: flex; flex-direction: column;">
