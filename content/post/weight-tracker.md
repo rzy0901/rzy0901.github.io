@@ -204,11 +204,18 @@ function filterDataByRange(data, range) {
   return data.filter(item => parseDate(item.date) >= startDate);
 }
 
-// Determine X-axis granularity based on data length
-function getGranularity(dataLength) {
-  if (dataLength <= 14) return 'day';
-  if (dataLength <= 90) return 'week';
-  return 'month';
+// Determine X-axis granularity based on time range
+function getGranularity(range, dataLength) {
+  if (range === 7 || range === 30) {
+    // 7D or 1M: show daily data
+    return 'day';
+  } else if (range === 90 || range === 180) {
+    // 3M or 6M: show weekly average
+    return 'week';
+  } else {
+    // 1Y or ALL: show monthly average
+    return 'month';
+  }
 }
 
 // Aggregate data by granularity
@@ -316,8 +323,8 @@ function updateChart(range) {
   // Filter data
   let filteredData = filterDataByRange(globalData, range);
   
-  // Determine granularity
-  const granularity = getGranularity(filteredData.length);
+  // Determine granularity based on selected range
+  const granularity = getGranularity(range, filteredData.length);
   
   // Aggregate data if needed
   const displayData = aggregateData(filteredData, granularity);

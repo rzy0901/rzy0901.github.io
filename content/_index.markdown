@@ -60,6 +60,7 @@ Emails:
 Recent Updates:
 
 <ul>
+    <li> <em>2025-10-20</em>: I started my long-term weight loss campaign. (See <a href="/post/weight-tracker/">Weight Tracking Record</a> for details.) </li>
     <li> <em>2025-9-1</em>: I joined HKUST as a PhD student. </li>
     <li><em>2025-1-25</em>: I finished half a year internship at Huawei Technology.</li>
     <!-- <li>(Need to take these courses at HKUST). <strike><em>2024-8-16</em>：为2024至过年回家前的自学列个计划吧（贴于此，以勉励自己）：</li><ul>
