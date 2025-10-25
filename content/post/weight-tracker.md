@@ -74,7 +74,8 @@ typora-root-url: ../../static
 
 ## Usage Instructions
 
-Weight data is stored in the `/weight-tracker.assets/weight-data.csv` file with the following format:
+Weight data is stored in the [`/weight-tracker.assets/weight-data.csv`](/weight-tracker.assets/weight-data.csv) file with the following format:
+<!-- `/weight-tracker.assets/weight-data.csv` file with the following format: -->
 
 ```csv
 Date,Weight(kg),Notes
