@@ -1,0 +1,331 @@
+\documentclass[letterpaper,10pt]{article}
+\setlength{\footskip}{4.08003pt}
+
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+% \usepackage[english]{babel}
+% \usepackage{tabularx}
+% \usepackage{hyphenat}
+\usepackage{fontawesome}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot[L]{\small{Last Updated: \textit{\today} \ by \href{https://renzhenyu.site}{Zhenyu Ren}}} % 设置页脚内容
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+
+\newcommand{\resumeSubSubheading}[2]{
+    \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+
+\newcommand{\resumeEducationHeading}[6]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+      \textit{\small#5} & \textit{\small #6} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+
+\newcommand{\resumeProjectHeading}[2]{
+    \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+
+\newcommand{\resumeOrganizationHeading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textit{\small #2} \\
+      \textit{\small#3}
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}\vspace{-5pt}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+
+% Quotation environment (for reply)
+\newenvironment{myQuote}{
+    \bigskip
+    \begin{mdframed}
+        [topline=false,
+            rightline=false,
+            bottomline=false,
+            innertopmargin=0.4em,
+            innerbottommargin=0.4em,
+            innerrightmargin=0.7em,
+            rightmargin=0.7em,
+            innerleftmargin=0.7em,
+            leftmargin=0.7em,
+            linewidth=.2em,
+            linecolor=black]
+        % Handling footnote style in mdframed
+        \stepcounter{footnote}
+        \renewcommand{\thempfootnote}{\arabic{footnote}}
+        }{
+    \end{mdframed}
+    \bigskip
+}
+
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%---------- HEADING ----------
+
+\begin{center}
+    \textbf{\Huge \scshape {Zhenyu Ren}} \\ \vspace{3pt}
+    \small
+    % \faMobile \hspace{.5pt} \href{tel:905314204536}{+90 531 420 4536}
+    % $|$
+    % \faAt \hspace{.5pt} Mail: \href{mailto:renzy2022@mail.sustech.edu.cn}{\textcolor{blue}{renzy2022@mail.sustech.edu.cn}}
+    \faAt \hspace{.5pt} Mail: \href{mailto:zrenax@connect.ust.hk}{\textcolor{blue}{zrenax@connect.ust.hk}}
+    $|$
+    % \faLinkedinSquare \hspace{.5pt} \href{https://www.linkedin.com/in/arasgungore}{LinkedIn}
+    % $|$
+    \faGithub \hspace{.5pt} Github: \href{https://github.com/rzy0901}{\textcolor{blue}{https://github.com/rzy0901}}
+    $|$
+    \faGlobe \hspace{.5pt} Website: \href{https://renzhenyu.site}{\textcolor{blue}{https://renzhenyu.site}}
+    % $|$
+    % \faMapMarker \hspace{.5pt} {Shenzhen, China}
+\end{center}
+
+
+
+%----------- EDUCATION -----------
+
+\section{Education}
+  \vspace{3pt}
+  \resumeSubHeadingListStart
+      \resumeSubheading
+      {Hong Kong University of Science and Technology (HKUST)}{Hong Kong, China}
+      {PhD student in Computer Science and Engineering}{Sep 2025 \textbf{--} Present}
+    \resumeSubHeadingListStart
+        \small{\item{Supervised by Prof.~\href{https://home.cse.ust.hk/~lim/}{\textcolor{blue}{Mo~Li}} (IEEE Fellow), focusing on short range wireless communication protocols and security (e.g., Nearlink, BLE, WiFi).}}
+    \resumeSubHeadingListEnd 
+    \resumeEducationHeading
+      {Southern University of Science and Technology (SUSTech)
+      }{Shenzhen, China}
+      {B.Sc. in Communication Engineering;   \textbf{GPA: 3.69/4.00}; \textbf{Weighted Score: 88.07}}{Sep 2018 \textbf{--} Jun 2022}
+      {M.Sc. in Electronic Science and Technology;
+      \textbf{GPA: 3.44/4.00}; \textbf{Weighted Score: 88.52} }{Sep 2022 \textbf{--} Jun 2025}
+        \resumeSubHeadingListStart
+        % \small{\item{Supervised by Prof. \href{https://ieeexplore.ieee.org/author/37089502484}{\textcolor{blue}{Rui Wang}} (Area Editor of IEEE OJ-COMS), focusing on \textbf{sensing channel modeling and experimental mmwave system for wireless sim2real gesture recognition.} \\ \vspace{3pt}
+        \small{\item{Supervised by Prof. \href{https://ieeexplore.ieee.org/author/37089502484}{\textcolor{blue}{Rui Wang}} (Area Editor of IEEE OJ-COMS), focusing on wireless sensing. \\ \vspace{3pt}
+        }}
+        \resumeSubHeadingListEnd    
+  \resumeSubHeadingListEnd
+
+%----------- EXPERIENCE -----------
+
+\section{Experience}
+  \vspace{3pt}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Huawei Technology, Computer Network and Protocol Research Laboratory}{Shenzhen, China}
+      {Research Intern}{July 2024 \textbf{--} Jan 2025}
+      \resumeSubHeadingListStart
+      \small{\item{Working on \textbf{Nearlink (Sparklink) wireless communication protocal}. 
+      % Collaborating with Prof.~\href{https://home.cse.ust.hk/~lim/}{\textcolor{blue}{Mo~Li}} (IEEE Fellow).
+      }
+      }
+      \resumeSubHeadingListEnd  
+    \resumeSubheading
+      {Huawei Technology, Wireless Technology (WT) Laboratory}{Shenzhen, China}
+      {Research Intern}{June 2021 \textbf{--} June 2022}
+      \resumeSubHeadingListStart
+      \small{\item{Focusing on \textbf{wireless communication \& sensing technology}. 
+      % Supervised by Dr. \href{https://ieeexplore.ieee.org/author/37088772113}{\textcolor{blue}{Tony Han Xiao}} (Chair of IEEE 802.11bf).
+      }
+      }
+      \resumeSubHeadingListEnd  
+  \resumeSubHeadingListEnd
+
+%----------- PUBLICATIONS -----------
+\section{Publications}
+\vspace{3pt}
+\resumeSubHeadingListStart
+\small{\item{
+    \textbf{Zhenyu Ren}, Yanbo Zhang, Boya Liu, and Mo Li. ``Snatcher: Apple Find My Network Exposes Your Lost Devices To Strangers," in \textit{Proceedings of the 2026 ACM SIGSAC Conference on Computer and Communications Security (CCS)}, 2026.
+    \href{https://arxiv.org/abs/2606.21067}{\color{blue}Paper} $|$ \href{https://github.com/rzy0901/Snatcher}{\color{blue}Artifact}.
+    Awarded \textbf{Artifacts Available}, \textbf{Artifacts Evaluated -- Functional}, and \textbf{Results Reproduced} badges.
+
+    Boya Liu*, \textbf{Zhenyu Ren*}, Yanbo Zhang, Mo Li, Jiaxin Liang, Bin He, Jie Li, Hao Wu, and Jingbin Zhou. 2026. Unveiling SparkLink Low Energy: A Comparative Measurement Study. \textit{ACM Trans. Internet Things} 7, 1, Article 6 (February 2026), 24 pages. https://doi.org/10.1145/3776559. (Co-first author).
+
+    \textbf{Zhenyu Ren}, Guoliang Li, Chenqing Ji, Chao Yu, Shuai Wang, and Rui Wang. ``CASTER: A Computer-Vision-Assisted Wireless Channel Simulator for Gesture Recognition," in \textit{IEEE Open Journal of the Communications Society}, vol. 5, pp. 3185-3195, 2024. DOI: 10.1109/OJCOMS.2024.3398016.
+    \href{https://doi.org/10.1109/ojcoms.2024.3398016}{\color{blue}Paper} $|$ \href{https://github.com/rzy0901/testSpectrogram}{\color{blue}GitHub}  $|$ \href{https://lasso-sustech.github.io/CASTER/}{\color{blue}Project Page}.
+    }
+    \item{\textbf{REN Zhenyu}, JI Chenqing, YU Chao, CHEN Wanli, and WANG Rui. Computer vision-assisted wireless channel simulation for millimeter wave human motion recognition[J]. \textit{Journal of Radars},  in press. DOI:  10.12000/JR24101.
+    }
+}
+\resumeSubHeadingListEnd
+
+% %----------- PATENTS -----------
+% \section{Patents}
+% \vspace{3pt}
+% % 任振裕，陈万里，王锐，余潮，“无线信道仿真方法、装置、计算机设备及存储介质”，专利申请号：2023110356420，南方科技大学，申请日：2023.08.16（中国发明专利）。
+% % 翻译上述专利
+% \resumeSubHeadingListStart
+% \small{\item{
+%       \textbf{Zhenyu Ren}, Wanli Chen, Rui Wang, Chao Yu, “Wireless Channel Simulation Method, Device, Computer Equipment, and Storage Medium”, Patent Application No.: 2023110356420, Southern University of Science and Technology, Application Date: 2023.08.16 (Chinese Invention Patent).
+%     }
+% }
+
+% \resumeSubHeadingListEnd
+%----------- AWARDS & ACHIEVEMENTS -----------
+
+\section{Skills}
+\resumeSubHeadingListStart
+    \item Claude, Codex, Gemini, Cursor, GitHub Copilot, ChatGPT, OpenClaw...
+\resumeSubHeadingListEnd
+
+% \section{Awards \& Achievements}
+%   \vspace{3pt}
+%   \resumeSubHeadingListStart
+%     \small{\item{
+%       Second Prize in the 17th ``Challenge Cup" Guangdong University Student Extracurricular Academic Science and Technology Works Competition, 2023.
+%       \\ \vspace{3pt}
+%       Leader for Guangdong University Students' Science and Technology Innovation Cultivation Special Fund (``Climbing Plan" Special Fund), 2022$\sim$2023 \emph{(Funding: 20,000 RMB)}.
+%       \\ \vspace{3pt}
+%       2022 Excellent Graduate of Undergraduate for exceptional performance in the SUSTech.
+%     %   \\ \vspace{3pt}
+%     %   2022 Distinguished Undergraduate Thesis of the SUSTech.
+%       \\ \vspace{3pt}
+%       Southern University of Science and Technology Outstanding Student Third-Class Scholarship (2018$\sim$2019, 2020$\sim$2021).
+%       \\ \vspace{3pt}
+%       First Prize in the 2020 National College Student Mathematics Modeling Competition \emph{(Top 0.5\% among 45000++ teams in China)}.
+%     }}
+%   \resumeSubHeadingListEnd
+
+%----------- SKILLS -----------
+
+% \section{Skills}
+%   \vspace{3pt}
+%   \resumeSubHeadingListStart
+%     \small{\item{
+%         \textbf{Programming Languages:}{ C/C++, Python, MATLAB, Java} \\ \vspace{3pt}
+%         \textbf{Technologies:}{ PyTorch, Linux/Ubuntu, Git/GitHub, OpenCV, UHD/USRP, 60GHz Sivers}
+%         \\ \vspace{3pt}
+%         \textbf{Writing:}{ \LaTeX, Markdown, Website} \\ \vspace{3pt}
+%         \textbf{English:}{ IELTS 6.5 with sub-score 6.0} (Test date: \textit{\small Jan 2024});
+%     }}
+%   \resumeSubHeadingListEnd
+
+% %----------- PROJECTS -----------
+
+% \section{Selected Projects}
+% \vspace{3pt}
+% \emph{Note: You can look up my \href{https://github.com/rzy0901}{\textcolor{blue}{GitHub}} for my full project lists.}
+%     \resumeSubHeadingListStart
+%       \resumeProjectHeading
+%         {\textbf{CASTER} $|$           \href{https://doi.org/10.1109/ojcoms.2024.3398016}{\color{blue}Paper} $|$ \href{https://github.com/rzy0901/testSpectrogram}{\color{blue}GitHub} $|$ \href{https://lasso-sustech.github.io/CASTER/}{\textcolor{blue}{Project Page}}}{}
+%         %   \resumeItemListStart
+%             % \resumeItem{CASTER: A {C}omputer-vision-{A}ssisted wireless channel {S}imula{T}or for g{E}sture {R}ecognition.}
+%             \resumeItem{An open-source platform for wireless channel simulation, human/hand pose extraction, gesture spectrogram generation, and real-time gesture recognition based on millimeter-wave passive sensing and communication systems.
+%             % \resumeItemListStart
+%             %   \resumeItem{Submodules \href{https://github.com/rzy0901/mediapipe_spectrogram}{\textcolor{blue}{mediapipe\_spectrogram}} and \href{https://github.com/rzy0901/testZED}{\textcolor{blue}{testZED}}: Developed algorithms for keypoint extraction from video streams and used a primitive-based channel model to generate simulated data, addressing the data collection issue in wireless sensing.}
+%             %   \resumeItem{Submodule \href{https://github.com/rzy0901/CASTER_classification}{\textcolor{blue}{CASTER\_classification}}: Implemented a Simulation-to-Reality transfer learning strategy using ResNet18 and adversarial discriminative domain adaptation (ADDA) for wireless gesture recognition. This approach improved real-world dataset accuracy from $83.0\%$ to $96.5\%$.}
+%             %   \resumeItem{Submodule \href{https://github.com/rzy0901/RxRealTime_GUI_rzy}{\textcolor{blue}{RxRealTime\_GUI}}: Implemented real-time gesture recognition based on millimeter-wave passive sensing and communication systems, using USRP and 60GHz Sivers phased array.
+%             %   }
+%             % \resumeItemListEnd
+%             }         
+%         %   \resumeItemListEnd
+%           \small{\item{\textbf{Some other projects:}\\ \vspace{3pt} (1) \href{https://github.com/rzy0901/rayTrace}{\textcolor{blue}{rayTrace}}: MATLAB software for indoor radio ray-tracing with human blockage. \textbf{\emph{A segment of GIF results was featured by Huawei's keynote speaker during the 1st workshop on wi-fi sensing (\href{https://www.bilibili.com/video/BV1WK411C7hB?t=951.8}{\textcolor{blue}{video recording at 15:52}}).}}\vspace{3pt} \\
+%           (2) \href{https://github.com/rzy0901/rzy0901.github.io}{\textcolor{blue}{Personal Website}}: Math notes and technical blogs.}}
+%         %   \small{\item{\textbf{Some other projects:}\\ \vspace{3pt} (1) \href{https://rzy0901.github.io/testWinprop/}{\textcolor{blue}{testWinprop}}: Radio Ray-tracing by Winprop C++ API (7 Stars); (2) \href{https://github.com/rzy0901/My-solutions-to-DSP-LAB}{\textcolor{blue}{My-solutions-to-DSP-LAB}}: MATLAB for Digital Signal Processing Labs (16 stars, 1 fork); (3) \href{https://github.com/rzy0901/CS205_Matrix}{\textcolor{blue}{CS205\_Matrix}}: C++ Matrix computation library (6 stars, 2 forks); (4) \href{https://github.com/rzy0901/rzy0901.github.io}{\textcolor{blue}{Personal Website}}: Math notes and technical blogs (example post: \href{https://renzhenyu.site/post/asp/}{\textcolor{blue}{Notebook for Applied Stochastic Processes}} and \href{https://renzhenyu.site/post/channel/}{\textcolor{blue}{Wireless Channel Trouble-Shooting}}).}}  
+%     \resumeSubHeadingListEnd
+    
+    
+% %----------- Extracurricular Activities -----------
+% \section{Extracurricular Activities}
+% \vspace{3pt}
+% \resumeSubHeadingListStart
+% \small{
+%   \item{
+%   Reviewer for IEEE ICC 2024, IEEE GLOBECOM 2024, IEEE ICMLCN 2024.\\ \vspace{3pt}
+%   TPC reviewer for IEEE ICC 2024 Workshop. \\ \vspace{3pt}
+%   Teaching Assistant for Wireless Communication.
+% }}
+% \resumeSubHeadingListEnd
+
+%----------- REFERENCES -----------
+% \section{References}
+% \vspace{3pt}
+% \resumeSubHeadingListStart
+% \small{
+%   \item{
+%   Prof. \href{https://ieeexplore.ieee.org/author/37089502484}{\textcolor{blue}{Rui Wang}}, Associate Professor, Department of Electronic and Electrical Engineering (EEE), Southern University of Science and Technology, Email: \href{mailto:wang.r@sustech.edu.cn}{\textcolor{blue}{wang.r@sustech.edu.cn}}.}}
+% \resumeSubHeadingListEnd
+
+% %----------- FOOTER -----------
+%   % \vspace{\baselineskip}
+%   \titlerule
+%   \begin{center}
+%       \small{
+%       Last Updated: \textit{July 07, 2024} \ by \href{https://renzhenyu.site}{Zhenyu Ren}}
+%   \end{center}
+
+\end{document}
