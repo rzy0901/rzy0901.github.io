@@ -74,6 +74,10 @@ article p {
 
 ## Experience
 
++ <b>Huawei Hong Kong Research Center (Leibniz Institute) | Part-time Research Intern</b> <i style="float: right">June 2026 – Present</i>
+
+  Working on the **SparkLink Low Energy (SLE)** protocol for multi-device collaboration in HarmonyOS.
+
 + <b>Huawei Technology, Computer Network and Protocol Research Laboratory | Research Intern</b> <i style="float: right">July 2024 – January 2025</i>
 
   Worked on **Nearlink (Sparklink)** protocol. Internship Certificate: [[pdf]](/cv.assets/intern_huawei_proof2.pdf).
