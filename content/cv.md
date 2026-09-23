@@ -88,6 +88,20 @@ article p {
 
 <div class="paper-box">
   <div class="paper-box-image">
+    <div class="badge">ACM CCS 2026</div>
+    <img src="/cv.assets/snatcher_teaser.png" alt="Snatcher" width="100%">
+    <div class="paper-box-caption">Keywords: Apple Find My network, BLE advertisement security, lost-device tracking, physical theft.</div>
+  </div>
+  <div class="paper-box-text">
+  <p><strong>Zhenyu Ren</strong>, Yanbo Zhang, Boya Liu, and Mo Li. "Snatcher: Apple Find My Network Exposes Your Lost Devices To Strangers," in <i>Proceedings of the 2026 ACM SIGSAC Conference on Computer and Communications Security (CCS)</i>, 2026. <br>
+  <a href="https://arxiv.org/abs/2606.21067">[Paper]</a> | <a href="https://github.com/rzy0901/Snatcher">[GitHub]</a> <br>
+  <img src="/cv.assets/artifacts_available.png" alt="Artifacts Available" title="Artifacts Available" style="height: 50px; width: auto; display: inline-block; margin: 2px;" class="disable-fancybox"><img src="/cv.assets/artifacts_evaluated_functional.png" alt="Artifacts Evaluated - Functional" title="Artifacts Evaluated - Functional" style="height: 50px; width: auto; display: inline-block; margin: 2px;" class="disable-fancybox"><img src="/cv.assets/results_reproduced.png" alt="Results Reproduced" title="Results Reproduced" style="height: 50px; width: auto; display: inline-block; margin: 2px;" class="disable-fancybox">
+  </p>
+  </div>
+</div>
+
+<div class="paper-box">
+  <div class="paper-box-image">
     <div class="badge">ACM TIOT 2026</div>
     <img src="/cv.assets/sle_measure.png" alt="SLE_measure" width="100%">
     <div class="paper-box-caption">Keywords: SparkLink Low Energy, Nearlink, BLE, comparative measurement study.</div>
@@ -138,4 +152,4 @@ article p {
 + 南方科技大学优秀学生三等奖学金（2次）；
 + 2020年全国大学生数学建模大赛省级一等奖； -->
 
-<center>LAST UPDATED: April 2026</center>
+<center>LAST UPDATED: September 2026</center>
