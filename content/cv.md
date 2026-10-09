@@ -98,7 +98,7 @@ article p {
   </div>
   <div class="paper-box-text">
   <p><strong>Zhenyu Ren</strong>, Yanbo Zhang, Boya Liu, and Mo Li. "Snatcher: Apple Find My Network Exposes Your Lost Devices To Strangers," in <i>Proceedings of the 2026 ACM SIGSAC Conference on Computer and Communications Security (CCS)</i>, 2026. <br>
-  <a href="https://arxiv.org/abs/2606.21067">[Paper]</a> | <a href="https://github.com/rzy0901/Snatcher">[GitHub]</a> <br>
+  <a href="https://arxiv.org/abs/2606.21067">[Paper]</a> | <a href="https://github.com/rzy0901/Snatcher">[GitHub]</a> | <a href="https://wands-hkust.github.io/Snatcher/">[Project Page]</a> (with 1 video demo). <br>
   <img src="/cv.assets/artifacts_available.png" alt="Artifacts Available" title="Artifacts Available" style="height: 50px; width: auto; display: inline-block; margin: 2px;" class="disable-fancybox"><img src="/cv.assets/artifacts_evaluated_functional.png" alt="Artifacts Evaluated - Functional" title="Artifacts Evaluated - Functional" style="height: 50px; width: auto; display: inline-block; margin: 2px;" class="disable-fancybox"><img src="/cv.assets/results_reproduced.png" alt="Results Reproduced" title="Results Reproduced" style="height: 50px; width: auto; display: inline-block; margin: 2px;" class="disable-fancybox">
   </p>
   </div>
