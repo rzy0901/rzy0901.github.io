@@ -147,12 +147,163 @@ article li i {
         width: 64px;
     }
 }
+article.post {
+    position: relative;
+}
+.cv-print-button {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    padding: 4px 10px;
+    color: #708090;
+    background: #fff;
+    border: 1px solid #708090;
+    border-radius: 4px;
+    font-size: 12px;
+    line-height: 1.4;
+    cursor: pointer;
+}
+.cv-print-button:hover {
+    background: #f0f2f5;
+}
+@media (max-width: 48em) {
+    .cv-print-button {
+        position: static;
+        display: block;
+        margin: 0 0 0.5em;
+    }
+}
+
+@page {
+    size: A4;
+    margin: 10mm;
+}
+@media print {
+    html,
+    body,
+    .slideout-panel {
+        background: #fff !important;
+        color: #222 !important;
+    }
+    .header,
+    .footer,
+    .mobile-navbar,
+    .post-toc,
+    .back-to-top,
+    .cv-print-button {
+        display: none !important;
+    }
+    article.post {
+        position: static !important;
+        margin: 0 !important;
+        padding: 12px 14px !important;
+        background: #fff !important;
+        border: 1.5px solid #222 !important;
+        box-shadow: none !important;
+        print-color-adjust: exact;
+        -webkit-print-color-adjust: exact;
+    }
+    article,
+    .post-content,
+    .post-content h2,
+    .post-content h3,
+    .post-content strong,
+    .post-content b {
+        color: #222 !important;
+    }
+    .post-content {
+        font-size: 12px !important;
+        line-height: 1.3 !important;
+    }
+    .post-content h2 {
+        font-size: 17px !important;
+        margin: 0.6em 0 0.3em !important;
+        break-after: avoid;
+        page-break-after: avoid;
+    }
+    .post-content h3 {
+        font-size: 14px !important;
+        margin: 0.5em 0 0.3em !important;
+        break-after: avoid;
+        page-break-after: avoid;
+    }
+    .post-content a {
+        color: #708090 !important;
+        text-decoration: none !important;
+    }
+    .cv-profile-photo {
+        float: right !important;
+        width: 20% !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        margin: 0 !important;
+    }
+    .cv-profile-info {
+        float: left !important;
+        width: 70% !important;
+    }
+    .cv-profile-photo img {
+        flex: 0 0 80px !important;
+        width: 80px !important;
+        max-width: 80px !important;
+    }
+    article li {
+        break-inside: avoid;
+        page-break-inside: avoid;
+    }
+    article li i {
+        display: inline !important;
+        float: right !important;
+        font-size: 0.92em !important;
+    }
+    article .paper-box {
+        flex-direction: row !important;
+        align-items: flex-start !important;
+        padding: 0.3em 0 !important;
+        break-inside: avoid !important;
+        page-break-inside: avoid !important;
+    }
+    article .paper-box .paper-box-image {
+        flex: 0 0 130px !important;
+        width: 130px !important;
+        min-width: 130px !important;
+        max-width: 130px !important;
+        margin-top: 0.2em !important;
+    }
+    article .paper-box .paper-box-image img {
+        width: 100% !important;
+        height: 90px !important;
+        max-width: 130px !important;
+    }
+    article .paper-box .paper-box-text {
+        flex: 1 1 0 !important;
+        min-width: 0 !important;
+        max-width: calc(100% - 145px) !important;
+        margin-top: 0 !important;
+        padding-left: 1em !important;
+    }
+    article .paper-box .paper-box-caption {
+        color: #555 !important;
+        font-size: 9px !important;
+    }
+    article .paper-box .badge {
+        font-size: 9px !important;
+        print-color-adjust: exact;
+        -webkit-print-color-adjust: exact;
+    }
+    img {
+        print-color-adjust: exact;
+        -webkit-print-color-adjust: exact;
+    }
+}
 </style>
 
 <!-- <font color="red" size = 4pt><strong>⚠ This page is outdated and will not be maintained until job hunting | 此简历在找工作前不再更新. (2025-09-24)</strong></font> -->
 ⚠ INFO: This page might be outdated.
 
 ## Resume for Zhenyu Ren (任振裕) [[CV.pdf]](/cv.assets/CV.pdf)
+
+<button class="cv-print-button" type="button" onclick="window.print()" title="Print this CV as a PDF">Print PDF</button>
 
 <div class="cv-profile-photo" style="display: flex;">
   <img src="/cv.assets/rzy.jpg" alt="Profile img" title="Zhenyu Ren"/>
