@@ -1,7 +1,7 @@
 {{ define "content" -}}
   <article class="post">
     <!-- post-header -->
-    <header class="post-header">
+    <header class="post-header print-post-header">
       <h1 class="post-title">{{ .Title }}</h1>
 
       <div class="post-meta">
@@ -22,6 +22,7 @@
           <span id="busuanzi_container_page_pv" class="more-meta"> {{ printf (T "pagePV") $valueSpan | safeHTML }} </span>
         {{- end }}
       </div>
+      <button class="print-pdf-button" type="button" onclick="window.print()" title="Print this post as a PDF">Print PDF</button>
     </header>
 
     <!-- TOC -->

@@ -161,3 +161,116 @@ article.post {
   font-size: .8em;
 }
 // End of paper-box
+
+.print-post-header {
+  position: relative;
+
+  .post-title {
+    padding-right: 90px;
+  }
+}
+
+.print-pdf-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 4px 10px;
+  color: #708090;
+  background: #fff;
+  border: 1px solid #708090;
+  border-radius: 4px;
+  font-size: 12px;
+  line-height: 1.4;
+  cursor: pointer;
+
+  &:hover {
+    background: #f0f2f5;
+  }
+}
+
+@media (max-width: 48em) {
+  .print-post-header .post-title {
+    padding-right: 0;
+  }
+
+  .print-pdf-button {
+    position: static;
+    display: block;
+    margin: 0.3em 0 0.6em;
+  }
+}
+
+@page {
+  size: A4;
+  margin: 10mm;
+}
+
+@media print {
+  html,
+  body,
+  .slideout-panel {
+    background: #fff !important;
+  }
+
+  .print-pdf-button {
+    display: none !important;
+  }
+
+  article.post {
+    margin: 0 !important;
+    padding: 12px 14px !important;
+    background: #fff !important;
+    border: 1.5px solid #222 !important;
+    box-shadow: none !important;
+    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+  }
+
+  .post-title {
+    padding-right: 0 !important;
+    color: #222 !important;
+    font-size: 20px !important;
+  }
+
+  .post-content {
+    font-size: 12px !important;
+    line-height: 1.35 !important;
+  }
+
+  .post-content h1,
+  .post-content h2,
+  .post-content h3,
+  .post-content h4,
+  .post-content h5,
+  .post-content h6 {
+    break-after: avoid;
+    page-break-after: avoid;
+  }
+
+  .post-content p,
+  .post-content li,
+  .post-content figure,
+  .post-content pre,
+  .post-content table,
+  .post-content blockquote,
+  .highlight-wrapper {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  .post-content img {
+    max-width: 100% !important;
+    height: auto !important;
+    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+  }
+
+  .post-content pre {
+    white-space: pre-wrap !important;
+    overflow-wrap: anywhere !important;
+  }
+
+  .post-content a {
+    color: #708090 !important;
+  }
+}

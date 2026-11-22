@@ -291,6 +291,11 @@ article.post {
         print-color-adjust: exact;
         -webkit-print-color-adjust: exact;
     }
+    article .paper-box .paper-box-text img {
+        width: auto !important;
+        max-width: none !important;
+        height: 50px !important;
+    }
     img {
         print-color-adjust: exact;
         -webkit-print-color-adjust: exact;
