@@ -52,6 +52,39 @@
   }
 }
 
+body {
+  background: #f2f2f2;
+}
+
+article.post {
+  box-sizing: border-box;
+  margin: 0.5em 0 1em;
+  padding: 1em clamp(0.8em, 2.5vw, 1.4em);
+  background: #fff;
+  border: 1.5px solid #222;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.12);
+}
+
+#archive {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: none;
+  margin: 0.5em 0 1em;
+  padding: 1em clamp(0.8em, 2.5vw, 1.4em);
+  background: #fff;
+  border: 1.5px solid #222;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.12);
+}
+
+.highlight-wrapper {
+  position: relative;
+}
+
+.highlight-wrapper .copy-code {
+  top: 0;
+  right: 0;
+}
+
 // paper box from https://github.com/QianrenLi/qianrenli.github.io/blob/main/assets/css/main.scss
 .paper-box {
   display: flex;

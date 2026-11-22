@@ -9,22 +9,143 @@ weight: 100000
 
 <style>
 article {
-    line-height: 1.3;
+    line-height: 1.35;
+}
+.post-content {
+    font-size: 15px;
+}
+.post-content h2 {
+    font-size: 1.45em;
+    margin: 0.8em 0 0.35em;
+}
+.post-content h3 {
+    font-size: 1.15em;
+    margin: 0.7em 0 0.35em;
 }
 article li {
-    margin-bottom: 0.2em;
+    margin-bottom: 0.15em;
 }
 article p {
+    margin-top: 0.15em;
+    margin-bottom: 0.15em;
+}
+article ul {
+    margin-top: 0.25em;
+    margin-bottom: 0.35em;
+    padding-left: 1.4em;
+}
+article .paper-box {
+    box-sizing: border-box;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 100%;
+    padding: 0.4em 0;
+}
+article .paper-box .paper-box-image {
+    flex: 0 0 180px;
+    width: 180px;
+    min-width: 0;
+    max-width: 180px;
     margin-top: 0.2em;
-    margin-bottom: 0.2em;
 }
 /* Unified paper box image size */
-.paper-box-image img {
+article .paper-box .paper-box-image img {
     width: 100%;
-    height: 160px;
+    height: 120px;
     object-fit: cover;
     object-position: center;
     display: block;
+}
+article .paper-box .paper-box-caption {
+    margin-top: 6px;
+    font-size: 11px;
+    line-height: 1.3;
+}
+article .paper-box .paper-box-text {
+    flex: 1 1 0;
+    min-width: 0;
+    max-width: calc(100% - 200px);
+    padding-left: 1.25em;
+}
+article .paper-box .badge {
+    font-size: 11px;
+}
+article li i {
+    font-size: 0.92em;
+}
+.cv-profile-photo {
+    float: right;
+    width: 20%;
+    flex-direction: column;
+    align-items: center;
+}
+.cv-profile-photo img {
+    flex: 0 0 110px;
+    float: none;
+    width: 110px;
+    max-width: 100%;
+    height: auto;
+}
+.cv-profile-info {
+    float: left;
+    width: 70%;
+}
+.post-content a {
+    word-break: normal !important;
+    overflow-wrap: normal !important;
+}
+.post-content h2 a {
+    white-space: nowrap;
+}
+
+@media (max-width: 48em) {
+    .post-content {
+        font-size: 14px;
+    }
+    .post-content h2 {
+        font-size: 1.35em;
+        margin-top: 0.7em;
+    }
+    article .paper-box {
+        flex-direction: column;
+        padding: 0.5em 0;
+    }
+    article .paper-box .paper-box-image {
+        flex: none;
+        width: 100%;
+        min-width: 0;
+        max-width: 100%;
+        margin-top: 0;
+    }
+    article .paper-box .paper-box-image img {
+        max-width: 100%;
+        height: 110px;
+    }
+    article .paper-box .paper-box-text {
+        flex: none;
+        max-width: 100%;
+        margin-top: 0.35em;
+        padding-left: 0;
+    }
+    article li i {
+        display: block;
+        float: none !important;
+    }
+    .cv-profile-photo,
+    .cv-profile-info {
+        float: none;
+        width: 100%;
+    }
+    .cv-profile-photo {
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 0.4em;
+    }
+    .cv-profile-photo img {
+        flex: 0 0 64px;
+        width: 64px;
+    }
 }
 </style>
 
@@ -33,17 +154,17 @@ article p {
 
 ## Resume for Zhenyu Ren (任振裕) [[CV.pdf]](/cv.assets/CV.pdf)
 
-<div style="width: 20%; float: right; display: flex; flex-direction: column;">
-  <img src="/cv.assets/rzy.jpg" style="max-width: 100%; float: right; zoom: 25%;" alt="Profile img" title="Zhenyu Ren"/>
-  <div><center>Zhenyu Ren (任振裕)</center></div>
+<div class="cv-profile-photo" style="display: flex;">
+  <img src="/cv.assets/rzy.jpg" alt="Profile img" title="Zhenyu Ren"/>
+  <div><center>Zhenyu Ren</center></div>
 </div>
 
-<div style="width: 70%; float: left;">
+<div class="cv-profile-info">
   <ul>
     <li>
-      <img src="/cv.assets/email.svg" style="width: 20px; height: 20px;" class="disable-fancybox"> Email: <a href="mailto:zrenax@connect.ust.hk">zrenax@connect.ust.hk</a>; <br/>
-      <img src="/cv.assets/website.svg" style="width: 20px; height: 20px;" class="disable-fancybox"> Website: <a href="https://renzhenyu.site">https://renzhenyu.site</a>; <br/>
-      <img src="/cv.assets/github.svg" style="width: 20px; height: 20px;" class="disable-fancybox"> Github: <a href="https://github.com/rzy0901">https://github.com/rzy0901</a>.
+      <img src="/cv.assets/email.svg" style="width: 16px; height: 16px;" class="disable-fancybox"> Email: <a href="mailto:zrenax@connect.ust.hk">zrenax@connect.ust.hk</a>; <br/>
+      <img src="/cv.assets/website.svg" style="width: 16px; height: 16px;" class="disable-fancybox"> Website: <a href="https://renzhenyu.site">https://renzhenyu.site</a>; <br/>
+      <img src="/cv.assets/github.svg" style="width: 16px; height: 16px;" class="disable-fancybox"> Github: <a href="https://github.com/rzy0901">https://github.com/rzy0901</a>.
     </li>
     <li>
       I am a Ph.D. student in the Department of Computer Science and Engineering at
