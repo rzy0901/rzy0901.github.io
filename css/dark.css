@@ -119,3 +119,78 @@ a,
 .back-to-top {
   color: #d1d1d6 !important;
 }
+
+@media print {
+  html,
+  body,
+  .slideout-panel,
+  article.post,
+  #archive {
+    background: #fff !important;
+    color: #222 !important;
+  }
+
+  article.post,
+  #archive {
+    border-color: #222 !important;
+    box-shadow: none !important;
+  }
+
+  .post-title,
+  .post-content,
+  .post-content h1,
+  .post-content h2,
+  .post-content h3,
+  .post-content h4,
+  .post-content h5,
+  .post-content h6,
+  .archive-year,
+  .archive-name,
+  .archive-post-counter,
+  .terms-title {
+    color: #222 !important;
+  }
+
+  a,
+  .post-content a,
+  .archive-post-title .archive-post-link {
+    color: #708090 !important;
+  }
+
+  .post-meta,
+  .post-time,
+  .archive-post-time,
+  .paper-box .paper-box-caption,
+  .post-footer,
+  .footer,
+  .footer a {
+    color: #555 !important;
+  }
+
+  .post-content code,
+  .post-content pre,
+  .highlight,
+  .post-content blockquote,
+  .admonition,
+  .post-toc {
+    background: #f6f8fa !important;
+  }
+
+  .post-content blockquote {
+    color: #555 !important;
+  }
+
+  .highlight table::after {
+    background: #e6e6e6 !important;
+    color: #555 !important;
+  }
+
+  .post-content table th {
+    background: #f6f8fa !important;
+  }
+
+  .post-content table th,
+  .post-content table td {
+    border-color: #cacaca !important;
+  }
+}
